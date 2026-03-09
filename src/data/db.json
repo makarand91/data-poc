@@ -1,0 +1,3952 @@
+{
+  "users": {
+    "demo-user-001": {
+      "id": "demo-user-001",
+      "email": "demo@amplifye.ai",
+      "name": "Demo User",
+      "company": "Amplifye Demo",
+      "passwordHash": "ZGVtbzEyMw==",
+      "credits": 3315,
+      "createdAt": "2026-01-15T10:00:00.000Z"
+    },
+    "e50cf263-3f11-4501-92bb-6c1d3528634d": {
+      "id": "e50cf263-3f11-4501-92bb-6c1d3528634d",
+      "email": "test@example.com",
+      "name": "Test User",
+      "company": "Test Corp",
+      "passwordHash": "dGVzdDEyMw==",
+      "credits": 500,
+      "createdAt": "2026-02-08T23:09:23.641Z"
+    }
+  },
+  "crmConnections": {
+    "85c19abd-a174-409d-933f-fe5007d29d04": {
+      "id": "85c19abd-a174-409d-933f-fe5007d29d04",
+      "userId": "demo-user-001",
+      "provider": "salesforce",
+      "apiToken": "****3xyz",
+      "rawToken": "sf_token_abc123xyz",
+      "status": "connected",
+      "lastSync": "2026-02-08T23:09:24.694Z",
+      "connectedAt": "2026-02-08T23:09:24.694Z"
+    },
+    "916632f3-016d-44af-98d4-a9ff8a763756": {
+      "id": "916632f3-016d-44af-98d4-a9ff8a763756",
+      "userId": "demo-user-001",
+      "provider": "hubspot",
+      "apiToken": "****sd",
+      "rawToken": "sd",
+      "status": "connected",
+      "lastSync": "2026-02-09T00:31:36.816Z",
+      "connectedAt": "2026-02-09T00:31:36.816Z"
+    },
+    "4ed2eb49-0d3b-42df-9396-8d8e8578e466": {
+      "id": "4ed2eb49-0d3b-42df-9396-8d8e8578e466",
+      "userId": "demo-user-001",
+      "provider": "pipedrive",
+      "apiToken": "****XSXS",
+      "rawToken": "XZSXSXS",
+      "status": "connected",
+      "lastSync": "2026-02-09T10:03:06.362Z",
+      "connectedAt": "2026-02-09T10:03:06.362Z"
+    }
+  },
+  "conversations": {
+    "b112df35-53a2-463c-b001-e581e9fb6b99": {
+      "id": "b112df35-53a2-463c-b001-e581e9fb6b99",
+      "userId": "demo-user-001",
+      "title": "Analyze my CRM data",
+      "status": "active",
+      "createdAt": "2026-02-08T23:09:24.728Z",
+      "updatedAt": "2026-02-08T23:09:24.734Z"
+    },
+    "f0de4606-caf7-47de-82ac-9ea88f61a45e": {
+      "id": "f0de4606-caf7-47de-82ac-9ea88f61a45e",
+      "userId": "demo-user-001",
+      "title": "Find similar ABM companies",
+      "status": "active",
+      "createdAt": "2026-02-08T23:09:24.743Z",
+      "updatedAt": "2026-02-08T23:09:24.747Z"
+    },
+    "2087f6ee-1d88-49b8-8625-a5b407aae2f8": {
+      "id": "2087f6ee-1d88-49b8-8625-a5b407aae2f8",
+      "userId": "demo-user-001",
+      "title": "Create an email campaign for enterprise segment",
+      "status": "active",
+      "createdAt": "2026-02-08T23:09:24.755Z",
+      "updatedAt": "2026-02-08T23:09:24.760Z"
+    },
+    "e7991993-7c1f-4004-9a71-f116951645c4": {
+      "id": "e7991993-7c1f-4004-9a71-f116951645c4",
+      "userId": "demo-user-001",
+      "title": "Analyze my CRM data",
+      "status": "active",
+      "createdAt": "2026-02-08T23:15:11.440Z",
+      "updatedAt": "2026-02-08T23:15:11.443Z"
+    },
+    "59896248-8584-4122-836c-35059c19cefc": {
+      "id": "59896248-8584-4122-836c-35059c19cefc",
+      "userId": "demo-user-001",
+      "title": "Find similar ABM companies",
+      "status": "active",
+      "createdAt": "2026-02-08T23:15:42.611Z",
+      "updatedAt": "2026-02-08T23:15:49.935Z"
+    },
+    "2b82c978-bfbe-45d8-97b6-f4f2fa9a69ab": {
+      "id": "2b82c978-bfbe-45d8-97b6-f4f2fa9a69ab",
+      "userId": "demo-user-001",
+      "title": "Create email campaign",
+      "status": "active",
+      "createdAt": "2026-02-08T23:37:33.550Z",
+      "updatedAt": "2026-02-08T23:37:33.555Z"
+    },
+    "7d3b7d03-9c7a-40ea-9c83-dc1b5ec84f3d": {
+      "id": "7d3b7d03-9c7a-40ea-9c83-dc1b5ec84f3d",
+      "userId": "demo-user-001",
+      "title": "Analyze my CRM data",
+      "status": "active",
+      "createdAt": "2026-02-08T23:37:54.766Z",
+      "updatedAt": "2026-02-08T23:37:54.774Z"
+    },
+    "5e946d12-6ec8-423a-8bd2-ebcad70bb5f9": {
+      "id": "5e946d12-6ec8-423a-8bd2-ebcad70bb5f9",
+      "userId": "demo-user-001",
+      "title": "Check email nurture status",
+      "status": "active",
+      "createdAt": "2026-02-09T00:26:54.813Z",
+      "updatedAt": "2026-02-09T00:27:31.607Z"
+    },
+    "9711e291-abb4-496c-b193-fbf3a998b1d8": {
+      "id": "9711e291-abb4-496c-b193-fbf3a998b1d8",
+      "userId": "demo-user-001",
+      "title": "Generate new leads",
+      "status": "active",
+      "createdAt": "2026-02-09T01:06:59.330Z",
+      "updatedAt": "2026-02-09T01:06:59.334Z"
+    },
+    "b75f1252-59cb-45ac-aa50-d9e59c10953e": {
+      "id": "b75f1252-59cb-45ac-aa50-d9e59c10953e",
+      "userId": "demo-user-001",
+      "title": "Show my Insyte™s",
+      "status": "active",
+      "createdAt": "2026-02-09T01:15:58.942Z",
+      "updatedAt": "2026-02-09T01:15:58.954Z"
+    },
+    "7ae27da2-8e91-47c3-a3ad-dcf26218288e": {
+      "id": "7ae27da2-8e91-47c3-a3ad-dcf26218288e",
+      "userId": "demo-user-001",
+      "title": "Generate new leads",
+      "status": "active",
+      "createdAt": "2026-02-09T03:03:58.900Z",
+      "updatedAt": "2026-02-09T03:03:58.904Z"
+    },
+    "4f645ad3-93c6-400e-816f-8336e34c0a91": {
+      "id": "4f645ad3-93c6-400e-816f-8336e34c0a91",
+      "userId": "demo-user-001",
+      "title": "Find similar ABM companies",
+      "status": "active",
+      "createdAt": "2026-02-09T03:26:14.956Z",
+      "updatedAt": "2026-02-09T03:26:36.359Z"
+    },
+    "6480c541-e747-4523-9a7e-555618863d39": {
+      "id": "6480c541-e747-4523-9a7e-555618863d39",
+      "userId": "demo-user-001",
+      "title": "Show my Insyte™s",
+      "status": "active",
+      "createdAt": "2026-02-09T03:38:09.350Z",
+      "updatedAt": "2026-02-09T03:38:09.360Z"
+    },
+    "2ded311e-2b80-4e98-b6f9-4c02161fb6c3": {
+      "id": "2ded311e-2b80-4e98-b6f9-4c02161fb6c3",
+      "userId": "demo-user-001",
+      "title": "Show my Insyte™s",
+      "status": "active",
+      "createdAt": "2026-02-09T04:13:56.556Z",
+      "updatedAt": "2026-02-09T04:13:56.565Z"
+    },
+    "04a9c678-feb5-4647-9b9d-e3d9afb43c75": {
+      "id": "04a9c678-feb5-4647-9b9d-e3d9afb43c75",
+      "userId": "demo-user-001",
+      "title": "Show my Insyte™s",
+      "status": "active",
+      "createdAt": "2026-02-09T04:23:58.399Z",
+      "updatedAt": "2026-02-09T04:24:05.391Z"
+    },
+    "72919487-dd9e-4ce1-8ae3-242f6c0e9150": {
+      "id": "72919487-dd9e-4ce1-8ae3-242f6c0e9150",
+      "userId": "demo-user-001",
+      "title": "Analyze my CRM data",
+      "status": "active",
+      "createdAt": "2026-02-09T06:14:01.104Z",
+      "updatedAt": "2026-02-09T06:14:01.117Z"
+    },
+    "86e981a1-5ac6-4e9b-bf0d-4da9d4fdb6e6": {
+      "id": "86e981a1-5ac6-4e9b-bf0d-4da9d4fdb6e6",
+      "userId": "demo-user-001",
+      "title": "Show data quality insights",
+      "status": "active",
+      "createdAt": "2026-02-09T07:05:51.520Z",
+      "updatedAt": "2026-02-09T07:06:00.996Z"
+    },
+    "1ce6d117-86c2-466f-99cf-7716811f8114": {
+      "id": "1ce6d117-86c2-466f-99cf-7716811f8114",
+      "userId": "demo-user-001",
+      "title": "Browse programmatic data",
+      "status": "active",
+      "createdAt": "2026-02-09T07:15:16.239Z",
+      "updatedAt": "2026-02-09T07:15:16.245Z"
+    },
+    "50777905-a7b7-4a20-9174-375c69a976b7": {
+      "id": "50777905-a7b7-4a20-9174-375c69a976b7",
+      "userId": "demo-user-001",
+      "title": "Create email campaign",
+      "status": "active",
+      "createdAt": "2026-02-09T07:32:36.333Z",
+      "updatedAt": "2026-02-09T07:33:11.296Z"
+    },
+    "8a480fb7-9cc4-478c-a43a-1abc3dfa3b1d": {
+      "id": "8a480fb7-9cc4-478c-a43a-1abc3dfa3b1d",
+      "userId": "demo-user-001",
+      "title": "Find similar ABM companies",
+      "status": "active",
+      "createdAt": "2026-02-09T07:33:57.294Z",
+      "updatedAt": "2026-02-09T07:34:12.937Z"
+    },
+    "9a81a7b8-515d-4005-a9bb-7658ae4b8bde": {
+      "id": "9a81a7b8-515d-4005-a9bb-7658ae4b8bde",
+      "userId": "demo-user-001",
+      "title": "Export this list",
+      "status": "active",
+      "createdAt": "2026-02-09T07:39:23.058Z",
+      "updatedAt": "2026-02-09T07:39:23.066Z"
+    },
+    "15a7d7a5-05c4-4738-9652-427cc3096d5d": {
+      "id": "15a7d7a5-05c4-4738-9652-427cc3096d5d",
+      "userId": "demo-user-001",
+      "title": "Export this list",
+      "status": "active",
+      "createdAt": "2026-02-09T07:40:59.072Z",
+      "updatedAt": "2026-02-09T07:40:59.077Z"
+    },
+    "fe23bb79-2d18-4782-926e-bc7fc74d9096": {
+      "id": "fe23bb79-2d18-4782-926e-bc7fc74d9096",
+      "userId": "demo-user-001",
+      "title": "Launch campaign",
+      "status": "active",
+      "createdAt": "2026-02-09T07:41:49.283Z",
+      "updatedAt": "2026-02-09T07:41:49.288Z"
+    },
+    "64840113-3c2a-4ac9-a6f9-68f4e901cf50": {
+      "id": "64840113-3c2a-4ac9-a6f9-68f4e901cf50",
+      "userId": "demo-user-001",
+      "title": "Find similar ABM companies",
+      "status": "active",
+      "createdAt": "2026-02-09T07:49:39.258Z",
+      "updatedAt": "2026-02-09T07:50:25.561Z"
+    },
+    "f9974ac9-e0f1-41f6-ac16-d577f8658948": {
+      "id": "f9974ac9-e0f1-41f6-ac16-d577f8658948",
+      "userId": "demo-user-001",
+      "title": "Analyze my CRM data",
+      "status": "active",
+      "createdAt": "2026-02-09T08:05:35.261Z",
+      "updatedAt": "2026-02-09T08:05:35.278Z"
+    },
+    "db853b18-55af-415c-9ba3-3647bdc32cd8": {
+      "id": "db853b18-55af-415c-9ba3-3647bdc32cd8",
+      "userId": "demo-user-001",
+      "title": "Analyze my CRM data",
+      "status": "active",
+      "createdAt": "2026-02-09T08:39:15.448Z",
+      "updatedAt": "2026-02-09T08:39:15.469Z"
+    },
+    "d7dc30fe-4957-4ee8-9c5c-a31fd046599a": {
+      "id": "d7dc30fe-4957-4ee8-9c5c-a31fd046599a",
+      "userId": "demo-user-001",
+      "title": "Find similar ABM companies",
+      "status": "active",
+      "createdAt": "2026-02-09T09:59:04.878Z",
+      "updatedAt": "2026-02-09T09:59:29.424Z"
+    },
+    "a35fbf7f-c1d1-4cc0-9120-d0fa64c963ab": {
+      "id": "a35fbf7f-c1d1-4cc0-9120-d0fa64c963ab",
+      "userId": "demo-user-001",
+      "title": "Browse programmatic data",
+      "status": "active",
+      "createdAt": "2026-02-09T10:14:06.191Z",
+      "updatedAt": "2026-02-09T10:14:06.197Z"
+    },
+    "48ea1204-917c-4be3-a26b-f5a6e94aa9bb": {
+      "id": "48ea1204-917c-4be3-a26b-f5a6e94aa9bb",
+      "userId": "demo-user-001",
+      "title": "Find similar ABM companies",
+      "status": "active",
+      "createdAt": "2026-02-09T11:19:30.184Z",
+      "updatedAt": "2026-02-09T11:19:30.203Z"
+    },
+    "78415a94-07cf-4c39-b180-d963c60b517c": {
+      "id": "78415a94-07cf-4c39-b180-d963c60b517c",
+      "userId": "demo-user-001",
+      "title": "Find similar ABM companies",
+      "status": "active",
+      "createdAt": "2026-02-09T11:53:59.474Z",
+      "updatedAt": "2026-02-09T11:54:07.779Z"
+    },
+    "50dc6c9c-700d-450f-aea1-622cf02e6c69": {
+      "id": "50dc6c9c-700d-450f-aea1-622cf02e6c69",
+      "userId": "demo-user-001",
+      "title": "Find similar ABM companies",
+      "status": "active",
+      "createdAt": "2026-03-05T10:47:54.138Z",
+      "updatedAt": "2026-03-05T10:47:54.154Z"
+    },
+    "44e1e5cc-c89e-4018-b74a-71e3aa0d069b": {
+      "id": "44e1e5cc-c89e-4018-b74a-71e3aa0d069b",
+      "userId": "demo-user-001",
+      "title": "Create email campaign",
+      "status": "active",
+      "createdAt": "2026-03-07T13:23:54.599Z",
+      "updatedAt": "2026-03-07T13:23:54.619Z"
+    },
+    "0927c49b-5526-4306-bb33-075bb652dec5": {
+      "id": "0927c49b-5526-4306-bb33-075bb652dec5",
+      "userId": "demo-user-001",
+      "title": "Download sample contacts",
+      "status": "active",
+      "createdAt": "2026-03-09T06:06:42.224Z",
+      "updatedAt": "2026-03-09T06:06:55.142Z"
+    },
+    "135d2ec3-d284-428d-99bc-c3d3aab21eb5": {
+      "id": "135d2ec3-d284-428d-99bc-c3d3aab21eb5",
+      "userId": "demo-user-001",
+      "title": "How many contacts match my ICP?",
+      "status": "active",
+      "createdAt": "2026-03-09T06:36:39.615Z",
+      "updatedAt": "2026-03-09T06:36:39.625Z"
+    },
+    "9449dc53-4820-4816-9888-0b900d4142a4": {
+      "id": "9449dc53-4820-4816-9888-0b900d4142a4",
+      "userId": "demo-user-001",
+      "title": "How many contacts match my ICP?",
+      "status": "active",
+      "createdAt": "2026-03-09T09:50:00.632Z",
+      "updatedAt": "2026-03-09T09:50:00.652Z"
+    },
+    "266ac563-d149-4dbd-aaeb-3168880ee0f5": {
+      "id": "266ac563-d149-4dbd-aaeb-3168880ee0f5",
+      "userId": "demo-user-001",
+      "title": "Find decision makers in Enterprise Tech",
+      "status": "active",
+      "createdAt": "2026-03-09T10:00:47.203Z",
+      "updatedAt": "2026-03-09T10:00:47.213Z"
+    }
+  },
+  "messages": {
+    "b112df35-53a2-463c-b001-e581e9fb6b99": [
+      {
+        "id": "2b5fa2a1-2941-44b2-b9c6-810c1824a06b",
+        "conversationId": "b112df35-53a2-463c-b001-e581e9fb6b99",
+        "role": "user",
+        "content": "Analyze my CRM data",
+        "metadata": {},
+        "createdAt": "2026-02-08T23:09:24.730Z"
+      },
+      {
+        "id": "094b9aa0-6258-47fa-9b36-dccb86e08c5a",
+        "conversationId": "b112df35-53a2-463c-b001-e581e9fb6b99",
+        "role": "assistant",
+        "content": "## Lead Scoring Report\n\n### Overview:\n\n**Total Active Leads: 1,247**\n\n**Score Distribution:**\n- Hot (80-100): 89 leads (7.1%)\n- Warm (60-79): 234 leads (18.8%)\n- Cool (40-59): 456 leads (36.6%)\n- Cold (0-39): 468 leads (37.5%)\n\n### Insights:\n1. **High-Intent Signals Detected:** 89 leads showing buying signals including multiple website visits, content downloads, and email engagement\n2. **Segment Opportunity:** Healthcare vertical shows 2.3x higher conversion than average but only 8% of pipeline\n3. **Timing Analysis:** Leads converting fastest when contacted within 4 hours of high-intent action\n4. **Channel Performance:** LinkedIn-sourced leads convert 40% better than cold outreach\n\n### Recommended Actions:\n- Prioritize 89 hot leads for immediate SDR outreach\n- Increase healthcare vertical targeting\n- Implement 4-hour SLA for high-intent lead response",
+        "metadata": {
+          "type": "analysis",
+          "reportId": "342d6eb8-8adb-44b4-9b1c-76601e8f641f",
+          "creditsUsed": 5
+        },
+        "createdAt": "2026-02-08T23:09:24.734Z"
+      }
+    ],
+    "f0de4606-caf7-47de-82ac-9ea88f61a45e": [
+      {
+        "id": "edf09855-7aad-4e64-9ca5-371fd8b87213",
+        "conversationId": "f0de4606-caf7-47de-82ac-9ea88f61a45e",
+        "role": "user",
+        "content": "Find similar ABM companies",
+        "metadata": {},
+        "createdAt": "2026-02-08T23:09:24.744Z"
+      },
+      {
+        "id": "295e4ec0-4fad-43b7-a67b-ac2bf54428fa",
+        "conversationId": "f0de4606-caf7-47de-82ac-9ea88f61a45e",
+        "role": "assistant",
+        "content": "## ABM Lookalike Companies Found\n\nI've identified **5 companies** that match your ideal customer profile:\n\n### 1. CloudBridge Solutions\n- **Industry:** Cloud Services\n- **Size:** 1000-5000 employees\n- **Revenue:** $340M\n- **Match Score:** 89%\n- **Intent Signals:** New CTO appointed, Digital transformation initiative, Budget increase\n- **Location:** Seattle, WA\n\n### 2. MedTech Innovations\n- **Industry:** Healthcare Tech\n- **Size:** 200-500 employees\n- **Revenue:** $92M\n- **Match Score:** 85%\n- **Intent Signals:** HIPAA compliance needs, Platform migration, Growth phase\n- **Location:** Boston, MA\n\n### 3. NexGen Financial\n- **Industry:** FinTech\n- **Size:** 100-200 employees\n- **Revenue:** $45M\n- **Match Score:** 87%\n- **Intent Signals:** Series B funding, Compliance requirements, Stack modernization\n- **Location:** New York, NY\n\n### 4. DataStream Corp\n- **Industry:** Data Infrastructure\n- **Size:** 200-500 employees\n- **Revenue:** $85M\n- **Match Score:** 91%\n- **Intent Signals:** Product launch, Expansion to EMEA, CRM migration\n- **Location:** Austin, TX\n\n### 5. TechVision Analytics\n- **Industry:** Enterprise Software\n- **Size:** 500-1000 employees\n- **Revenue:** $120M\n- **Match Score:** 94%\n- **Intent Signals:** Recent funding round, Hiring sales team, Tech stack match\n- **Location:** San Francisco, CA\n\n*This search consumed 10 credits from your account.*",
+        "metadata": {
+          "type": "abm",
+          "creditsUsed": 10
+        },
+        "createdAt": "2026-02-08T23:09:24.747Z"
+      }
+    ],
+    "2087f6ee-1d88-49b8-8625-a5b407aae2f8": [
+      {
+        "id": "f21f936a-0737-4fbb-aa43-7acb67a1f739",
+        "conversationId": "2087f6ee-1d88-49b8-8625-a5b407aae2f8",
+        "role": "user",
+        "content": "Create an email campaign for enterprise segment",
+        "metadata": {},
+        "createdAt": "2026-02-08T23:09:24.756Z"
+      },
+      {
+        "id": "e320d3f5-e9a5-4ff7-826f-0c01c676fd9a",
+        "conversationId": "2087f6ee-1d88-49b8-8625-a5b407aae2f8",
+        "role": "assistant",
+        "content": "## Campaign Created: Mid-Market SaaS ABM Campaign\n\n**Type:** ABM\n**Segment:** Mid-Market SaaS\n\n### Email Sequence:\n**Step 1 (Day 0):** EMAIL - Personalized industry analysis\n**Step 2 (Day 2):** LINKEDIN - Engage with company content\n**Step 3 (Day 4):** EMAIL - Custom report delivery\n**Step 4 (Day 7):** CALL - Discovery call attempt\n\n### Subject Line:\n\"Personalized Growth Strategy for {{company}}\"\n\n### Preview:\nHi {{first_name}},\n\nI've put together a brief analysis of how {{company}} compares to peers in the SaaS space. Your recent product expansion caught our attention.\n\nWe've helped similar companies increase pipeline velocity by 35%. I'd love to share specific insights tailored to {{company}}.\n\nMind if I send over the analysis?\n\nCheers,\n{{sender_name}}\n\n---\n*Campaign has been saved as draft. You can review and activate it from the Content Hub.*",
+        "metadata": {
+          "type": "campaign",
+          "campaignId": "3e339c5b-606d-4583-82fa-8037fa2ab485",
+          "creditsUsed": 10
+        },
+        "createdAt": "2026-02-08T23:09:24.760Z"
+      }
+    ],
+    "e7991993-7c1f-4004-9a71-f116951645c4": [
+      {
+        "id": "26ae5016-996b-429b-bf7a-e6b042f1df1b",
+        "conversationId": "e7991993-7c1f-4004-9a71-f116951645c4",
+        "role": "user",
+        "content": "Analyze my CRM data",
+        "metadata": {},
+        "createdAt": "2026-02-08T23:15:11.441Z"
+      },
+      {
+        "id": "026c522b-f212-4b8e-9b91-dc1ba5d81fb6",
+        "conversationId": "e7991993-7c1f-4004-9a71-f116951645c4",
+        "role": "assistant",
+        "content": "## Pipeline Analysis Report\n\n### Key Findings:\n\n**1. Pipeline Health Score: 78/100**\nYour pipeline shows strong top-of-funnel activity but conversion rates drop significantly at the proposal stage.\n\n**2. Revenue at Risk: $2.4M**\n- 23 deals stalled for >30 days in negotiation\n- Average deal cycle increased by 12 days this quarter\n- 8 high-value accounts showing declining engagement\n\n**3. Top Performing Segments:**\n- Enterprise Tech: 34% conversion rate\n- Mid-Market SaaS: 28% conversion rate\n- Financial Services: 22% conversion rate\n\n**4. Recommendations:**\n- Re-engage 8 at-risk accounts with personalized outreach\n- Implement deal acceleration playbook for proposal stage\n- Focus ABM efforts on Enterprise Tech segment\n\n**5. Engagement Metrics:**\n- Email open rate: 42% (above industry avg)\n- Meeting booking rate: 18%\n- Content engagement: 67% of leads engaged with at least 3 assets",
+        "metadata": {
+          "type": "analysis",
+          "reportId": "9b409440-a7d0-4293-afa8-66e28edfc695",
+          "creditsUsed": 5
+        },
+        "createdAt": "2026-02-08T23:15:11.443Z"
+      }
+    ],
+    "59896248-8584-4122-836c-35059c19cefc": [
+      {
+        "id": "c28e9ebc-a7a7-4307-8c8e-f3d5bd73bbcc",
+        "conversationId": "59896248-8584-4122-836c-35059c19cefc",
+        "role": "user",
+        "content": "Find similar ABM companies",
+        "metadata": {},
+        "createdAt": "2026-02-08T23:15:42.613Z"
+      },
+      {
+        "id": "c723f8b8-2307-4e78-9299-523963a05d2f",
+        "conversationId": "59896248-8584-4122-836c-35059c19cefc",
+        "role": "assistant",
+        "content": "## ABM Lookalike Companies Found\n\nI've identified **5 companies** that match your ideal customer profile:\n\n### 1. TechVision Analytics\n- **Industry:** Enterprise Software\n- **Size:** 500-1000 employees\n- **Revenue:** $120M\n- **Match Score:** 94%\n- **Intent Signals:** Recent funding round, Hiring sales team, Tech stack match\n- **Location:** San Francisco, CA\n\n### 2. NexGen Financial\n- **Industry:** FinTech\n- **Size:** 100-200 employees\n- **Revenue:** $45M\n- **Match Score:** 87%\n- **Intent Signals:** Series B funding, Compliance requirements, Stack modernization\n- **Location:** New York, NY\n\n### 3. GreenEnergy Systems\n- **Industry:** Clean Energy\n- **Size:** 100-200 employees\n- **Revenue:** $67M\n- **Match Score:** 81%\n- **Intent Signals:** Government contracts, Rapid scaling, CRM implementation\n- **Location:** Denver, CO\n\n### 4. DataStream Corp\n- **Industry:** Data Infrastructure\n- **Size:** 200-500 employees\n- **Revenue:** $85M\n- **Match Score:** 91%\n- **Intent Signals:** Product launch, Expansion to EMEA, CRM migration\n- **Location:** Austin, TX\n\n### 5. RetailEdge Platform\n- **Industry:** E-Commerce\n- **Size:** 500-1000 employees\n- **Revenue:** $210M\n- **Match Score:** 83%\n- **Intent Signals:** Omnichannel strategy, Data integration needs, Customer experience focus\n- **Location:** Chicago, IL\n\n*This search consumed 10 credits from your account.*",
+        "metadata": {
+          "type": "abm",
+          "creditsUsed": 10
+        },
+        "createdAt": "2026-02-08T23:15:42.620Z"
+      },
+      {
+        "id": "1b05a12f-6250-47ee-991b-40be765f7c82",
+        "conversationId": "59896248-8584-4122-836c-35059c19cefc",
+        "role": "user",
+        "content": "Add to my crm",
+        "metadata": {},
+        "createdAt": "2026-02-08T23:15:49.934Z"
+      },
+      {
+        "id": "6b966d75-4071-4d64-a8f3-0e905b581f08",
+        "conversationId": "59896248-8584-4122-836c-35059c19cefc",
+        "role": "assistant",
+        "content": "I understand you're looking for help with \"Add to my crm\". I can assist you with:\n\n- **Data Analysis** - Analyze your CRM and pipeline data\n- **ABM Targeting** - Find lookalike companies matching your ICP\n- **Campaign Creation** - Build personalized email sequences\n- **Reports** - Generate actionable insights\n\nCould you be more specific about what you'd like me to do?",
+        "metadata": {
+          "type": "general"
+        },
+        "createdAt": "2026-02-08T23:15:49.935Z"
+      }
+    ],
+    "2b82c978-bfbe-45d8-97b6-f4f2fa9a69ab": [
+      {
+        "id": "db6e7595-67d3-47cb-a96c-ab0960d7b335",
+        "conversationId": "2b82c978-bfbe-45d8-97b6-f4f2fa9a69ab",
+        "role": "user",
+        "content": "Create email campaign",
+        "metadata": {},
+        "createdAt": "2026-02-08T23:37:33.551Z"
+      },
+      {
+        "id": "27021f7e-15d6-48bb-b683-97c1391288bc",
+        "conversationId": "2b82c978-bfbe-45d8-97b6-f4f2fa9a69ab",
+        "role": "assistant",
+        "content": "## Campaign Created: Mid-Market SaaS ABM Campaign\n\n**Type:** ABM\n**Segment:** Mid-Market SaaS\n\n### Email Sequence:\n**Step 1 (Day 0):** EMAIL - Personalized industry analysis\n**Step 2 (Day 2):** LINKEDIN - Engage with company content\n**Step 3 (Day 4):** EMAIL - Custom report delivery\n**Step 4 (Day 7):** CALL - Discovery call attempt\n\n### Subject Line:\n\"Personalized Growth Strategy for {{company}}\"\n\n### Preview:\nHi {{first_name}},\n\nI've put together a brief analysis of how {{company}} compares to peers in the SaaS space. Your recent product expansion caught our attention.\n\nWe've helped similar companies increase pipeline velocity by 35%. I'd love to share specific insights tailored to {{company}}.\n\nMind if I send over the analysis?\n\nCheers,\n{{sender_name}}\n\n---\n*Campaign has been saved as draft. You can review and activate it from the Content Hub.*",
+        "metadata": {
+          "type": "campaign",
+          "campaignId": "680a68cf-3719-46de-b073-8a062731fccd",
+          "creditsUsed": 10
+        },
+        "createdAt": "2026-02-08T23:37:33.555Z"
+      }
+    ],
+    "7d3b7d03-9c7a-40ea-9c83-dc1b5ec84f3d": [
+      {
+        "id": "5868da32-9868-48e8-bc63-5e969819d109",
+        "conversationId": "7d3b7d03-9c7a-40ea-9c83-dc1b5ec84f3d",
+        "role": "user",
+        "content": "Analyze my CRM data",
+        "metadata": {},
+        "createdAt": "2026-02-08T23:37:54.768Z"
+      },
+      {
+        "id": "048593da-0fe3-4cd6-870f-dfd92b994f95",
+        "conversationId": "7d3b7d03-9c7a-40ea-9c83-dc1b5ec84f3d",
+        "role": "assistant",
+        "content": "## Pipeline Analysis Report\n\n### Key Findings:\n\n**1. Pipeline Health Score: 78/100**\nYour pipeline shows strong top-of-funnel activity but conversion rates drop significantly at the proposal stage.\n\n**2. Revenue at Risk: $2.4M**\n- 23 deals stalled for >30 days in negotiation\n- Average deal cycle increased by 12 days this quarter\n- 8 high-value accounts showing declining engagement\n\n**3. Top Performing Segments:**\n- Enterprise Tech: 34% conversion rate\n- Mid-Market SaaS: 28% conversion rate\n- Financial Services: 22% conversion rate\n\n**4. Recommendations:**\n- Re-engage 8 at-risk accounts with personalized outreach\n- Implement deal acceleration playbook for proposal stage\n- Focus ABM efforts on Enterprise Tech segment\n\n**5. Engagement Metrics:**\n- Email open rate: 42% (above industry avg)\n- Meeting booking rate: 18%\n- Content engagement: 67% of leads engaged with at least 3 assets",
+        "metadata": {
+          "type": "analysis",
+          "reportId": "be148a38-8245-40ae-9c97-d5a35c040568",
+          "creditsUsed": 5
+        },
+        "createdAt": "2026-02-08T23:37:54.774Z"
+      }
+    ],
+    "5e946d12-6ec8-423a-8bd2-ebcad70bb5f9": [
+      {
+        "id": "4dacb4d2-b13c-43fc-bcd8-ac2749287e8c",
+        "conversationId": "5e946d12-6ec8-423a-8bd2-ebcad70bb5f9",
+        "role": "user",
+        "content": "Check email nurture status",
+        "metadata": {},
+        "createdAt": "2026-02-09T00:26:54.816Z"
+      },
+      {
+        "id": "c36765f6-6b49-4118-a8e7-342f212ce6c7",
+        "conversationId": "5e946d12-6ec8-423a-8bd2-ebcad70bb5f9",
+        "role": "assistant",
+        "content": "## Email Nurture & Engagement Analysis\n\nHere's your recent campaign performance with AI-powered recommendations:\n\n### Campaign 1: Enterprise Tech Q1\n- **Segment:** Enterprise Tech\n- **Sent:** 450 | **Opened:** 189 (42%) | **Clicked:** 67 (15%) | **Replied:** 34 (7.5%) | **Converted:** 12 (2.7%)\n\n**AI Recommendation:** Enterprise Tech Q1 has 42% open rate with 67 clicks. I recommend sending a case study follow-up to the 67 clickers in 2 days with specific ROI metrics relevant to this segment.\n\n**Suggested Follow-up Actions:**\n- **Send case study to clickers** — 67 leads | Timing: 2 days | Expected Lift: 18-22% reply rate\n- **Schedule calls with 34 repliers** — 34 leads | Timing: 24 hours | Expected Lift: 35-40% meeting rate\n- **Resource nurture for unopened** — 261 leads | Timing: 3 days | Expected Lift: 12-15% opens\n\n---\n\n### Campaign 2: Oil & Gas VP Campaign\n- **Segment:** Energy\n- **Sent:** 280 | **Opened:** 112 (40%) | **Clicked:** 12 (10%) | **Replied:** 4 (3%) | **Converted:** 1 (0.4%)\n\n**AI Recommendation:** Oil & Gas VP campaign: 12 people clicked but didn't reply. Suggested action: Send personalized follow-up with ROI calculator in 48 hours targeting the decision criteria of energy sector executives.\n\n**Suggested Follow-up Actions:**\n- **Send ROI calculator to clickers** — 12 leads | Timing: 48 hours | Expected Lift: 25-30% reply rate\n- **LinkedIn engagement for non-clickers** — 168 leads | Timing: 2 days | Expected Lift: 8-10% re-engagement\n- **Demo offer to high-engagement contacts** — 4 leads | Timing: 24 hours | Expected Lift: 50% conversion\n\n---\n\n### Campaign 3: SaaS Growth Marketing\n- **Segment:** Mid-Market SaaS\n- **Sent:** 320 | **Opened:** 182 (57%) | **Clicked:** 89 (28%) | **Replied:** 34 (11%) | **Converted:** 8 (2.5%)\n\n**AI Recommendation:** SaaS segment showing strong engagement (57% open rate, 28% click rate). Next step: Personalized product demo offer to the 89 clickers with specific use case callouts for their company size.\n\n**Suggested Follow-up Actions:**\n- **Schedule demo with clickers** — 89 leads | Timing: 1 day | Expected Lift: 40-45% meeting rate\n- **Segment-specific case studies** — 182 leads | Timing: 3 days | Expected Lift: 15-18% second click\n- **VIP account acceleration track** — 34 leads | Timing: 2 hours | Expected Lift: 60% deal acceleration\n\n---\n\n*All recommendations account for audience size, engagement patterns, and optimal timing windows.*",
+        "metadata": {
+          "type": "nurture"
+        },
+        "createdAt": "2026-02-09T00:26:54.818Z"
+      },
+      {
+        "id": "d9dd68e4-471a-4351-af29-eebbfd669b63",
+        "conversationId": "5e946d12-6ec8-423a-8bd2-ebcad70bb5f9",
+        "role": "user",
+        "content": "run campaign",
+        "metadata": {},
+        "createdAt": "2026-02-09T00:27:13.677Z"
+      },
+      {
+        "id": "ec825b7c-017d-474f-8cca-ce0aa6f48b0d",
+        "conversationId": "5e946d12-6ec8-423a-8bd2-ebcad70bb5f9",
+        "role": "assistant",
+        "content": "## Campaign Created: Enterprise Tech Outreach Sequence\n\n**Type:** EMAIL\n**Segment:** Enterprise Tech\n\n### Email Sequence:\n**Step 1 (Day 0):** EMAIL - Initial outreach - value proposition\n**Step 2 (Day 3):** EMAIL - Case study follow-up\n**Step 3 (Day 5):** LINKEDIN - LinkedIn connection + message\n**Step 4 (Day 7):** EMAIL - ROI calculator share\n**Step 5 (Day 10):** CALL - Phone follow-up\n**Step 6 (Day 14):** EMAIL - Break-up email\n\n### Subject Line:\n\"Driving Revenue Growth with AI-Powered Sales Intelligence\"\n\n### Preview:\nHi {{first_name}},\n\nI noticed {{company}} has been expanding its sales operations recently. Companies in your space are seeing 40% faster deal cycles with AI-powered lead intelligence.\n\nWould you be open to a 15-minute call this week to explore how we could help {{company}} achieve similar results?\n\nBest,\n{{sender_name}}\n\n---\n*Campaign has been saved as draft. You can review and activate it from the Content Hub.*",
+        "metadata": {
+          "type": "campaign",
+          "campaignId": "b0bd1726-eae7-4e28-844b-b5ff357d9272",
+          "creditsUsed": 10
+        },
+        "createdAt": "2026-02-09T00:27:13.687Z"
+      },
+      {
+        "id": "5fc83f01-f869-4ba1-8606-b3ea169288ed",
+        "conversationId": "5e946d12-6ec8-423a-8bd2-ebcad70bb5f9",
+        "role": "user",
+        "content": "execute campaign now",
+        "metadata": {},
+        "createdAt": "2026-02-09T00:27:31.594Z"
+      },
+      {
+        "id": "01219df0-1e9d-4ccb-aeee-70dfd95f23a5",
+        "conversationId": "5e946d12-6ec8-423a-8bd2-ebcad70bb5f9",
+        "role": "assistant",
+        "content": "## Campaign Created: Mid-Market SaaS ABM Campaign\n\n**Type:** ABM\n**Segment:** Mid-Market SaaS\n\n### Email Sequence:\n**Step 1 (Day 0):** EMAIL - Personalized industry analysis\n**Step 2 (Day 2):** LINKEDIN - Engage with company content\n**Step 3 (Day 4):** EMAIL - Custom report delivery\n**Step 4 (Day 7):** CALL - Discovery call attempt\n\n### Subject Line:\n\"Personalized Growth Strategy for {{company}}\"\n\n### Preview:\nHi {{first_name}},\n\nI've put together a brief analysis of how {{company}} compares to peers in the SaaS space. Your recent product expansion caught our attention.\n\nWe've helped similar companies increase pipeline velocity by 35%. I'd love to share specific insights tailored to {{company}}.\n\nMind if I send over the analysis?\n\nCheers,\n{{sender_name}}\n\n---\n*Campaign has been saved as draft. You can review and activate it from the Content Hub.*",
+        "metadata": {
+          "type": "campaign",
+          "campaignId": "6412df2d-80a8-465f-9e79-b4c73a1ff4ff",
+          "creditsUsed": 10
+        },
+        "createdAt": "2026-02-09T00:27:31.607Z"
+      }
+    ],
+    "9711e291-abb4-496c-b193-fbf3a998b1d8": [
+      {
+        "id": "8a081f62-4647-4328-86c8-c24fd3be7257",
+        "conversationId": "9711e291-abb4-496c-b193-fbf3a998b1d8",
+        "role": "user",
+        "content": "Generate new leads",
+        "metadata": {},
+        "createdAt": "2026-02-09T01:06:59.331Z"
+      },
+      {
+        "id": "7f89bcf2-4a4e-4bcd-93f8-78093e886362",
+        "conversationId": "9711e291-abb4-496c-b193-fbf3a998b1d8",
+        "role": "assistant",
+        "content": "## Lead Generation Workflow\n\nI can help you generate qualified leads. Let me walk you through the process:\n\n### Step 1: Define Your ICP (Ideal Customer Profile)\nLet me know your targeting criteria:\n- **Industries:** (e.g., Enterprise Tech, Healthcare, Financial Services)\n- **Job Titles:** (e.g., VP Sales, CRO, Sales Director)\n- **Company Size:** (e.g., 500-1000 employees, $100M-500M revenue)\n- **Geography:** (e.g., North America, EMEA, specific states)\n- **Pain Points:** (e.g., pipeline visibility, sales velocity, deal acceleration)\n\n### Step 2: Search Our Database\nI'll query our proprietary database of 5M+ B2B contacts across all verticals matching your exact criteria.\n\n### Step 3: Enrich with Intent Signals\nAdd behavior and intent data including:\n- Recent job changes and promotions\n- Company news and funding events\n- Website visit activity and content engagement\n- LinkedIn profile changes and connections\n\n### Step 4: Score & Prioritize\nAI-powered scoring assigns lead grades based on:\n- Fit score (how well they match your ICP)\n- Intent score (buying signals detected)\n- Reachability score (email/phone accuracy)\n\n### Sample Results (Enterprise Tech ICP):\n\n**Top 5 Leads Generated:**\n1. **John Chen** — VP Sales, TechVision Analytics (San Francisco, CA) | Fit: 94% | Intent: 87% | Status: Just hired 2 months ago\n2. **Maria Rodriguez** — Director of Revenue Operations, DataStream Corp (Austin, TX) | Fit: 91% | Intent: 82% | Status: Recently visited 4 product pages\n3. **Sarah Thompson** — CRO, CloudBridge Solutions (Seattle, WA) | Fit: 89% | Intent: 79% | Status: Engaged with 3 case studies this month\n4. **Michael Park** — Head of Sales, NexGen Financial (New York, NY) | Fit: 87% | Intent: 76% | Status: Recently expanded sales team\n5. **Jennifer Wu** — VP Revenue, MedTech Innovations (Boston, MA) | Fit: 85% | Intent: 71% | Status: Downloaded 2 ROI calculators\n\n**Estimated Cost:** 15-20 credits per 100 qualified leads generated\n\n*Ready to define your ICP? Tell me about your ideal customer and I'll generate your first batch of leads.*",
+        "metadata": {
+          "type": "lead_generation"
+        },
+        "createdAt": "2026-02-09T01:06:59.334Z"
+      }
+    ],
+    "b75f1252-59cb-45ac-aa50-d9e59c10953e": [
+      {
+        "id": "94e9b404-91a1-4cde-8988-da66ed66bc3d",
+        "conversationId": "b75f1252-59cb-45ac-aa50-d9e59c10953e",
+        "role": "user",
+        "content": "Show my Insyte™s",
+        "metadata": {},
+        "createdAt": "2026-02-09T01:15:58.944Z"
+      },
+      {
+        "id": "7af30535-663b-477a-8d7e-dcb584f6e446",
+        "conversationId": "b75f1252-59cb-45ac-aa50-d9e59c10953e",
+        "role": "assistant",
+        "content": "## Insyte™ — Content Deployment & Tracking\n\nYou have **4 active Insyte™s** with **5,114 total visitors** (3,909 unique).\n\n### 1. Enterprise Solutions Hub\n- **Type:** Multi-Asset Page | **Status:** live\n- **Visitors:** 1,247 total | 892 unique | Avg Time: 3m 42s\n- **Top Region:** United States (64%)\n- **Top Industry:** Technology (45%)\n- **Top Job Function:** VP Sales (32%)\n\n### 2. Oil & Gas Innovation Microsite\n- **Type:** Microsite | **Status:** live\n- **Visitors:** 634 total | 487 unique | Avg Time: 5m 18s\n- **Top Region:** United States (52%)\n- **Top Industry:** Energy (72%)\n- **Top Job Function:** VP Operations (38%)\n\n### 3. AI in Revenue Operations Webinar\n- **Type:** On-Demand Webinar | **Status:** live\n- **Visitors:** 2,341 total | 1,876 unique | Avg Time: 18m 24s\n- **Top Region:** United States (58%)\n- **Top Industry:** SaaS (48%)\n- **Top Job Function:** RevOps (36%)\n\n### 4. Healthcare Digital Transformation\n- **Type:** Microsite + Chatbot | **Status:** live\n- **Visitors:** 892 total | 654 unique | Avg Time: 7m 12s\n- **Top Region:** United States (71%)\n- **Top Industry:** Healthcare (65%)\n- **Top Job Function:** CIO (30%)\n\n---\n\n### Tracking Highlights:\n- **Enterprise Solutions Hub** was visited 47 times by US-based VP Sales this week — consider launching a targeted ABM campaign\n- **Oil & Gas Microsite** engagement spiked 3x from UAE — optimize for Middle East audience\n- **AI in RevOps Webinar** has 82% completion rate from SaaS companies — create follow-up content\n- **Healthcare Microsite** chatbot top query: \"pricing\" (68 times) — add a dedicated pricing page\n\n### Available Insyte™ Types:\n1. **Trackable Multi-Asset Page** — Landing page with multiple downloadable assets (15 credits)\n2. **Microsite** — Custom site from your PDF/video content (20 credits)\n3. **On-Demand Webinar** — Host recorded webinars for on-demand viewing (25 credits)\n4. **Microsite + Chatbot** — Microsite with embedded AI chatbot (30 credits)\n5. **Webinar + Chatbot** — On-demand webinar with AI chatbot (35 credits)\n\n*Visit the Insyte™ page to create new content or view detailed tracking analytics.*",
+        "metadata": {
+          "type": "insyte"
+        },
+        "createdAt": "2026-02-09T01:15:58.954Z"
+      }
+    ],
+    "7ae27da2-8e91-47c3-a3ad-dcf26218288e": [
+      {
+        "id": "908f7b62-ba8a-4dc2-9876-498193e3a8a2",
+        "conversationId": "7ae27da2-8e91-47c3-a3ad-dcf26218288e",
+        "role": "user",
+        "content": "Generate new leads",
+        "metadata": {},
+        "createdAt": "2026-02-09T03:03:58.902Z"
+      },
+      {
+        "id": "9e9aee0c-5dcc-4774-a4fc-70d42f911393",
+        "conversationId": "7ae27da2-8e91-47c3-a3ad-dcf26218288e",
+        "role": "assistant",
+        "content": "## Lead Generation Workflow\n\nI can help you generate qualified leads. Let me walk you through the process:\n\n### Step 1: Define Your ICP (Ideal Customer Profile)\nLet me know your targeting criteria:\n- **Industries:** (e.g., Enterprise Tech, Healthcare, Financial Services)\n- **Job Titles:** (e.g., VP Sales, CRO, Sales Director)\n- **Company Size:** (e.g., 500-1000 employees, $100M-500M revenue)\n- **Geography:** (e.g., North America, EMEA, specific states)\n- **Pain Points:** (e.g., pipeline visibility, sales velocity, deal acceleration)\n\n### Step 2: Search Our Database\nI'll query our proprietary database of 5M+ B2B contacts across all verticals matching your exact criteria.\n\n### Step 3: Enrich with Intent Signals\nAdd behavior and intent data including:\n- Recent job changes and promotions\n- Company news and funding events\n- Website visit activity and content engagement\n- LinkedIn profile changes and connections\n\n### Step 4: Score & Prioritize\nAI-powered scoring assigns lead grades based on:\n- Fit score (how well they match your ICP)\n- Intent score (buying signals detected)\n- Reachability score (email/phone accuracy)\n\n### Sample Results (Enterprise Tech ICP):\n\n**Top 5 Leads Generated:**\n1. **John Chen** — VP Sales, TechVision Analytics (San Francisco, CA) | Fit: 94% | Intent: 87% | Status: Just hired 2 months ago\n2. **Maria Rodriguez** — Director of Revenue Operations, DataStream Corp (Austin, TX) | Fit: 91% | Intent: 82% | Status: Recently visited 4 product pages\n3. **Sarah Thompson** — CRO, CloudBridge Solutions (Seattle, WA) | Fit: 89% | Intent: 79% | Status: Engaged with 3 case studies this month\n4. **Michael Park** — Head of Sales, NexGen Financial (New York, NY) | Fit: 87% | Intent: 76% | Status: Recently expanded sales team\n5. **Jennifer Wu** — VP Revenue, MedTech Innovations (Boston, MA) | Fit: 85% | Intent: 71% | Status: Downloaded 2 ROI calculators\n\n**Estimated Cost:** 15-20 credits per 100 qualified leads generated\n\n*Ready to define your ICP? Tell me about your ideal customer and I'll generate your first batch of leads.*",
+        "metadata": {
+          "type": "lead_generation",
+          "thinkingSteps": [
+            "Initializing Lead Generation Engine...",
+            "Loading ICP matching criteria...",
+            "Searching 5M+ B2B contact database...",
+            "Enriching results with intent signals...",
+            "Scoring and ranking leads by fit + intent..."
+          ]
+        },
+        "createdAt": "2026-02-09T03:03:58.904Z"
+      }
+    ],
+    "4f645ad3-93c6-400e-816f-8336e34c0a91": [
+      {
+        "id": "d4fdb35c-3205-4702-83db-8da0e58caabc",
+        "conversationId": "4f645ad3-93c6-400e-816f-8336e34c0a91",
+        "role": "user",
+        "content": "Find similar ABM companies",
+        "metadata": {},
+        "createdAt": "2026-02-09T03:26:14.959Z"
+      },
+      {
+        "id": "64eab9eb-4bf3-4a38-8ebf-0aebe0d09978",
+        "conversationId": "4f645ad3-93c6-400e-816f-8336e34c0a91",
+        "role": "assistant",
+        "content": "## ABM Lookalike Companies Found\n\nI've identified **5 companies** that match your ideal customer profile:\n\n### 1. GreenEnergy Systems\n- **Industry:** Clean Energy\n- **Size:** 100-200 employees\n- **Revenue:** $67M\n- **Match Score:** 81%\n- **Intent Signals:** Government contracts, Rapid scaling, CRM implementation\n- **Location:** Denver, CO\n\n### 2. MedTech Innovations\n- **Industry:** Healthcare Tech\n- **Size:** 200-500 employees\n- **Revenue:** $92M\n- **Match Score:** 85%\n- **Intent Signals:** HIPAA compliance needs, Platform migration, Growth phase\n- **Location:** Boston, MA\n\n### 3. NexGen Financial\n- **Industry:** FinTech\n- **Size:** 100-200 employees\n- **Revenue:** $45M\n- **Match Score:** 87%\n- **Intent Signals:** Series B funding, Compliance requirements, Stack modernization\n- **Location:** New York, NY\n\n### 4. RetailEdge Platform\n- **Industry:** E-Commerce\n- **Size:** 500-1000 employees\n- **Revenue:** $210M\n- **Match Score:** 83%\n- **Intent Signals:** Omnichannel strategy, Data integration needs, Customer experience focus\n- **Location:** Chicago, IL\n\n### 5. CloudBridge Solutions\n- **Industry:** Cloud Services\n- **Size:** 1000-5000 employees\n- **Revenue:** $340M\n- **Match Score:** 89%\n- **Intent Signals:** New CTO appointed, Digital transformation initiative, Budget increase\n- **Location:** Seattle, WA\n\n*This search consumed 10 credits from your account.*",
+        "metadata": {
+          "type": "abm",
+          "thinkingSteps": [
+            "Accessing ABM Intelligence Engine...",
+            "Loading your ideal customer profile...",
+            "Scanning firmographic database for matches...",
+            "Analyzing intent signals and technographics...",
+            "Ranking companies by match score..."
+          ],
+          "creditsUsed": 10
+        },
+        "createdAt": "2026-02-09T03:26:14.969Z"
+      },
+      {
+        "id": "56f1b6aa-0f53-42ec-adcf-77e4cb1e88ab",
+        "conversationId": "4f645ad3-93c6-400e-816f-8336e34c0a91",
+        "role": "user",
+        "content": "Add to my crm",
+        "metadata": {},
+        "createdAt": "2026-02-09T03:26:36.354Z"
+      },
+      {
+        "id": "841c663a-94c4-41e6-a8c8-01aa9046bd94",
+        "conversationId": "4f645ad3-93c6-400e-816f-8336e34c0a91",
+        "role": "assistant",
+        "content": "I understand you're looking for help with \"Add to my crm\". I can assist you with:\n\n- **Data Analysis** - Analyze your CRM and pipeline data\n- **ABM Targeting** - Find lookalike companies matching your ICP\n- **Campaign Creation** - Build personalized email sequences\n- **Email Nurture** - Review engagement and follow-up recommendations\n- **Data Quality** - Health checks and enrichment recommendations\n- **Lead Generation** - Find and score new prospects\n- **Hyper-Personalization** - Create individualized bulk emails\n- **Segment Insights** - Industry and vertical-specific analysis\n- **Insyte™** - Deploy microsites, webinars, multi-asset pages and track visitors\n- **Reports** - Generate actionable insights\n\nCould you be more specific about what you'd like me to do?",
+        "metadata": {
+          "type": "general",
+          "thinkingSteps": [
+            "Processing your request...",
+            "Analyzing context and intent...",
+            "Preparing response..."
+          ]
+        },
+        "createdAt": "2026-02-09T03:26:36.359Z"
+      }
+    ],
+    "6480c541-e747-4523-9a7e-555618863d39": [
+      {
+        "id": "ff85fd42-41b7-4d76-a7dd-d546d137cabd",
+        "conversationId": "6480c541-e747-4523-9a7e-555618863d39",
+        "role": "user",
+        "content": "Show my Insyte™s",
+        "metadata": {},
+        "createdAt": "2026-02-09T03:38:09.353Z"
+      },
+      {
+        "id": "7b306803-5826-4744-9f53-e6698b369a86",
+        "conversationId": "6480c541-e747-4523-9a7e-555618863d39",
+        "role": "assistant",
+        "content": "## Insyte™ — Content Deployment & Tracking\n\nYou have **4 active Insyte™s** with **5,114 total visitors** (3,909 unique).\n\n### 1. Enterprise Solutions Hub\n- **Type:** Multi-Asset Page | **Status:** live\n- **Visitors:** 1,247 total | 892 unique | Avg Time: 3m 42s\n- **Top Region:** United States (64%)\n- **Top Industry:** Technology (45%)\n- **Top Job Function:** VP Sales (32%)\n\n### 2. Oil & Gas Innovation Microsite\n- **Type:** Microsite | **Status:** live\n- **Visitors:** 634 total | 487 unique | Avg Time: 5m 18s\n- **Top Region:** United States (52%)\n- **Top Industry:** Energy (72%)\n- **Top Job Function:** VP Operations (38%)\n\n### 3. AI in Revenue Operations Webinar\n- **Type:** On-Demand Webinar | **Status:** live\n- **Visitors:** 2,341 total | 1,876 unique | Avg Time: 18m 24s\n- **Top Region:** United States (58%)\n- **Top Industry:** SaaS (48%)\n- **Top Job Function:** RevOps (36%)\n\n### 4. Healthcare Digital Transformation\n- **Type:** Microsite + Chatbot | **Status:** live\n- **Visitors:** 892 total | 654 unique | Avg Time: 7m 12s\n- **Top Region:** United States (71%)\n- **Top Industry:** Healthcare (65%)\n- **Top Job Function:** CIO (30%)\n\n---\n\n### Tracking Highlights:\n- **Enterprise Solutions Hub** was visited 47 times by US-based VP Sales this week — consider launching a targeted ABM campaign\n- **Oil & Gas Microsite** engagement spiked 3x from UAE — optimize for Middle East audience\n- **AI in RevOps Webinar** has 82% completion rate from SaaS companies — create follow-up content\n- **Healthcare Microsite** chatbot top query: \"pricing\" (68 times) — add a dedicated pricing page\n\n### Available Insyte™ Types:\n1. **Trackable Multi-Asset Page** — Landing page with multiple downloadable assets (15 credits)\n2. **Microsite** — Custom site from your PDF/video content (20 credits)\n3. **On-Demand Webinar** — Host recorded webinars for on-demand viewing (25 credits)\n4. **Microsite + Chatbot** — Microsite with embedded AI chatbot (30 credits)\n5. **Webinar + Chatbot** — On-demand webinar with AI chatbot (35 credits)\n\n*Visit the Insyte™ page to create new content or view detailed tracking analytics.*",
+        "metadata": {
+          "type": "insyte",
+          "thinkingSteps": [
+            "Connecting to Insyte™ Tracking Engine...",
+            "Pulling visitor analytics across all Insyte™s...",
+            "Analyzing geographic and firmographic patterns...",
+            "Correlating visitor data with CRM records...",
+            "Generating tracking insights and recommendations..."
+          ]
+        },
+        "createdAt": "2026-02-09T03:38:09.360Z"
+      }
+    ],
+    "2ded311e-2b80-4e98-b6f9-4c02161fb6c3": [
+      {
+        "id": "b61b73a8-1bf4-475e-ac36-4f748ee52e62",
+        "conversationId": "2ded311e-2b80-4e98-b6f9-4c02161fb6c3",
+        "role": "user",
+        "content": "Show my Insyte™s",
+        "metadata": {},
+        "createdAt": "2026-02-09T04:13:56.558Z"
+      },
+      {
+        "id": "a1a4507b-98cc-45da-9cac-c8b81bbef5c9",
+        "conversationId": "2ded311e-2b80-4e98-b6f9-4c02161fb6c3",
+        "role": "assistant",
+        "content": "## Insyte™ — Content Deployment & Tracking\n\nYou have **4 active Insyte™s** with **5,114 total visitors** (3,909 unique).\n\n### 1. Enterprise Solutions Hub\n- **Type:** Multi-Asset Page | **Status:** live\n- **Visitors:** 1,247 total | 892 unique | Avg Time: 3m 42s\n- **Top Region:** United States (64%)\n- **Top Industry:** Technology (45%)\n- **Top Job Function:** VP Sales (32%)\n\n### 2. Oil & Gas Innovation Microsite\n- **Type:** Microsite | **Status:** live\n- **Visitors:** 634 total | 487 unique | Avg Time: 5m 18s\n- **Top Region:** United States (52%)\n- **Top Industry:** Energy (72%)\n- **Top Job Function:** VP Operations (38%)\n\n### 3. AI in Revenue Operations Webinar\n- **Type:** On-Demand Webinar | **Status:** live\n- **Visitors:** 2,341 total | 1,876 unique | Avg Time: 18m 24s\n- **Top Region:** United States (58%)\n- **Top Industry:** SaaS (48%)\n- **Top Job Function:** RevOps (36%)\n\n### 4. Healthcare Digital Transformation\n- **Type:** Microsite + Chatbot | **Status:** live\n- **Visitors:** 892 total | 654 unique | Avg Time: 7m 12s\n- **Top Region:** United States (71%)\n- **Top Industry:** Healthcare (65%)\n- **Top Job Function:** CIO (30%)\n\n---\n\n### Tracking Highlights:\n- **Enterprise Solutions Hub** was visited 47 times by US-based VP Sales this week — consider launching a targeted ABM campaign\n- **Oil & Gas Microsite** engagement spiked 3x from UAE — optimize for Middle East audience\n- **AI in RevOps Webinar** has 82% completion rate from SaaS companies — create follow-up content\n- **Healthcare Microsite** chatbot top query: \"pricing\" (68 times) — add a dedicated pricing page\n\n### Available Insyte™ Types:\n1. **Trackable Multi-Asset Page** — Landing page with multiple downloadable assets (15 credits)\n2. **Microsite** — Custom site from your PDF/video content (20 credits)\n3. **On-Demand Webinar** — Host recorded webinars for on-demand viewing (25 credits)\n4. **Microsite + Chatbot** — Microsite with embedded AI chatbot (30 credits)\n5. **Webinar + Chatbot** — On-demand webinar with AI chatbot (35 credits)\n\n*Visit the Insyte™ page to create new content or view detailed tracking analytics.*",
+        "metadata": {
+          "type": "insyte",
+          "thinkingSteps": [
+            "Connecting to Insyte™ Tracking Engine...",
+            "Pulling visitor analytics across all Insyte™s...",
+            "Analyzing geographic and firmographic patterns...",
+            "Correlating visitor data with CRM records...",
+            "Generating tracking insights and recommendations..."
+          ]
+        },
+        "createdAt": "2026-02-09T04:13:56.565Z"
+      }
+    ],
+    "04a9c678-feb5-4647-9b9d-e3d9afb43c75": [
+      {
+        "id": "8282c5b0-86fe-469b-90a4-073e6f26e21f",
+        "conversationId": "04a9c678-feb5-4647-9b9d-e3d9afb43c75",
+        "role": "user",
+        "content": "Show my Insyte™s",
+        "metadata": {},
+        "createdAt": "2026-02-09T04:23:58.403Z"
+      },
+      {
+        "id": "db9609b4-2f0f-4c61-a2b4-a390de4df27b",
+        "conversationId": "04a9c678-feb5-4647-9b9d-e3d9afb43c75",
+        "role": "assistant",
+        "content": "## Insyte™ — Content Deployment & Tracking\n\nYou have **4 active Insyte™s** with **5,114 total visitors** (3,909 unique).\n\n### 1. Enterprise Solutions Hub\n- **Type:** Multi-Asset Page | **Status:** live\n- **Visitors:** 1,247 total | 892 unique | Avg Time: 3m 42s\n- **Top Region:** United States (64%)\n- **Top Industry:** Technology (45%)\n- **Top Job Function:** VP Sales (32%)\n\n### 2. Oil & Gas Innovation Microsite\n- **Type:** Microsite | **Status:** live\n- **Visitors:** 634 total | 487 unique | Avg Time: 5m 18s\n- **Top Region:** United States (52%)\n- **Top Industry:** Energy (72%)\n- **Top Job Function:** VP Operations (38%)\n\n### 3. AI in Revenue Operations Webinar\n- **Type:** On-Demand Webinar | **Status:** live\n- **Visitors:** 2,341 total | 1,876 unique | Avg Time: 18m 24s\n- **Top Region:** United States (58%)\n- **Top Industry:** SaaS (48%)\n- **Top Job Function:** RevOps (36%)\n\n### 4. Healthcare Digital Transformation\n- **Type:** Microsite + Chatbot | **Status:** live\n- **Visitors:** 892 total | 654 unique | Avg Time: 7m 12s\n- **Top Region:** United States (71%)\n- **Top Industry:** Healthcare (65%)\n- **Top Job Function:** CIO (30%)\n\n---\n\n### Tracking Highlights:\n- **Enterprise Solutions Hub** was visited 47 times by US-based VP Sales this week — consider launching a targeted ABM campaign\n- **Oil & Gas Microsite** engagement spiked 3x from UAE — optimize for Middle East audience\n- **AI in RevOps Webinar** has 82% completion rate from SaaS companies — create follow-up content\n- **Healthcare Microsite** chatbot top query: \"pricing\" (68 times) — add a dedicated pricing page\n\n### Available Insyte™ Types:\n1. **Trackable Multi-Asset Page** — Landing page with multiple downloadable assets (15 credits)\n2. **Microsite** — Custom site from your PDF/video content (20 credits)\n3. **On-Demand Webinar** — Host recorded webinars for on-demand viewing (25 credits)\n4. **Microsite + Chatbot** — Microsite with embedded AI chatbot (30 credits)\n5. **Webinar + Chatbot** — On-demand webinar with AI chatbot (35 credits)\n\n*Visit the Insyte™ page to create new content or view detailed tracking analytics.*",
+        "metadata": {
+          "type": "insyte",
+          "thinkingSteps": [
+            "Connecting to Insyte™ Tracking Engine...",
+            "Pulling visitor analytics across all Insyte™s...",
+            "Analyzing geographic and firmographic patterns...",
+            "Correlating visitor data with CRM records...",
+            "Generating tracking insights and recommendations..."
+          ]
+        },
+        "createdAt": "2026-02-09T04:23:58.408Z"
+      },
+      {
+        "id": "d317e340-3462-469f-af58-e0b986987e81",
+        "conversationId": "04a9c678-feb5-4647-9b9d-e3d9afb43c75",
+        "role": "user",
+        "content": "Check tracking analytics",
+        "metadata": {},
+        "createdAt": "2026-02-09T04:24:05.389Z"
+      },
+      {
+        "id": "e8e17177-722c-433c-bdb4-6b96fd8c6017",
+        "conversationId": "04a9c678-feb5-4647-9b9d-e3d9afb43c75",
+        "role": "assistant",
+        "content": "I understand you're looking for help with \"Check tracking analytics\". I can assist you with:\n\n- **Data Analysis** - Analyze your CRM and pipeline data\n- **ABM Targeting** - Find lookalike companies matching your ICP\n- **Campaign Creation** - Build personalized email sequences\n- **Email Nurture** - Review engagement and follow-up recommendations\n- **Data Quality** - Health checks and enrichment recommendations\n- **Lead Generation** - Find and score new prospects\n- **Hyper-Personalization** - Create individualized bulk emails\n- **Segment Insights** - Industry and vertical-specific analysis\n- **Insyte™** - Deploy microsites, webinars, multi-asset pages and track visitors\n- **Reports** - Generate actionable insights\n\nCould you be more specific about what you'd like me to do?",
+        "metadata": {
+          "type": "general",
+          "thinkingSteps": [
+            "Processing your request...",
+            "Analyzing context and intent...",
+            "Preparing response..."
+          ]
+        },
+        "createdAt": "2026-02-09T04:24:05.391Z"
+      }
+    ],
+    "72919487-dd9e-4ce1-8ae3-242f6c0e9150": [
+      {
+        "id": "56801bb2-4d41-42ba-9adc-6db239215675",
+        "conversationId": "72919487-dd9e-4ce1-8ae3-242f6c0e9150",
+        "role": "user",
+        "content": "Analyze my CRM data",
+        "metadata": {},
+        "createdAt": "2026-02-09T06:14:01.107Z"
+      },
+      {
+        "id": "b595ed3c-459c-4ef0-a017-7d6f90a69731",
+        "conversationId": "72919487-dd9e-4ce1-8ae3-242f6c0e9150",
+        "role": "assistant",
+        "content": "## Pipeline Analysis Report\n\n### Key Findings:\n\n**1. Pipeline Health Score: 78/100**\nYour pipeline shows strong top-of-funnel activity but conversion rates drop significantly at the proposal stage.\n\n**2. Revenue at Risk: $2.4M**\n- 23 deals stalled for >30 days in negotiation\n- Average deal cycle increased by 12 days this quarter\n- 8 high-value accounts showing declining engagement\n\n**3. Top Performing Segments:**\n- Enterprise Tech: 34% conversion rate\n- Mid-Market SaaS: 28% conversion rate\n- Financial Services: 22% conversion rate\n\n**4. Recommendations:**\n- Re-engage 8 at-risk accounts with personalized outreach\n- Implement deal acceleration playbook for proposal stage\n- Focus ABM efforts on Enterprise Tech segment\n\n**5. Engagement Metrics:**\n- Email open rate: 42% (above industry avg)\n- Meeting booking rate: 18%\n- Content engagement: 67% of leads engaged with at least 3 assets",
+        "metadata": {
+          "type": "analysis",
+          "thinkingSteps": [
+            "Connecting to CRM via Salesforce MCP...",
+            "Querying pipeline data and deal history...",
+            "Analyzing 45,678 records across 6 segments...",
+            "Running AI scoring and pattern detection...",
+            "Compiling insights report..."
+          ],
+          "reportId": "94a790e9-d9c3-4e63-855f-0275dc474d1a",
+          "creditsUsed": 5
+        },
+        "createdAt": "2026-02-09T06:14:01.117Z"
+      }
+    ],
+    "86e981a1-5ac6-4e9b-bf0d-4da9d4fdb6e6": [
+      {
+        "id": "e76eaeb4-eddf-4d43-b9b1-82b2b8376905",
+        "conversationId": "86e981a1-5ac6-4e9b-bf0d-4da9d4fdb6e6",
+        "role": "user",
+        "content": "Show data quality insights",
+        "metadata": {},
+        "createdAt": "2026-02-09T07:05:51.523Z"
+      },
+      {
+        "id": "26f7b53e-b8d4-4c1a-abe3-dce53437d7bf",
+        "conversationId": "86e981a1-5ac6-4e9b-bf0d-4da9d4fdb6e6",
+        "role": "assistant",
+        "content": "## Data Quality & Health Report\n\n### Overall Health Score: 68/100\n\n### Key Issues Summary:\n- **Outdated Contacts:** 23,654 (24%) — Titles, locations, or job changes not reflected\n- **Invalid Emails:** 5,914 (6%) — Bounced, defunct, or malformed addresses\n- **Duplicate Records:** 3,942 (4%) — Multiple entries for same person/company\n\n### Recommended Actions & Cost:\n\n**1. Run Enrichment on Outdated Contacts**\n- **Leads Affected:** 23,654\n- **Credits Required:** 25\n- **Expected Improvement:** +8-12 points on health score\n- **Timing:** Can complete in 2-4 hours\n\n**2. Remove Invalid Emails**\n- **Leads Affected:** 5,914\n- **Credits Required:** 5\n- **Expected Improvement:** +3-4 points on health score\n- **Timing:** Immediate\n\n**3. Merge Duplicates**\n- **Leads Affected:** 3,942\n- **Credits Required:** 8\n- **Expected Improvement:** +2-3 points on health score\n- **Timing:** Automated, 1 hour\n\n### Total Cost: 38 credits (vs current balance: 500)\n\n**Expected new health score after all actions: 85-88/100**\n\n*Data quality directly impacts email deliverability, campaign response rates, and lead scoring accuracy.*",
+        "metadata": {
+          "type": "data_quality",
+          "thinkingSteps": [
+            "Connecting to MDLH Data Warehouse...",
+            "Scanning 45,678 contact records...",
+            "Running data quality audit algorithms...",
+            "Detecting duplicates, invalid emails, and stale records...",
+            "Calculating health score and improvement actions..."
+          ]
+        },
+        "createdAt": "2026-02-09T07:05:51.528Z"
+      },
+      {
+        "id": "1a26fee5-9f2b-45da-8798-8728e9cecc75",
+        "conversationId": "86e981a1-5ac6-4e9b-bf0d-4da9d4fdb6e6",
+        "role": "user",
+        "content": "Run enrichment now",
+        "metadata": {},
+        "createdAt": "2026-02-09T07:06:00.992Z"
+      },
+      {
+        "id": "fbfddcd7-6234-40b6-a8ac-554b77a4002a",
+        "conversationId": "86e981a1-5ac6-4e9b-bf0d-4da9d4fdb6e6",
+        "role": "assistant",
+        "content": "## Data Quality & Health Report\n\n### Overall Health Score: 68/100\n\n### Key Issues Summary:\n- **Outdated Contacts:** 23,654 (24%) — Titles, locations, or job changes not reflected\n- **Invalid Emails:** 5,914 (6%) — Bounced, defunct, or malformed addresses\n- **Duplicate Records:** 3,942 (4%) — Multiple entries for same person/company\n\n### Recommended Actions & Cost:\n\n**1. Run Enrichment on Outdated Contacts**\n- **Leads Affected:** 23,654\n- **Credits Required:** 25\n- **Expected Improvement:** +8-12 points on health score\n- **Timing:** Can complete in 2-4 hours\n\n**2. Remove Invalid Emails**\n- **Leads Affected:** 5,914\n- **Credits Required:** 5\n- **Expected Improvement:** +3-4 points on health score\n- **Timing:** Immediate\n\n**3. Merge Duplicates**\n- **Leads Affected:** 3,942\n- **Credits Required:** 8\n- **Expected Improvement:** +2-3 points on health score\n- **Timing:** Automated, 1 hour\n\n### Total Cost: 38 credits (vs current balance: 500)\n\n**Expected new health score after all actions: 85-88/100**\n\n*Data quality directly impacts email deliverability, campaign response rates, and lead scoring accuracy.*",
+        "metadata": {
+          "type": "data_quality",
+          "thinkingSteps": [
+            "Connecting to MDLH Data Warehouse...",
+            "Scanning 45,678 contact records...",
+            "Running data quality audit algorithms...",
+            "Detecting duplicates, invalid emails, and stale records...",
+            "Calculating health score and improvement actions..."
+          ]
+        },
+        "createdAt": "2026-02-09T07:06:00.995Z"
+      }
+    ],
+    "1ce6d117-86c2-466f-99cf-7716811f8114": [
+      {
+        "id": "7c97a0d4-177d-4586-85ed-5c0f67e53033",
+        "conversationId": "1ce6d117-86c2-466f-99cf-7716811f8114",
+        "role": "user",
+        "content": "Browse programmatic data",
+        "metadata": {},
+        "createdAt": "2026-02-09T07:15:16.241Z"
+      },
+      {
+        "id": "862258fe-b66a-4ff4-b504-13c8374e5f84",
+        "conversationId": "1ce6d117-86c2-466f-99cf-7716811f8114",
+        "role": "assistant",
+        "content": "## Programmatic Data & B2B Intelligence\n\nAccess to our comprehensive B2B database with email and IP address intelligence:\n\n### Database Overview:\n- **Total B2B Emails:** 2.8B unique email addresses\n- **IP Address Inventory:** 1.4B IP addresses mapped to organizations\n- **Companies Covered:** 45M+ companies globally\n- **Industries:** All major verticals including Tech, Finance, Healthcare, Manufacturing, Energy, and more\n\n### Data Available:\n\n**Email Database:**\n- Decision makers and key personnel\n- Direct company emails\n- Verified email deliverability\n- Job title, seniority level, and function\n- Recent job changes and promotions\n\n**IP Intelligence:**\n- Company-verified IP addresses\n- IP geolocation and ISP data\n- Website hosting information\n- Network size and infrastructure\n- Organizational hierarchy\n\n### Segmentation Options:\nSegment the database by:\n- **Industry:** Enterprise Tech, SaaS, Financial Services, Healthcare, Manufacturing, Energy, etc.\n- **Job Level:** C-Suite, VP, Director, Manager, Individual Contributor\n- **Company Size:** Startup (1-50), SMB (51-500), Mid-Market (501-5000), Enterprise (5000+)\n- **Region:** North America, EMEA, APAC, or specific countries\n- **Job Function:** Sales, Marketing, Operations, IT, Finance, HR, and more\n- **Revenue:** All ranges from <$1M to $10B+\n\n### Popular Segments:\n1. **Enterprise Tech Decision Makers** — 890K contacts | 340K IPs\n2. **SaaS VP+ Sales Leaders** — 450K contacts | 180K IPs\n3. **Financial Services C-Suite** — 320K contacts | 125K IPs\n4. **Healthcare IT Directors** — 210K contacts | 85K IPs\n5. **Manufacturing Operations** — 380K contacts | 150K IPs\n6. **Energy Sector Executives** — 160K contacts | 65K IPs\n\n### Pricing & Access:\n- **1 credit per 1,000 records**\n- **Volume discounts** available for larger segments\n- **Custom segments** can be created and saved\n- **Real-time updates** as data changes\n\n*Say \"show popular segments\" to see more details, or \"download Enterprise Tech segment\" to get started.*",
+        "metadata": {
+          "type": "programmatic_data",
+          "thinkingSteps": [
+            "Connecting to Programmatic Data API...",
+            "Querying available B2B records...",
+            "Checking IP address inventory...",
+            "Loading popular segments...",
+            "Preparing download options..."
+          ]
+        },
+        "createdAt": "2026-02-09T07:15:16.245Z"
+      }
+    ],
+    "50777905-a7b7-4a20-9174-375c69a976b7": [
+      {
+        "id": "5659485c-809b-49b6-93d7-14c910010d5f",
+        "conversationId": "50777905-a7b7-4a20-9174-375c69a976b7",
+        "role": "user",
+        "content": "Create email campaign",
+        "metadata": {},
+        "createdAt": "2026-02-09T07:32:36.337Z"
+      },
+      {
+        "id": "0b700d86-0fdd-405f-bccb-a3d7ad7811e5",
+        "conversationId": "50777905-a7b7-4a20-9174-375c69a976b7",
+        "role": "assistant",
+        "content": "## Campaign Created: Enterprise Tech Outreach Sequence\n\n**Type:** EMAIL\n**Segment:** Enterprise Tech\n\n### Email Sequence:\n**Step 1 (Day 0):** EMAIL - Initial outreach - value proposition\n**Step 2 (Day 3):** EMAIL - Case study follow-up\n**Step 3 (Day 5):** LINKEDIN - LinkedIn connection + message\n**Step 4 (Day 7):** EMAIL - ROI calculator share\n**Step 5 (Day 10):** CALL - Phone follow-up\n**Step 6 (Day 14):** EMAIL - Break-up email\n\n### Subject Line:\n\"Driving Revenue Growth with AI-Powered Sales Intelligence\"\n\n### Preview:\nHi {{first_name}},\n\nI noticed {{company}} has been expanding its sales operations recently. Companies in your space are seeing 40% faster deal cycles with AI-powered lead intelligence.\n\nWould you be open to a 15-minute call this week to explore how we could help {{company}} achieve similar results?\n\nBest,\n{{sender_name}}\n\n---\n*Campaign has been saved as draft. You can review and activate it from the Content Hub.*",
+        "metadata": {
+          "type": "campaign",
+          "thinkingSteps": [
+            "Connecting to Email Campaign MCP...",
+            "Loading segment data and contact profiles...",
+            "Generating email sequence with AI copywriter...",
+            "Optimizing send times and subject lines...",
+            "Creating campaign draft..."
+          ],
+          "campaignId": "afa2cb9b-d27a-46fb-ad71-fe8f505ebeb4",
+          "creditsUsed": 10
+        },
+        "createdAt": "2026-02-09T07:32:36.348Z"
+      },
+      {
+        "id": "6f358aba-b4f2-4487-b741-df85b51e5ce6",
+        "conversationId": "50777905-a7b7-4a20-9174-375c69a976b7",
+        "role": "user",
+        "content": "Show email templates",
+        "metadata": {},
+        "createdAt": "2026-02-09T07:32:59.592Z"
+      },
+      {
+        "id": "f2fe4255-0574-41da-ae19-936911605d05",
+        "conversationId": "50777905-a7b7-4a20-9174-375c69a976b7",
+        "role": "assistant",
+        "content": "## Email Templates — Top Performers\n\nHere are our most effective templates across different engagement stages:\n\n### Template 1: Case Study Follow-up\n**Category:** Nurture\n**Subject Line:** How {{company}} increased pipeline velocity by 40%\n\n**Body Preview:**\nHi {{first_name}},\n\nThought you might find this relevant — {{company}} in the {{industry}} space was facing similar chal...\n\n**Usage Stats:** 2840 sent | 1195 opened | 418 clicked | 89 converted\n\n---\n\n### Template 2: ROI Calculator Share\n**Category:** Engagement\n**Subject Line:** Quick ROI calc for {{company}}: potential {{currency}}{{roi_value}} impact\n\n**Body Preview:**\nHi {{first_name}},\n\nI put together a quick ROI model specifically for {{company}} based on your {{company}} size and ind...\n\n**Usage Stats:** 1560 sent | 913 opened | 487 clicked | 142 converted\n\n---\n\n### Template 3: Social Proof + Resource\n**Category:** Credibility\n**Subject Line:** {{first_name}}, quick resource from {{company}} leadership\n\n**Body Preview:**\nHi {{first_name}},\n\nI've been following {{company}}'s expansion into {{market_segment}} and came across this resource th...\n\n**Usage Stats:** 945 sent | 702 opened | 389 clicked | 73 converted\n\n---\n\n### Template 4: Problem Agitation\n**Category:** Awareness\n**Subject Line:** The {{challenge}} problem at {{company}}\n\n**Body Preview:**\nHi {{first_name}},\n\nWe've been noticing an interesting trend among {{company_size}} {{industry}} companies like {{compan...\n\n**Usage Stats:** 3200 sent | 1312 opened | 624 clicked | 156 converted\n\n---\n\n### Template 5: Product Demo Request\n**Category:** Conversion\n**Subject Line:** {{first_name}}, 15-min demo for {{company}}\n\n**Body Preview:**\nHi {{first_name}},\n\nSince you showed interest in how we help {{industry}} companies optimize {{process}}, I thought it m...\n\n**Usage Stats:** 1128 sent | 876 opened | 512 clicked | 198 converted\n\n---\n\n*All templates include dynamic personalization fields. Copy any template to customize further in the Email Builder.*",
+        "metadata": {
+          "type": "templates",
+          "thinkingSteps": [
+            "Accessing email template library...",
+            "Scoring templates by performance metrics...",
+            "Filtering top performers for your segments...",
+            "Loading preview data..."
+          ]
+        },
+        "createdAt": "2026-02-09T07:32:59.595Z"
+      },
+      {
+        "id": "dc1e210d-b25b-45d8-8cca-deae31f345b6",
+        "conversationId": "50777905-a7b7-4a20-9174-375c69a976b7",
+        "role": "user",
+        "content": "Personalize emails for segment",
+        "metadata": {},
+        "createdAt": "2026-02-09T07:33:11.292Z"
+      },
+      {
+        "id": "a2e8dd02-863d-462d-a1c7-c7a86af43132",
+        "conversationId": "50777905-a7b7-4a20-9174-375c69a976b7",
+        "role": "assistant",
+        "content": "## Hyper-Personalization with Nurture Sequences\n\nI'll help you create hyper-personalized emails with multi-step nurture sequences. Let me walk you through the process:\n\n### What's New: Multi-Step Nurture\n\nInstead of single emails, build complete nurture sequences:\n- **Initial Email** (Day 0) — Your opening personalized message\n- **1-4 Follow-ups** (Configurable) — Strategic follow-ups tailored to your goals\n- **AI-Generated** — Unique emails per contact per step\n- **Multi-Channel** — Email, LinkedIn, Call combinations\n\n### Follow-up Strategy Options (1-4 follow-ups):\n- **Case Study** — Industry/role-specific success stories\n- **ROI Calculator** — Personalized financial impact breakdown\n- **Social Proof** — Customer testimonials and credentials\n- **Meeting Request** — Direct call-to-action with value prop\n- **Break-up** — Final nurture attempt before pause\n\n### Multi-Channel Sequences:\n- **Email** — Hyper-personalized message per step\n- **LinkedIn** — Connection requests, content engagement\n- **Call** — Phone follow-up for high-intent contacts\n\n### AI-Generated Personalization:\nEach email adapts based on:\n- Individual's seniority and decision-making authority\n- Company's industry vertical and current initiatives\n- Their recent online behavior and engagement patterns\n- Step-specific context (case study, ROI model, etc.)\n\n### Sample Nurture Sequence Timeline:\n\n**Initial Email (Day 0):**\nSubject: \"John, your team just expanded — here's how other Sales VPs scaled faster\"\n\n**Follow-up 1 (Day 3) — Case Study:**\nSubject: \"How {{similar_company}} achieved 40% faster deal cycles\"\n\n**Follow-up 2 (Day 7) — Meeting Request:**\nSubject: \"Worth 15 minutes this week, John?\"\n\n### Visual Timeline & Approval Workflow:\n1. Configure your sequence (# of follow-ups, channels, strategies)\n2. AI generates all emails per contact\n3. Preview and approve before sending\n4. Visual timeline shows send schedule and strategy breakdown\n5. Deploy across your entire segment\n\n---\n\n*Visit the Hyper Personalization page to build your nurture sequence, or tell me your target audience.*",
+        "metadata": {
+          "type": "personalization",
+          "thinkingSteps": [
+            "Connecting to Hyper-Personalization Engine...",
+            "Loading contact profiles and behavioral data...",
+            "Analyzing intent signals and engagement history...",
+            "Configuring nurture sequence parameters...",
+            "Preparing multi-step email generation..."
+          ]
+        },
+        "createdAt": "2026-02-09T07:33:11.296Z"
+      }
+    ],
+    "8a480fb7-9cc4-478c-a43a-1abc3dfa3b1d": [
+      {
+        "id": "d4bee111-b314-41c6-8afb-dbe75be11b74",
+        "conversationId": "8a480fb7-9cc4-478c-a43a-1abc3dfa3b1d",
+        "role": "user",
+        "content": "Find similar ABM companies",
+        "metadata": {},
+        "createdAt": "2026-02-09T07:33:57.297Z"
+      },
+      {
+        "id": "242bc176-52ff-4e62-b3af-41cd2a4e5f0a",
+        "conversationId": "8a480fb7-9cc4-478c-a43a-1abc3dfa3b1d",
+        "role": "assistant",
+        "content": "## ABM Lookalike Companies Found\n\nI've identified **5 companies** that match your ideal customer profile:\n\n### 1. TechVision Analytics\n- **Industry:** Enterprise Software\n- **Size:** 500-1000 employees\n- **Revenue:** $120M\n- **Match Score:** 94%\n- **Intent Signals:** Recent funding round, Hiring sales team, Tech stack match\n- **Location:** San Francisco, CA\n\n### 2. DataStream Corp\n- **Industry:** Data Infrastructure\n- **Size:** 200-500 employees\n- **Revenue:** $85M\n- **Match Score:** 91%\n- **Intent Signals:** Product launch, Expansion to EMEA, CRM migration\n- **Location:** Austin, TX\n\n### 3. MedTech Innovations\n- **Industry:** Healthcare Tech\n- **Size:** 200-500 employees\n- **Revenue:** $92M\n- **Match Score:** 85%\n- **Intent Signals:** HIPAA compliance needs, Platform migration, Growth phase\n- **Location:** Boston, MA\n\n### 4. CloudBridge Solutions\n- **Industry:** Cloud Services\n- **Size:** 1000-5000 employees\n- **Revenue:** $340M\n- **Match Score:** 89%\n- **Intent Signals:** New CTO appointed, Digital transformation initiative, Budget increase\n- **Location:** Seattle, WA\n\n### 5. GreenEnergy Systems\n- **Industry:** Clean Energy\n- **Size:** 100-200 employees\n- **Revenue:** $67M\n- **Match Score:** 81%\n- **Intent Signals:** Government contracts, Rapid scaling, CRM implementation\n- **Location:** Denver, CO\n\n*This search consumed 10 credits from your account.*",
+        "metadata": {
+          "type": "abm",
+          "thinkingSteps": [
+            "Accessing ABM Intelligence Engine...",
+            "Loading your ideal customer profile...",
+            "Scanning firmographic database for matches...",
+            "Analyzing intent signals and technographics...",
+            "Ranking companies by match score..."
+          ],
+          "creditsUsed": 10
+        },
+        "createdAt": "2026-02-09T07:33:57.308Z"
+      },
+      {
+        "id": "41f34be6-300c-4e86-bb5f-aefedf12f17b",
+        "conversationId": "8a480fb7-9cc4-478c-a43a-1abc3dfa3b1d",
+        "role": "user",
+        "content": "Export this list",
+        "metadata": {},
+        "createdAt": "2026-02-09T07:34:12.932Z"
+      },
+      {
+        "id": "c3e8769f-95e7-4037-b173-25e109ca0254",
+        "conversationId": "8a480fb7-9cc4-478c-a43a-1abc3dfa3b1d",
+        "role": "assistant",
+        "content": "I understand you're looking for help with \"Export this list\". I can assist you with:\n\n- **Data Analysis** - Analyze your CRM and pipeline data\n- **ABM Targeting** - Find lookalike companies matching your ICP\n- **Campaign Creation** - Build personalized email sequences\n- **Email Nurture** - Review engagement and follow-up recommendations\n- **Data Quality** - Health checks and enrichment recommendations\n- **Lead Generation** - Find and score new prospects\n- **Hyper-Personalization** - Create individualized bulk emails\n- **Segment Insights** - Industry and vertical-specific analysis\n- **Insyte™** - Deploy microsites, webinars, multi-asset pages and track visitors\n- **Reports** - Generate actionable insights\n\nCould you be more specific about what you'd like me to do?",
+        "metadata": {
+          "type": "general",
+          "thinkingSteps": [
+            "Processing your request...",
+            "Analyzing context and intent...",
+            "Preparing response..."
+          ]
+        },
+        "createdAt": "2026-02-09T07:34:12.937Z"
+      }
+    ],
+    "9a81a7b8-515d-4005-a9bb-7658ae4b8bde": [
+      {
+        "id": "725563ce-28d5-4e6f-b2e1-431ccb8de8cf",
+        "conversationId": "9a81a7b8-515d-4005-a9bb-7658ae4b8bde",
+        "role": "user",
+        "content": "Export this list",
+        "metadata": {},
+        "createdAt": "2026-02-09T07:39:23.060Z"
+      },
+      {
+        "id": "eebfe581-edb1-4e8d-81e0-6237b68b0454",
+        "conversationId": "9a81a7b8-515d-4005-a9bb-7658ae4b8bde",
+        "role": "assistant",
+        "content": "## Export Ready — Download Your Data\n\nYour data has been compiled and is ready for download:\n\n### Export Summary:\n- **File:** ABM_Target_Accounts_Feb2026.csv\n- **Records:** 5 companies, 12 contacts\n- **Fields Included:** Company Name, Contact Name, Title, Email, Phone, Industry, Company Size, Revenue, Match Score, Intent Signals, Location\n- **Format:** CSV (Excel-compatible)\n\n### Preview (first 3 rows):\n\n| Company | Contact | Title | Email | Match |\n|---------|---------|-------|-------|-------|\n| TechVision Analytics | John Chen | VP Sales | j.chen@techvision.io | 94% |\n| DataStream Corp | Maria Rodriguez | Dir. RevOps | m.rodriguez@datastream.com | 91% |\n| CloudBridge Solutions | Sarah Thompson | CRO | s.thompson@cloudbridge.io | 89% |\n\n### Download Your File:\n📥 **[Download ABM_Target_Accounts_Feb2026.csv](https://app.amplifye.ai/exports/abm-target-accounts-feb2026.csv)** (142 KB)\n\n📥 **[Download as Excel (.xlsx)](https://app.amplifye.ai/exports/abm-target-accounts-feb2026.xlsx)** (168 KB)\n\n*File will be available for 30 days. 2 credits consumed for data export.*",
+        "metadata": {
+          "type": "export",
+          "thinkingSteps": [
+            "Compiling selected records...",
+            "Enriching export with all available fields...",
+            "Generating CSV file...",
+            "Preparing download link..."
+          ]
+        },
+        "createdAt": "2026-02-09T07:39:23.066Z"
+      }
+    ],
+    "15a7d7a5-05c4-4738-9652-427cc3096d5d": [
+      {
+        "id": "23857102-7be9-41c5-9833-3165eb0e96e2",
+        "conversationId": "15a7d7a5-05c4-4738-9652-427cc3096d5d",
+        "role": "user",
+        "content": "Export this list",
+        "metadata": {},
+        "createdAt": "2026-02-09T07:40:59.075Z"
+      },
+      {
+        "id": "0ece5fae-5e70-4f36-a3b9-64c00dd3873b",
+        "conversationId": "15a7d7a5-05c4-4738-9652-427cc3096d5d",
+        "role": "assistant",
+        "content": "## Export Ready — Download Your Data\n\nYour data has been compiled and is ready for download:\n\n### Export Summary:\n- **File:** ABM_Target_Accounts_Feb2026.csv\n- **Records:** 5 companies, 12 contacts\n- **Fields Included:** Company Name, Contact Name, Title, Email, Phone, Industry, Company Size, Revenue, Match Score, Intent Signals, Location\n- **Format:** CSV (Excel-compatible)\n\n### Preview (first 3 rows):\n\n| Company | Contact | Title | Email | Match |\n|---------|---------|-------|-------|-------|\n| TechVision Analytics | John Chen | VP Sales | j.chen@techvision.io | 94% |\n| DataStream Corp | Maria Rodriguez | Dir. RevOps | m.rodriguez@datastream.com | 91% |\n| CloudBridge Solutions | Sarah Thompson | CRO | s.thompson@cloudbridge.io | 89% |\n\n### Download Your File:\n📥 **[Download ABM_Target_Accounts_Feb2026.csv](https://app.amplifye.ai/exports/abm-target-accounts-feb2026.csv)** (142 KB)\n\n📥 **[Download as Excel (.xlsx)](https://app.amplifye.ai/exports/abm-target-accounts-feb2026.xlsx)** (168 KB)\n\n*File will be available for 30 days. 2 credits consumed for data export.*",
+        "metadata": {
+          "type": "export",
+          "thinkingSteps": [
+            "Compiling selected records...",
+            "Enriching export with all available fields...",
+            "Generating CSV file...",
+            "Preparing download link..."
+          ]
+        },
+        "createdAt": "2026-02-09T07:40:59.077Z"
+      }
+    ],
+    "fe23bb79-2d18-4782-926e-bc7fc74d9096": [
+      {
+        "id": "94c197d6-b678-442e-9b00-44635c9e5f81",
+        "conversationId": "fe23bb79-2d18-4782-926e-bc7fc74d9096",
+        "role": "user",
+        "content": "Launch campaign",
+        "metadata": {},
+        "createdAt": "2026-02-09T07:41:49.285Z"
+      },
+      {
+        "id": "a72a8967-0ee9-492c-8cb2-90abd146d163",
+        "conversationId": "fe23bb79-2d18-4782-926e-bc7fc74d9096",
+        "role": "assistant",
+        "content": "## Launch a Campaign\n\nLet's set up your campaign. I need a few details:\n\n### 1. Campaign Name\nGive your campaign a name (e.g., \"Q1 Enterprise Outreach\", \"Healthcare VP Nurture\")\n\n### 2. Target Segment\nWho are you targeting? Choose from:\n- **Enterprise Tech** — 8,934 contacts\n- **Mid-Market SaaS** — 6,721 contacts\n- **Financial Services** — 5,432 contacts\n- **Healthcare** — 4,210 contacts\n- **Oil & Gas** — 3,876 contacts\n- **Manufacturing** — 3,102 contacts\n- **E-Commerce** — 2,987 contacts\n- **Clean Energy** — 2,104 contacts\n- Or specify a custom audience\n\n### 3. Campaign Type\n- **Email Only** — Automated email sequence (6-8 steps)\n- **Multi-Channel** — Email + LinkedIn + Phone calls\n- **ABM** — Hyper-personalized account-based outreach\n- **Nurture** — Long-term drip campaign for awareness\n\n### 4. Schedule\n- **Start immediately** — Begin sending today\n- **Schedule for later** — Pick a date and time\n- **Drip over time** — Spread sends across days/weeks\n\n### 5. Budget\n- Estimated credits: 10-50 depending on segment size and campaign type\n- Your current balance: 500 credits\n\n---\n\n**Quick Launch Option:**\nJust tell me something like:\n*\"Launch an email campaign called Q1 Outreach targeting Enterprise Tech starting tomorrow\"*\n\nOr provide the details one by one and I'll configure everything.\n\n*Once configured, I'll show you a preview before activating. Say \"activate it\" or \"go live\" when ready.*",
+        "metadata": {
+          "type": "launch_campaign_setup",
+          "thinkingSteps": [
+            "Loading campaign builder...",
+            "Checking available segments and contacts...",
+            "Loading campaign type templates...",
+            "Preparing configuration options..."
+          ]
+        },
+        "createdAt": "2026-02-09T07:41:49.288Z"
+      }
+    ],
+    "64840113-3c2a-4ac9-a6f9-68f4e901cf50": [
+      {
+        "id": "24f721c6-aa79-4298-9b69-3d1b47c8d063",
+        "conversationId": "64840113-3c2a-4ac9-a6f9-68f4e901cf50",
+        "role": "user",
+        "content": "Find similar ABM companies",
+        "metadata": {},
+        "createdAt": "2026-02-09T07:49:39.262Z"
+      },
+      {
+        "id": "cf246e41-e4ec-4238-9541-b65269638c15",
+        "conversationId": "64840113-3c2a-4ac9-a6f9-68f4e901cf50",
+        "role": "assistant",
+        "content": "## ABM Lookalike Companies Found\n\nI've identified **5 companies** that match your ideal customer profile:\n\n### 1. NexGen Financial\n- **Industry:** FinTech\n- **Size:** 100-200 employees\n- **Revenue:** $45M\n- **Match Score:** 87%\n- **Intent Signals:** Series B funding, Compliance requirements, Stack modernization\n- **Location:** New York, NY\n\n### 2. DataStream Corp\n- **Industry:** Data Infrastructure\n- **Size:** 200-500 employees\n- **Revenue:** $85M\n- **Match Score:** 91%\n- **Intent Signals:** Product launch, Expansion to EMEA, CRM migration\n- **Location:** Austin, TX\n\n### 3. MedTech Innovations\n- **Industry:** Healthcare Tech\n- **Size:** 200-500 employees\n- **Revenue:** $92M\n- **Match Score:** 85%\n- **Intent Signals:** HIPAA compliance needs, Platform migration, Growth phase\n- **Location:** Boston, MA\n\n### 4. LogiFlow AI\n- **Industry:** Supply Chain\n- **Size:** 200-500 employees\n- **Revenue:** $110M\n- **Match Score:** 79%\n- **Intent Signals:** AI adoption, Process automation, Vendor consolidation\n- **Location:** Atlanta, GA\n\n### 5. RetailEdge Platform\n- **Industry:** E-Commerce\n- **Size:** 500-1000 employees\n- **Revenue:** $210M\n- **Match Score:** 83%\n- **Intent Signals:** Omnichannel strategy, Data integration needs, Customer experience focus\n- **Location:** Chicago, IL\n\n*This search consumed 10 credits from your account.*",
+        "metadata": {
+          "type": "abm",
+          "thinkingSteps": [
+            "Accessing ABM Intelligence Engine...",
+            "Loading your ideal customer profile...",
+            "Scanning firmographic database for matches...",
+            "Analyzing intent signals and technographics...",
+            "Ranking companies by match score..."
+          ],
+          "creditsUsed": 10
+        },
+        "createdAt": "2026-02-09T07:49:39.280Z"
+      },
+      {
+        "id": "abbc3d3e-5f3f-42ee-a3a7-40c250791719",
+        "conversationId": "64840113-3c2a-4ac9-a6f9-68f4e901cf50",
+        "role": "user",
+        "content": "How many decision makers for ABM?",
+        "metadata": {},
+        "createdAt": "2026-02-09T07:49:49.062Z"
+      },
+      {
+        "id": "7277f3d9-47ac-4e4d-b33e-1deeb2196a12",
+        "conversationId": "64840113-3c2a-4ac9-a6f9-68f4e901cf50",
+        "role": "assistant",
+        "content": "## Decision Maker Availability Report\n\nBased on your ABM target accounts and current ICP criteria, here's the decision maker breakdown:\n\n### By Seniority Level:\n\n| Level | Available | Already in DB | Net New |\n|-------|-----------|---------------|--------|\n| C-Suite (CEO, CTO, CFO, CMO) | 847 | 124 | **723** |\n| VP Level | 2,340 | 456 | **1,884** |\n| Director Level | 4,120 | 890 | **3,230** |\n| Senior Manager | 3,670 | 1,234 | **2,436** |\n\n**Total Decision Makers Available: 10,977**\n**Already in Your Database: 2,704**\n**Net New You Can Add: 8,273**\n\n### By Industry (Top ABM Segments):\n- **Enterprise Tech:** 3,420 decision makers (1,240 C-Suite/VP)\n- **Oil & Gas:** 1,890 decision makers (680 C-Suite/VP)\n- **Healthcare:** 2,100 decision makers (920 C-Suite/VP)\n- **Financial Services:** 1,980 decision makers (840 C-Suite/VP)\n- **SaaS/Software:** 1,587 decision makers (507 C-Suite/VP)\n\n### Cost to Access:\n- **100 contacts:** 15 credits\n- **500 contacts:** 60 credits (20% discount)\n- **1,000 contacts:** 100 credits (33% discount)\n- **Full ABM list (8,273):** 650 credits (premium package)\n\n### Recommended Next Steps:\n1. Start with VP+ level contacts in your top 2 segments (3,604 contacts)\n2. Enrich with intent signals (+5 credits per 100)\n3. Launch hyper-personalized outreach\n\n*Say \"add decision makers to CRM\" or \"get VP contacts in Enterprise Tech\" to proceed.*",
+        "metadata": {
+          "type": "decision_makers",
+          "thinkingSteps": [
+            "Querying MDLH Data Warehouse for decision makers...",
+            "Cross-referencing with ABM target account list...",
+            "Analyzing seniority distribution...",
+            "Checking existing database for overlap...",
+            "Calculating net new availability...",
+            "Generating pricing tiers..."
+          ]
+        },
+        "createdAt": "2026-02-09T07:49:49.065Z"
+      },
+      {
+        "id": "1fce9600-9bc0-4e00-828c-e806f8f05123",
+        "conversationId": "64840113-3c2a-4ac9-a6f9-68f4e901cf50",
+        "role": "user",
+        "content": "Create campaign for these",
+        "metadata": {},
+        "createdAt": "2026-02-09T07:49:58.515Z"
+      },
+      {
+        "id": "4fcf01dd-4340-4fbb-bd6f-4909bbd58d9b",
+        "conversationId": "64840113-3c2a-4ac9-a6f9-68f4e901cf50",
+        "role": "assistant",
+        "content": "## Campaign Created from Current Results\n\nI've created a multi-step nurture campaign targeting the companies from your last search:\n\n### Campaign: ABM Target Outreach — Auto-Generated\n- **Contacts:** 12 decision makers across 5 companies\n- **Sequence Length:** 6 touchpoints over 14 days\n- **Personalization:** Hyper-personalized based on each contact's profile\n\n### Sequence:\n\n**Step 1 (Day 0):** EMAIL — Personalized value proposition\n*Subject: \"{{first_name}}, a thought on {{company}}'s growth in {{industry}}\"*\n\n**Step 2 (Day 2):** LINKEDIN — Connection request + engage with their content\n\n**Step 3 (Day 4):** EMAIL — Relevant case study for their industry\n*Subject: \"How {{peer_company}} solved {{challenge}}\"*\n\n**Step 4 (Day 7):** EMAIL — ROI calculator or resource share\n*Subject: \"Quick ROI breakdown for {{company}}\"*\n\n**Step 5 (Day 10):** CALL — Phone follow-up to engaged prospects\n\n**Step 6 (Day 14):** EMAIL — Final touchpoint with meeting offer\n*Subject: \"Worth 15 minutes, {{first_name}}?\"*\n\n### Status: Saved as Draft\n- Review and edit in Content Hub\n- Estimated credits: 15 for launch\n- Projected open rate: 38-42% (based on segment benchmarks)\n\n*Campaign is ready for review. Say \"activate campaign\" or visit Content Hub to edit.*",
+        "metadata": {
+          "type": "campaign_from_results",
+          "thinkingSteps": [
+            "Loading results from previous search...",
+            "Mapping contacts to campaign targets...",
+            "Generating personalized email sequence...",
+            "Applying best-practice send cadence...",
+            "Optimizing subject lines per contact profile...",
+            "Saving campaign draft..."
+          ]
+        },
+        "createdAt": "2026-02-09T07:49:58.522Z"
+      },
+      {
+        "id": "3bcf09fa-6eee-447f-a02f-5f2d7b72bd5f",
+        "conversationId": "64840113-3c2a-4ac9-a6f9-68f4e901cf50",
+        "role": "user",
+        "content": "Check my credit balance",
+        "metadata": {},
+        "createdAt": "2026-02-09T07:50:25.554Z"
+      },
+      {
+        "id": "ddaf0230-ea20-44c9-a382-bcf19a54fd6e",
+        "conversationId": "64840113-3c2a-4ac9-a6f9-68f4e901cf50",
+        "role": "assistant",
+        "content": "## Credit Balance Summary\n\nYour current balance and recent usage:\n\n- **Current Balance:** 500 credits\n- **Used This Month:** 150 credits\n- **ABM Searches:** 8 (80 credits)\n- **Campaign Generation:** 5 (50 credits)\n- **Data Analysis:** 4 (20 credits)\n\n*Credits refresh on the 1st of each month.*",
+        "metadata": {
+          "type": "general",
+          "thinkingSteps": [
+            "Checking account balance...",
+            "Loading usage history..."
+          ]
+        },
+        "createdAt": "2026-02-09T07:50:25.561Z"
+      }
+    ],
+    "f9974ac9-e0f1-41f6-ac16-d577f8658948": [
+      {
+        "id": "c7470a60-6029-45df-8ec6-9e0117f7b60a",
+        "conversationId": "f9974ac9-e0f1-41f6-ac16-d577f8658948",
+        "role": "user",
+        "content": "Analyze my CRM data",
+        "metadata": {},
+        "createdAt": "2026-02-09T08:05:35.264Z"
+      },
+      {
+        "id": "3b671db9-7058-41aa-a787-2348afdd394a",
+        "conversationId": "f9974ac9-e0f1-41f6-ac16-d577f8658948",
+        "role": "assistant",
+        "content": "## Lead Scoring Report\n\n### Overview:\n\n**Total Active Leads: 1,247**\n\n**Score Distribution:**\n- Hot (80-100): 89 leads (7.1%)\n- Warm (60-79): 234 leads (18.8%)\n- Cool (40-59): 456 leads (36.6%)\n- Cold (0-39): 468 leads (37.5%)\n\n### Insights:\n1. **High-Intent Signals Detected:** 89 leads showing buying signals including multiple website visits, content downloads, and email engagement\n2. **Segment Opportunity:** Healthcare vertical shows 2.3x higher conversion than average but only 8% of pipeline\n3. **Timing Analysis:** Leads converting fastest when contacted within 4 hours of high-intent action\n4. **Channel Performance:** LinkedIn-sourced leads convert 40% better than cold outreach\n\n### Recommended Actions:\n- Prioritize 89 hot leads for immediate SDR outreach\n- Increase healthcare vertical targeting\n- Implement 4-hour SLA for high-intent lead response",
+        "metadata": {
+          "type": "analysis",
+          "thinkingSteps": [
+            "Connecting to CRM via Salesforce MCP...",
+            "Querying pipeline data and deal history...",
+            "Analyzing 45,678 records across 6 segments...",
+            "Running AI scoring and pattern detection...",
+            "Compiling insights report..."
+          ],
+          "reportId": "7d0e070e-a177-40ea-861e-9401ef120695",
+          "creditsUsed": 5
+        },
+        "createdAt": "2026-02-09T08:05:35.278Z"
+      }
+    ],
+    "db853b18-55af-415c-9ba3-3647bdc32cd8": [
+      {
+        "id": "dd096aa6-a92e-477a-a141-78a8a59515e1",
+        "conversationId": "db853b18-55af-415c-9ba3-3647bdc32cd8",
+        "role": "user",
+        "content": "Analyze my CRM data",
+        "metadata": {},
+        "createdAt": "2026-02-09T08:39:15.453Z"
+      },
+      {
+        "id": "91e4a132-db0c-4fdd-a094-be0d17e403c5",
+        "conversationId": "db853b18-55af-415c-9ba3-3647bdc32cd8",
+        "role": "assistant",
+        "content": "## Lead Scoring Report\n\n### Overview:\n\n**Total Active Leads: 1,247**\n\n**Score Distribution:**\n- Hot (80-100): 89 leads (7.1%)\n- Warm (60-79): 234 leads (18.8%)\n- Cool (40-59): 456 leads (36.6%)\n- Cold (0-39): 468 leads (37.5%)\n\n### Insights:\n1. **High-Intent Signals Detected:** 89 leads showing buying signals including multiple website visits, content downloads, and email engagement\n2. **Segment Opportunity:** Healthcare vertical shows 2.3x higher conversion than average but only 8% of pipeline\n3. **Timing Analysis:** Leads converting fastest when contacted within 4 hours of high-intent action\n4. **Channel Performance:** LinkedIn-sourced leads convert 40% better than cold outreach\n\n### Recommended Actions:\n- Prioritize 89 hot leads for immediate SDR outreach\n- Increase healthcare vertical targeting\n- Implement 4-hour SLA for high-intent lead response",
+        "metadata": {
+          "type": "analysis",
+          "thinkingSteps": [
+            "Connecting to CRM via Salesforce MCP...",
+            "Querying pipeline data and deal history...",
+            "Analyzing 45,678 records across 6 segments...",
+            "Running AI scoring and pattern detection...",
+            "Compiling insights report..."
+          ],
+          "reportId": "454e36c7-1218-45c1-96c7-c4616f3fac32",
+          "creditsUsed": 5
+        },
+        "createdAt": "2026-02-09T08:39:15.469Z"
+      }
+    ],
+    "d7dc30fe-4957-4ee8-9c5c-a31fd046599a": [
+      {
+        "id": "3d5fb357-a972-4731-87b2-f2144e583470",
+        "conversationId": "d7dc30fe-4957-4ee8-9c5c-a31fd046599a",
+        "role": "user",
+        "content": "Find similar ABM companies",
+        "metadata": {},
+        "createdAt": "2026-02-09T09:59:04.881Z"
+      },
+      {
+        "id": "d6920959-7cd4-441d-b04e-0544b52f6776",
+        "conversationId": "d7dc30fe-4957-4ee8-9c5c-a31fd046599a",
+        "role": "assistant",
+        "content": "## ABM Lookalike Companies Found\n\nI've identified **5 companies** that match your ideal customer profile:\n\n### 1. LogiFlow AI\n- **Industry:** Supply Chain\n- **Size:** 200-500 employees\n- **Revenue:** $110M\n- **Match Score:** 79%\n- **Intent Signals:** AI adoption, Process automation, Vendor consolidation\n- **Location:** Atlanta, GA\n\n### 2. TechVision Analytics\n- **Industry:** Enterprise Software\n- **Size:** 500-1000 employees\n- **Revenue:** $120M\n- **Match Score:** 94%\n- **Intent Signals:** Recent funding round, Hiring sales team, Tech stack match\n- **Location:** San Francisco, CA\n\n### 3. NexGen Financial\n- **Industry:** FinTech\n- **Size:** 100-200 employees\n- **Revenue:** $45M\n- **Match Score:** 87%\n- **Intent Signals:** Series B funding, Compliance requirements, Stack modernization\n- **Location:** New York, NY\n\n### 4. DataStream Corp\n- **Industry:** Data Infrastructure\n- **Size:** 200-500 employees\n- **Revenue:** $85M\n- **Match Score:** 91%\n- **Intent Signals:** Product launch, Expansion to EMEA, CRM migration\n- **Location:** Austin, TX\n\n### 5. CloudBridge Solutions\n- **Industry:** Cloud Services\n- **Size:** 1000-5000 employees\n- **Revenue:** $340M\n- **Match Score:** 89%\n- **Intent Signals:** New CTO appointed, Digital transformation initiative, Budget increase\n- **Location:** Seattle, WA\n\n*This search consumed 10 credits from your account.*",
+        "metadata": {
+          "type": "abm",
+          "thinkingSteps": [
+            "Accessing ABM Intelligence Engine...",
+            "Loading your ideal customer profile...",
+            "Scanning firmographic database for matches...",
+            "Analyzing intent signals and technographics...",
+            "Ranking companies by match score..."
+          ],
+          "creditsUsed": 10
+        },
+        "createdAt": "2026-02-09T09:59:04.889Z"
+      },
+      {
+        "id": "1a7e9d80-84a2-49d7-9689-9698baaaa7c3",
+        "conversationId": "d7dc30fe-4957-4ee8-9c5c-a31fd046599a",
+        "role": "user",
+        "content": "Export this list",
+        "metadata": {},
+        "createdAt": "2026-02-09T09:59:29.422Z"
+      },
+      {
+        "id": "6ab2bf7b-e934-4250-9782-42db514370dd",
+        "conversationId": "d7dc30fe-4957-4ee8-9c5c-a31fd046599a",
+        "role": "assistant",
+        "content": "## Export Ready — Download Your Data\n\nYour data has been compiled and is ready for download:\n\n### Export Summary:\n- **File:** ABM_Target_Accounts_Feb2026.csv\n- **Records:** 5 companies, 12 contacts\n- **Fields Included:** Company Name, Contact Name, Title, Email, Phone, Industry, Company Size, Revenue, Match Score, Intent Signals, Location\n- **Format:** CSV (Excel-compatible)\n\n### Preview (first 3 rows):\n\n| Company | Contact | Title | Email | Match |\n|---------|---------|-------|-------|-------|\n| TechVision Analytics | John Chen | VP Sales | j.chen@techvision.io | 94% |\n| DataStream Corp | Maria Rodriguez | Dir. RevOps | m.rodriguez@datastream.com | 91% |\n| CloudBridge Solutions | Sarah Thompson | CRO | s.thompson@cloudbridge.io | 89% |\n\n### Download Your File:\n📥 **[Download ABM_Target_Accounts_Feb2026.csv](https://app.amplifye.ai/exports/abm-target-accounts-feb2026.csv)** (142 KB)\n\n📥 **[Download as Excel (.xlsx)](https://app.amplifye.ai/exports/abm-target-accounts-feb2026.xlsx)** (168 KB)\n\n*File will be available for 30 days. 2 credits consumed for data export.*",
+        "metadata": {
+          "type": "export",
+          "thinkingSteps": [
+            "Compiling selected records...",
+            "Enriching export with all available fields...",
+            "Generating CSV file...",
+            "Preparing download link..."
+          ]
+        },
+        "createdAt": "2026-02-09T09:59:29.424Z"
+      }
+    ],
+    "a35fbf7f-c1d1-4cc0-9120-d0fa64c963ab": [
+      {
+        "id": "104072cb-606e-4472-9063-5673037a3cd2",
+        "conversationId": "a35fbf7f-c1d1-4cc0-9120-d0fa64c963ab",
+        "role": "user",
+        "content": "Browse programmatic data",
+        "metadata": {},
+        "createdAt": "2026-02-09T10:14:06.193Z"
+      },
+      {
+        "id": "5a5f8182-f381-4d93-9585-cfebb6793213",
+        "conversationId": "a35fbf7f-c1d1-4cc0-9120-d0fa64c963ab",
+        "role": "assistant",
+        "content": "## Programmatic Data & B2B Intelligence\n\nAccess to our comprehensive B2B database with email and IP address intelligence:\n\n### Database Overview:\n- **Total B2B Emails:** 2.8B unique email addresses\n- **IP Address Inventory:** 1.4B IP addresses mapped to organizations\n- **Companies Covered:** 45M+ companies globally\n- **Industries:** All major verticals including Tech, Finance, Healthcare, Manufacturing, Energy, and more\n\n### Data Available:\n\n**Email Database:**\n- Decision makers and key personnel\n- Direct company emails\n- Verified email deliverability\n- Job title, seniority level, and function\n- Recent job changes and promotions\n\n**IP Intelligence:**\n- Company-verified IP addresses\n- IP geolocation and ISP data\n- Website hosting information\n- Network size and infrastructure\n- Organizational hierarchy\n\n### Segmentation Options:\nSegment the database by:\n- **Industry:** Enterprise Tech, SaaS, Financial Services, Healthcare, Manufacturing, Energy, etc.\n- **Job Level:** C-Suite, VP, Director, Manager, Individual Contributor\n- **Company Size:** Startup (1-50), SMB (51-500), Mid-Market (501-5000), Enterprise (5000+)\n- **Region:** North America, EMEA, APAC, or specific countries\n- **Job Function:** Sales, Marketing, Operations, IT, Finance, HR, and more\n- **Revenue:** All ranges from <$1M to $10B+\n\n### Popular Segments:\n1. **Enterprise Tech Decision Makers** — 890K contacts | 340K IPs\n2. **SaaS VP+ Sales Leaders** — 450K contacts | 180K IPs\n3. **Financial Services C-Suite** — 320K contacts | 125K IPs\n4. **Healthcare IT Directors** — 210K contacts | 85K IPs\n5. **Manufacturing Operations** — 380K contacts | 150K IPs\n6. **Energy Sector Executives** — 160K contacts | 65K IPs\n\n### Pricing & Access:\n- **1 credit per 1,000 records**\n- **Volume discounts** available for larger segments\n- **Custom segments** can be created and saved\n- **Real-time updates** as data changes\n\n*Say \"show popular segments\" to see more details, or \"download Enterprise Tech segment\" to get started.*",
+        "metadata": {
+          "type": "programmatic_data",
+          "thinkingSteps": [
+            "Connecting to Programmatic Data API...",
+            "Querying available B2B records...",
+            "Checking IP address inventory...",
+            "Loading popular segments...",
+            "Preparing download options..."
+          ]
+        },
+        "createdAt": "2026-02-09T10:14:06.197Z"
+      }
+    ],
+    "48ea1204-917c-4be3-a26b-f5a6e94aa9bb": [
+      {
+        "id": "ffd8e965-ba12-40c3-86f7-f9bfa59e6195",
+        "conversationId": "48ea1204-917c-4be3-a26b-f5a6e94aa9bb",
+        "role": "user",
+        "content": "Find similar ABM companies",
+        "metadata": {},
+        "createdAt": "2026-02-09T11:19:30.189Z"
+      },
+      {
+        "id": "6d202eea-89c5-4ec8-aeb7-a566bed4a0db",
+        "conversationId": "48ea1204-917c-4be3-a26b-f5a6e94aa9bb",
+        "role": "assistant",
+        "content": "## ABM Lookalike Companies Found\n\nI've identified **5 companies** that match your ideal customer profile:\n\n### 1. TechVision Analytics\n- **Industry:** Enterprise Software\n- **Size:** 500-1000 employees\n- **Revenue:** $120M\n- **Match Score:** 94%\n- **Intent Signals:** Recent funding round, Hiring sales team, Tech stack match\n- **Location:** San Francisco, CA\n\n### 2. LogiFlow AI\n- **Industry:** Supply Chain\n- **Size:** 200-500 employees\n- **Revenue:** $110M\n- **Match Score:** 79%\n- **Intent Signals:** AI adoption, Process automation, Vendor consolidation\n- **Location:** Atlanta, GA\n\n### 3. DataStream Corp\n- **Industry:** Data Infrastructure\n- **Size:** 200-500 employees\n- **Revenue:** $85M\n- **Match Score:** 91%\n- **Intent Signals:** Product launch, Expansion to EMEA, CRM migration\n- **Location:** Austin, TX\n\n### 4. CloudBridge Solutions\n- **Industry:** Cloud Services\n- **Size:** 1000-5000 employees\n- **Revenue:** $340M\n- **Match Score:** 89%\n- **Intent Signals:** New CTO appointed, Digital transformation initiative, Budget increase\n- **Location:** Seattle, WA\n\n### 5. MedTech Innovations\n- **Industry:** Healthcare Tech\n- **Size:** 200-500 employees\n- **Revenue:** $92M\n- **Match Score:** 85%\n- **Intent Signals:** HIPAA compliance needs, Platform migration, Growth phase\n- **Location:** Boston, MA\n\n*This search consumed 10 credits from your account.*",
+        "metadata": {
+          "type": "abm",
+          "thinkingSteps": [
+            "Accessing ABM Intelligence Engine...",
+            "Loading your ideal customer profile...",
+            "Scanning firmographic database for matches...",
+            "Analyzing intent signals and technographics...",
+            "Ranking companies by match score..."
+          ],
+          "creditsUsed": 10
+        },
+        "createdAt": "2026-02-09T11:19:30.203Z"
+      }
+    ],
+    "78415a94-07cf-4c39-b180-d963c60b517c": [
+      {
+        "id": "c3644811-0f05-4b98-bc42-7d613a0ae2a8",
+        "conversationId": "78415a94-07cf-4c39-b180-d963c60b517c",
+        "role": "user",
+        "content": "Find similar ABM companies",
+        "metadata": {},
+        "createdAt": "2026-02-09T11:53:59.479Z"
+      },
+      {
+        "id": "cb449f44-4b51-49bc-892a-5f4c9fe40e6b",
+        "conversationId": "78415a94-07cf-4c39-b180-d963c60b517c",
+        "role": "assistant",
+        "content": "## ABM Lookalike Companies Found\n\nI've identified **5 companies** that match your ideal customer profile:\n\n### 1. TechVision Analytics\n- **Industry:** Enterprise Software\n- **Size:** 500-1000 employees\n- **Revenue:** $120M\n- **Match Score:** 94%\n- **Intent Signals:** Recent funding round, Hiring sales team, Tech stack match\n- **Location:** San Francisco, CA\n\n### 2. DataStream Corp\n- **Industry:** Data Infrastructure\n- **Size:** 200-500 employees\n- **Revenue:** $85M\n- **Match Score:** 91%\n- **Intent Signals:** Product launch, Expansion to EMEA, CRM migration\n- **Location:** Austin, TX\n\n### 3. NexGen Financial\n- **Industry:** FinTech\n- **Size:** 100-200 employees\n- **Revenue:** $45M\n- **Match Score:** 87%\n- **Intent Signals:** Series B funding, Compliance requirements, Stack modernization\n- **Location:** New York, NY\n\n### 4. CloudBridge Solutions\n- **Industry:** Cloud Services\n- **Size:** 1000-5000 employees\n- **Revenue:** $340M\n- **Match Score:** 89%\n- **Intent Signals:** New CTO appointed, Digital transformation initiative, Budget increase\n- **Location:** Seattle, WA\n\n### 5. RetailEdge Platform\n- **Industry:** E-Commerce\n- **Size:** 500-1000 employees\n- **Revenue:** $210M\n- **Match Score:** 83%\n- **Intent Signals:** Omnichannel strategy, Data integration needs, Customer experience focus\n- **Location:** Chicago, IL\n\n*This search consumed 10 credits from your account.*",
+        "metadata": {
+          "type": "abm",
+          "thinkingSteps": [
+            "Accessing ABM Intelligence Engine...",
+            "Loading your ideal customer profile...",
+            "Scanning firmographic database for matches...",
+            "Analyzing intent signals and technographics...",
+            "Ranking companies by match score..."
+          ],
+          "creditsUsed": 10
+        },
+        "createdAt": "2026-02-09T11:53:59.494Z"
+      },
+      {
+        "id": "dd413bc2-663a-4350-a9f1-2e6a4e7fd89f",
+        "conversationId": "78415a94-07cf-4c39-b180-d963c60b517c",
+        "role": "user",
+        "content": "Add these to my CRM",
+        "metadata": {},
+        "createdAt": "2026-02-09T11:54:07.776Z"
+      },
+      {
+        "id": "f9961fdb-392f-4d27-8341-2c23d12c23b5",
+        "conversationId": "78415a94-07cf-4c39-b180-d963c60b517c",
+        "role": "assistant",
+        "content": "## CRM Sync Complete\n\nI've successfully synced the records to your CRM:\n\n### Sync Summary:\n- **Records Pushed:** 5 companies + 12 associated contacts\n- **CRM:** Salesforce (connected via MCP)\n- **Destination:** ABM Target Account List\n- **Status:** All records synced successfully\n\n### What was synced:\n1. **TechVision Analytics** — 3 contacts added (VP Sales, Director RevOps, Head of Marketing)\n2. **DataStream Corp** — 2 contacts added (CTO, VP Engineering)\n3. **CloudBridge Solutions** — 3 contacts added (CRO, VP Sales, Director Sales Ops)\n4. **NexGen Financial** — 2 contacts added (CFO, VP Finance)\n5. **MedTech Innovations** — 2 contacts added (VP Revenue, Director BD)\n\n### Automatic Actions Triggered:\n- Contact ownership assigned based on territory rules\n- Lead scoring model applied to all 12 contacts\n- Account enrichment queued for missing data fields\n- Activity log updated in your CRM\n\n*5 credits consumed for CRM sync. You can view these accounts in your Salesforce ABM Target List.*",
+        "metadata": {
+          "type": "crm_sync",
+          "thinkingSteps": [
+            "Connecting to Salesforce CRM via MCP...",
+            "Authenticating with stored API token...",
+            "Preparing 5 company records and 12 contacts...",
+            "Pushing to ABM Target Account List...",
+            "Verifying sync completion...",
+            "Applying territory rules and lead scoring..."
+          ]
+        },
+        "createdAt": "2026-02-09T11:54:07.779Z"
+      }
+    ],
+    "50dc6c9c-700d-450f-aea1-622cf02e6c69": [
+      {
+        "id": "18a05db8-a61d-4dd0-b8cc-b7cc65b96e0a",
+        "conversationId": "50dc6c9c-700d-450f-aea1-622cf02e6c69",
+        "role": "user",
+        "content": "Find similar ABM companies",
+        "metadata": {},
+        "createdAt": "2026-03-05T10:47:54.142Z"
+      },
+      {
+        "id": "05db5588-6e07-455a-ad1c-2be4b8f519a8",
+        "conversationId": "50dc6c9c-700d-450f-aea1-622cf02e6c69",
+        "role": "assistant",
+        "content": "## ABM Lookalike Companies Found\n\nI've identified **5 companies** that match your ideal customer profile:\n\n### 1. NexGen Financial\n- **Industry:** FinTech\n- **Size:** 100-200 employees\n- **Revenue:** $45M\n- **Match Score:** 87%\n- **Intent Signals:** Series B funding, Compliance requirements, Stack modernization\n- **Location:** New York, NY\n\n### 2. CloudBridge Solutions\n- **Industry:** Cloud Services\n- **Size:** 1000-5000 employees\n- **Revenue:** $340M\n- **Match Score:** 89%\n- **Intent Signals:** New CTO appointed, Digital transformation initiative, Budget increase\n- **Location:** Seattle, WA\n\n### 3. DataStream Corp\n- **Industry:** Data Infrastructure\n- **Size:** 200-500 employees\n- **Revenue:** $85M\n- **Match Score:** 91%\n- **Intent Signals:** Product launch, Expansion to EMEA, CRM migration\n- **Location:** Austin, TX\n\n### 4. GreenEnergy Systems\n- **Industry:** Clean Energy\n- **Size:** 100-200 employees\n- **Revenue:** $67M\n- **Match Score:** 81%\n- **Intent Signals:** Government contracts, Rapid scaling, CRM implementation\n- **Location:** Denver, CO\n\n### 5. RetailEdge Platform\n- **Industry:** E-Commerce\n- **Size:** 500-1000 employees\n- **Revenue:** $210M\n- **Match Score:** 83%\n- **Intent Signals:** Omnichannel strategy, Data integration needs, Customer experience focus\n- **Location:** Chicago, IL\n\n*This search consumed 10 credits from your account.*",
+        "metadata": {
+          "type": "abm",
+          "thinkingSteps": [
+            "Accessing ABM Intelligence Engine...",
+            "Loading your ideal customer profile...",
+            "Scanning firmographic database for matches...",
+            "Analyzing intent signals and technographics...",
+            "Ranking companies by match score..."
+          ],
+          "creditsUsed": 10
+        },
+        "createdAt": "2026-03-05T10:47:54.154Z"
+      }
+    ],
+    "44e1e5cc-c89e-4018-b74a-71e3aa0d069b": [
+      {
+        "id": "4aacdf4d-acc1-44c0-a653-2690b16f8c5b",
+        "conversationId": "44e1e5cc-c89e-4018-b74a-71e3aa0d069b",
+        "role": "user",
+        "content": "Create email campaign",
+        "metadata": {},
+        "createdAt": "2026-03-07T13:23:54.603Z"
+      },
+      {
+        "id": "9297bee5-beae-4297-b586-352748ff62fd",
+        "conversationId": "44e1e5cc-c89e-4018-b74a-71e3aa0d069b",
+        "role": "assistant",
+        "content": "## Campaign Created: Mid-Market SaaS ABM Campaign\n\n**Type:** ABM\n**Segment:** Mid-Market SaaS\n\n### Email Sequence:\n**Step 1 (Day 0):** EMAIL - Personalized industry analysis\n**Step 2 (Day 2):** LINKEDIN - Engage with company content\n**Step 3 (Day 4):** EMAIL - Custom report delivery\n**Step 4 (Day 7):** CALL - Discovery call attempt\n\n### Subject Line:\n\"Personalized Growth Strategy for {{company}}\"\n\n### Preview:\nHi {{first_name}},\n\nI've put together a brief analysis of how {{company}} compares to peers in the SaaS space. Your recent product expansion caught our attention.\n\nWe've helped similar companies increase pipeline velocity by 35%. I'd love to share specific insights tailored to {{company}}.\n\nMind if I send over the analysis?\n\nCheers,\n{{sender_name}}\n\n---\n*Campaign has been saved as draft. You can review and activate it from the Content Hub.*",
+        "metadata": {
+          "type": "campaign",
+          "thinkingSteps": [
+            "Connecting to Email Campaign MCP...",
+            "Loading segment data and contact profiles...",
+            "Generating email sequence with AI copywriter...",
+            "Optimizing send times and subject lines...",
+            "Creating campaign draft..."
+          ],
+          "campaignId": "2c28406f-2088-476f-82e0-80eefa47e992",
+          "creditsUsed": 10
+        },
+        "createdAt": "2026-03-07T13:23:54.619Z"
+      }
+    ],
+    "0927c49b-5526-4306-bb33-075bb652dec5": [
+      {
+        "id": "30d9c1a5-5038-4dd9-87e2-9389466f9c8a",
+        "conversationId": "0927c49b-5526-4306-bb33-075bb652dec5",
+        "role": "user",
+        "content": "Download sample contacts",
+        "metadata": {},
+        "createdAt": "2026-03-09T06:06:42.229Z"
+      },
+      {
+        "id": "44c0aa54-3733-4642-8c50-a343edb54039",
+        "conversationId": "0927c49b-5526-4306-bb33-075bb652dec5",
+        "role": "assistant",
+        "content": "## Download Initiated\n\n**Records Selected:** 393,799 contacts\n**Format:** CSV (with all enrichment fields)\n**File Size:** ~8MB\n**Credit Cost:** 40 credits\n**Your Balance:** 500 credits\n\n### Download Includes:\n✓ Email addresses (verified)\n✓ Direct phone numbers (where available)\n✓ Job titles and seniority levels\n✓ Company name and size\n✓ Industry classification\n✓ LinkedIn profile URLs\n✓ Geographic location\n✓ Technology stack data\n\n**Status:** Ready to download\n**Expires:** In 7 days\n\nThe file is preparing in the background. You can download it from your Files dashboard or we can schedule an automated delivery to your preferred location.",
+        "metadata": {
+          "type": "download",
+          "thinkingSteps": [
+            "Validating download parameters...",
+            "Querying data warehouse...",
+            "Building export file...",
+            "Calculating credit cost...",
+            "Preparing download link..."
+          ]
+        },
+        "createdAt": "2026-03-09T06:06:42.255Z"
+      },
+      {
+        "id": "f7122167-974b-4051-b96f-2c0a59892a3f",
+        "conversationId": "0927c49b-5526-4306-bb33-075bb652dec5",
+        "role": "user",
+        "content": "Find more contacts",
+        "metadata": {},
+        "createdAt": "2026-03-09T06:06:55.134Z"
+      },
+      {
+        "id": "d5371a04-2680-4cff-bee3-f8d22068d1ed",
+        "conversationId": "0927c49b-5526-4306-bb33-075bb652dec5",
+        "role": "assistant",
+        "content": "## Contact Data & Pricing\n\n### Decision Makers Available:\n\n**By Function:**\n- Sales Leaders: 289,456 contacts @ 0.50 credits per contact\n- Marketing Leaders: 156,234 contacts @ 0.50 credits per contact\n- Finance/CFO: 178,945 contacts @ 0.75 credits per contact\n- IT/CTO: 245,678 contacts @ 0.75 credits per contact\n- Operations: 134,567 contacts @ 0.50 credits per contact\n\n**By Seniority:**\n- C-Level: 87,654 contacts @ 1.00 credit per contact\n- VP-Level: 234,567 contacts @ 0.75 credits per contact\n- Director-Level: 456,789 contacts @ 0.50 credits per contact\n- Manager-Level: 678,901 contacts @ 0.35 credits per contact\n\n**By Vertical:**\n- Enterprise Tech: 95,432 contacts @ 0.50 credits per contact\n- Financial Services: 78,234 contacts @ 0.75 credits per contact\n- Healthcare: 65,123 contacts @ 0.75 credits per contact\n- Manufacturing: 54,321 contacts @ 0.50 credits per contact\n\n### Pricing Structure:\n- **100 contacts:** 35-100 credits (depending on seniority)\n- **1,000 contacts:** 350-1,000 credits\n- **10,000 contacts:** 3,500-10,000 credits\n- **100,000+ contacts:** Custom pricing (contact sales)\n\n### What's Included:\n✓ Verified email addresses\n✓ Direct phone numbers\n✓ Current job title\n✓ Company and industry\n✓ Seniority level\n✓ Geographic location\n✓ Job history (30-day old)\n\nYour Current Balance: **500 credits**",
+        "metadata": {
+          "type": "contact_pricing",
+          "thinkingSteps": [
+            "Loading contact database...",
+            "Analyzing available decision makers...",
+            "Calculating pricing tiers...",
+            "Verifying contact quality...",
+            "Preparing summary..."
+          ]
+        },
+        "createdAt": "2026-03-09T06:06:55.141Z"
+      }
+    ],
+    "135d2ec3-d284-428d-99bc-c3d3aab21eb5": [
+      {
+        "id": "2a875129-bdff-4bc3-99b9-e434852ca424",
+        "conversationId": "135d2ec3-d284-428d-99bc-c3d3aab21eb5",
+        "role": "user",
+        "content": "How many contacts match my ICP?",
+        "metadata": {},
+        "createdAt": "2026-03-09T06:36:39.620Z"
+      },
+      {
+        "id": "a9c80776-0bfd-4ecc-9e44-191485c9ceef",
+        "conversationId": "135d2ec3-d284-428d-99bc-c3d3aab21eb5",
+        "role": "assistant",
+        "content": "## Contact Data & Pricing\n\n### Decision Makers Available:\n\n**By Function:**\n- Sales Leaders: 289,456 contacts @ 0.50 credits per contact\n- Marketing Leaders: 156,234 contacts @ 0.50 credits per contact\n- Finance/CFO: 178,945 contacts @ 0.75 credits per contact\n- IT/CTO: 245,678 contacts @ 0.75 credits per contact\n- Operations: 134,567 contacts @ 0.50 credits per contact\n\n**By Seniority:**\n- C-Level: 87,654 contacts @ 1.00 credit per contact\n- VP-Level: 234,567 contacts @ 0.75 credits per contact\n- Director-Level: 456,789 contacts @ 0.50 credits per contact\n- Manager-Level: 678,901 contacts @ 0.35 credits per contact\n\n**By Vertical:**\n- Enterprise Tech: 95,432 contacts @ 0.50 credits per contact\n- Financial Services: 78,234 contacts @ 0.75 credits per contact\n- Healthcare: 65,123 contacts @ 0.75 credits per contact\n- Manufacturing: 54,321 contacts @ 0.50 credits per contact\n\n### Pricing Structure:\n- **100 contacts:** 35-100 credits (depending on seniority)\n- **1,000 contacts:** 350-1,000 credits\n- **10,000 contacts:** 3,500-10,000 credits\n- **100,000+ contacts:** Custom pricing (contact sales)\n\n### What's Included:\n✓ Verified email addresses\n✓ Direct phone numbers\n✓ Current job title\n✓ Company and industry\n✓ Seniority level\n✓ Geographic location\n✓ Job history (30-day old)\n\nYour Current Balance: **500 credits**",
+        "metadata": {
+          "type": "contact_pricing",
+          "thinkingSteps": [
+            "Loading contact database...",
+            "Analyzing available decision makers...",
+            "Calculating pricing tiers...",
+            "Verifying contact quality...",
+            "Preparing summary..."
+          ]
+        },
+        "createdAt": "2026-03-09T06:36:39.625Z"
+      }
+    ],
+    "9449dc53-4820-4816-9888-0b900d4142a4": [
+      {
+        "id": "e07cb1f5-b492-4800-8ff3-5c6983dc84f1",
+        "conversationId": "9449dc53-4820-4816-9888-0b900d4142a4",
+        "role": "user",
+        "content": "How many contacts match my ICP?",
+        "metadata": {},
+        "createdAt": "2026-03-09T09:50:00.637Z"
+      },
+      {
+        "id": "fd289d54-221d-46dc-9a50-aae32d4c7088",
+        "conversationId": "9449dc53-4820-4816-9888-0b900d4142a4",
+        "role": "assistant",
+        "content": "## ICP Match Analysis Report\n\n### Overall Match Score: 87/100\n\nYour ideal customer profile is performing well across target accounts.\n\n**Match Breakdown by Category:**\n\n1. **Industry Alignment:** 92/100\n   - Software & SaaS: 45% of matches (highest)\n   - Financial Services: 28% of matches\n   - Healthcare Tech: 18% of matches\n   - Other: 9% of matches\n\n2. **Company Size Distribution:**\n   - Enterprise (1000+ employees): 42% match\n   - Mid-Market (200-1000): 38% match\n   - SMB (50-200): 20% match\n\n3. **Revenue Band Alignment:**\n   - $50M-$500M: 52% of target accounts\n   - $500M+: 35% of target accounts\n   - <$50M: 13% of target accounts\n\n4. **Geographic Coverage:**\n   - North America: 58% (US: 42%, Canada: 16%)\n   - Europe: 28%\n   - APAC: 14%\n\n5. **Data Completeness:**\n   - Email addresses available: 94%\n   - Direct phone numbers: 67%\n   - Job level enrichment: 88%\n   - Technographic data: 82%\n\n### Total Contacts Available:\n- **Direct Matches (90+ score):** 3,247 contacts\n- **Strong Matches (75-89 score):** 5,891 contacts\n- **Moderate Matches (60-74 score):** 4,123 contacts\n\n**Total Addressable Contacts: 13,261**\n\n### Key Insights:\n- Your ICP is well-represented in the Software/SaaS vertical\n- Mid-market segment shows strongest data quality (92% email verification)\n- European accounts underrepresented in current targeting\n- Finance/compliance titles have highest engagement potential",
+        "metadata": {
+          "type": "icp_match",
+          "thinkingSteps": [
+            "Accessing your ICP profile...",
+            "Scanning database for matching accounts...",
+            "Analyzing industry and company size distributions...",
+            "Calculating match scores...",
+            "Compiling availability metrics..."
+          ],
+          "creditsUsed": 5
+        },
+        "createdAt": "2026-03-09T09:50:00.652Z"
+      }
+    ],
+    "266ac563-d149-4dbd-aaeb-3168880ee0f5": [
+      {
+        "id": "ff7d6a64-4a76-402d-bfb7-3e5a71dce982",
+        "conversationId": "266ac563-d149-4dbd-aaeb-3168880ee0f5",
+        "role": "user",
+        "content": "Find decision makers in Enterprise Tech",
+        "metadata": {},
+        "createdAt": "2026-03-09T10:00:47.208Z"
+      },
+      {
+        "id": "c92e980a-d974-48fd-8396-fbd479dea7bf",
+        "conversationId": "266ac563-d149-4dbd-aaeb-3168880ee0f5",
+        "role": "assistant",
+        "content": "## Contact Data & Pricing\n\n### Decision Makers Available:\n\n**By Function:**\n- Sales Leaders: 289,456 contacts @ 0.50 credits per contact\n- Marketing Leaders: 156,234 contacts @ 0.50 credits per contact\n- Finance/CFO: 178,945 contacts @ 0.75 credits per contact\n- IT/CTO: 245,678 contacts @ 0.75 credits per contact\n- Operations: 134,567 contacts @ 0.50 credits per contact\n\n**By Seniority:**\n- C-Level: 87,654 contacts @ 1.00 credit per contact\n- VP-Level: 234,567 contacts @ 0.75 credits per contact\n- Director-Level: 456,789 contacts @ 0.50 credits per contact\n- Manager-Level: 678,901 contacts @ 0.35 credits per contact\n\n**By Vertical:**\n- Enterprise Tech: 95,432 contacts @ 0.50 credits per contact\n- Financial Services: 78,234 contacts @ 0.75 credits per contact\n- Healthcare: 65,123 contacts @ 0.75 credits per contact\n- Manufacturing: 54,321 contacts @ 0.50 credits per contact\n\n### Pricing Structure:\n- **100 contacts:** 35-100 credits (depending on seniority)\n- **1,000 contacts:** 350-1,000 credits\n- **10,000 contacts:** 3,500-10,000 credits\n- **100,000+ contacts:** Custom pricing (contact sales)\n\n### What's Included:\n✓ Verified email addresses\n✓ Direct phone numbers\n✓ Current job title\n✓ Company and industry\n✓ Seniority level\n✓ Geographic location\n✓ Job history (30-day old)\n\nYour Current Balance: **500 credits**",
+        "metadata": {
+          "type": "contact_pricing",
+          "thinkingSteps": [
+            "Loading contact database...",
+            "Analyzing available decision makers...",
+            "Calculating pricing tiers...",
+            "Verifying contact quality...",
+            "Preparing summary..."
+          ]
+        },
+        "createdAt": "2026-03-09T10:00:47.213Z"
+      }
+    ]
+  },
+  "reports": {
+    "342d6eb8-8adb-44b4-9b1c-76601e8f641f": {
+      "id": "342d6eb8-8adb-44b4-9b1c-76601e8f641f",
+      "userId": "demo-user-001",
+      "conversationId": "b112df35-53a2-463c-b001-e581e9fb6b99",
+      "title": "Lead Scoring Analysis",
+      "type": "crm_analysis",
+      "summary": "AI-powered analysis of your lead quality and scoring effectiveness.",
+      "data": {
+        "totalLeads": 1247,
+        "hot": 89,
+        "warm": 234,
+        "cool": 456,
+        "cold": 468,
+        "topVertical": "Healthcare",
+        "conversionBoost": "2.3x"
+      },
+      "createdAt": "2026-02-08T23:09:24.731Z"
+    },
+    "9b409440-a7d0-4293-afa8-66e28edfc695": {
+      "id": "9b409440-a7d0-4293-afa8-66e28edfc695",
+      "userId": "demo-user-001",
+      "conversationId": "e7991993-7c1f-4004-9a71-f116951645c4",
+      "title": "CRM Pipeline Analysis",
+      "type": "crm_analysis",
+      "summary": "Based on your CRM data, I've identified key patterns in your sales pipeline.",
+      "data": {
+        "pipelineScore": 78,
+        "revenueAtRisk": 2400000,
+        "dealsStalled": 23,
+        "avgCycleIncrease": 12,
+        "topSegments": [
+          {
+            "name": "Enterprise Tech",
+            "conversion": 34
+          },
+          {
+            "name": "Mid-Market SaaS",
+            "conversion": 28
+          },
+          {
+            "name": "Financial Services",
+            "conversion": 22
+          }
+        ]
+      },
+      "createdAt": "2026-02-08T23:15:11.441Z"
+    },
+    "be148a38-8245-40ae-9c97-d5a35c040568": {
+      "id": "be148a38-8245-40ae-9c97-d5a35c040568",
+      "userId": "demo-user-001",
+      "conversationId": "7d3b7d03-9c7a-40ea-9c83-dc1b5ec84f3d",
+      "title": "CRM Pipeline Analysis",
+      "type": "crm_analysis",
+      "summary": "Based on your CRM data, I've identified key patterns in your sales pipeline.",
+      "data": {
+        "pipelineScore": 78,
+        "revenueAtRisk": 2400000,
+        "dealsStalled": 23,
+        "avgCycleIncrease": 12,
+        "topSegments": [
+          {
+            "name": "Enterprise Tech",
+            "conversion": 34
+          },
+          {
+            "name": "Mid-Market SaaS",
+            "conversion": 28
+          },
+          {
+            "name": "Financial Services",
+            "conversion": 22
+          }
+        ]
+      },
+      "createdAt": "2026-02-08T23:37:54.769Z"
+    },
+    "94a790e9-d9c3-4e63-855f-0275dc474d1a": {
+      "id": "94a790e9-d9c3-4e63-855f-0275dc474d1a",
+      "userId": "demo-user-001",
+      "conversationId": "72919487-dd9e-4ce1-8ae3-242f6c0e9150",
+      "title": "CRM Pipeline Analysis",
+      "type": "crm_analysis",
+      "summary": "Based on your CRM data, I've identified key patterns in your sales pipeline.",
+      "data": {
+        "pipelineScore": 78,
+        "revenueAtRisk": 2400000,
+        "dealsStalled": 23,
+        "avgCycleIncrease": 12,
+        "topSegments": [
+          {
+            "name": "Enterprise Tech",
+            "conversion": 34
+          },
+          {
+            "name": "Mid-Market SaaS",
+            "conversion": 28
+          },
+          {
+            "name": "Financial Services",
+            "conversion": 22
+          }
+        ]
+      },
+      "createdAt": "2026-02-09T06:14:01.109Z"
+    },
+    "7d0e070e-a177-40ea-861e-9401ef120695": {
+      "id": "7d0e070e-a177-40ea-861e-9401ef120695",
+      "userId": "demo-user-001",
+      "conversationId": "f9974ac9-e0f1-41f6-ac16-d577f8658948",
+      "title": "Lead Scoring Analysis",
+      "type": "crm_analysis",
+      "summary": "AI-powered analysis of your lead quality and scoring effectiveness.",
+      "data": {
+        "totalLeads": 1247,
+        "hot": 89,
+        "warm": 234,
+        "cool": 456,
+        "cold": 468,
+        "topVertical": "Healthcare",
+        "conversionBoost": "2.3x"
+      },
+      "createdAt": "2026-02-09T08:05:35.270Z"
+    },
+    "454e36c7-1218-45c1-96c7-c4616f3fac32": {
+      "id": "454e36c7-1218-45c1-96c7-c4616f3fac32",
+      "userId": "demo-user-001",
+      "conversationId": "db853b18-55af-415c-9ba3-3647bdc32cd8",
+      "title": "Lead Scoring Analysis",
+      "type": "crm_analysis",
+      "summary": "AI-powered analysis of your lead quality and scoring effectiveness.",
+      "data": {
+        "totalLeads": 1247,
+        "hot": 89,
+        "warm": 234,
+        "cool": 456,
+        "cold": 468,
+        "topVertical": "Healthcare",
+        "conversionBoost": "2.3x"
+      },
+      "createdAt": "2026-02-09T08:39:15.458Z"
+    }
+  },
+  "campaigns": {
+    "3e339c5b-606d-4583-82fa-8037fa2ab485": {
+      "id": "3e339c5b-606d-4583-82fa-8037fa2ab485",
+      "userId": "demo-user-001",
+      "name": "Mid-Market SaaS ABM Campaign",
+      "type": "abm",
+      "segment": "Mid-Market SaaS",
+      "content": {
+        "subject": "Personalized Growth Strategy for {{company}}",
+        "body": "Hi {{first_name}},\n\nI've put together a brief analysis of how {{company}} compares to peers in the SaaS space. Your recent product expansion caught our attention.\n\nWe've helped similar companies increase pipeline velocity by 35%. I'd love to share specific insights tailored to {{company}}.\n\nMind if I send over the analysis?\n\nCheers,\n{{sender_name}}",
+        "sequences": [
+          {
+            "step": 1,
+            "type": "email",
+            "content": "Personalized industry analysis",
+            "delay": "Day 0"
+          },
+          {
+            "step": 2,
+            "type": "linkedin",
+            "content": "Engage with company content",
+            "delay": "Day 2"
+          },
+          {
+            "step": 3,
+            "type": "email",
+            "content": "Custom report delivery",
+            "delay": "Day 4"
+          },
+          {
+            "step": 4,
+            "type": "call",
+            "content": "Discovery call attempt",
+            "delay": "Day 7"
+          }
+        ]
+      },
+      "metrics": {
+        "sent": 120,
+        "opened": 72,
+        "clicked": 38,
+        "replied": 19,
+        "converted": 8
+      },
+      "status": "draft",
+      "createdAt": "2026-02-08T23:09:24.757Z",
+      "updatedAt": "2026-02-08T23:09:24.757Z"
+    },
+    "680a68cf-3719-46de-b073-8a062731fccd": {
+      "id": "680a68cf-3719-46de-b073-8a062731fccd",
+      "userId": "demo-user-001",
+      "name": "Mid-Market SaaS ABM Campaign",
+      "type": "abm",
+      "segment": "Mid-Market SaaS",
+      "content": {
+        "subject": "Personalized Growth Strategy for {{company}}",
+        "body": "Hi {{first_name}},\n\nI've put together a brief analysis of how {{company}} compares to peers in the SaaS space. Your recent product expansion caught our attention.\n\nWe've helped similar companies increase pipeline velocity by 35%. I'd love to share specific insights tailored to {{company}}.\n\nMind if I send over the analysis?\n\nCheers,\n{{sender_name}}",
+        "sequences": [
+          {
+            "step": 1,
+            "type": "email",
+            "content": "Personalized industry analysis",
+            "delay": "Day 0"
+          },
+          {
+            "step": 2,
+            "type": "linkedin",
+            "content": "Engage with company content",
+            "delay": "Day 2"
+          },
+          {
+            "step": 3,
+            "type": "email",
+            "content": "Custom report delivery",
+            "delay": "Day 4"
+          },
+          {
+            "step": 4,
+            "type": "call",
+            "content": "Discovery call attempt",
+            "delay": "Day 7"
+          }
+        ]
+      },
+      "metrics": {
+        "sent": 120,
+        "opened": 72,
+        "clicked": 38,
+        "replied": 19,
+        "converted": 8
+      },
+      "status": "draft",
+      "createdAt": "2026-02-08T23:37:33.553Z",
+      "updatedAt": "2026-02-08T23:37:33.553Z"
+    },
+    "b0bd1726-eae7-4e28-844b-b5ff357d9272": {
+      "id": "b0bd1726-eae7-4e28-844b-b5ff357d9272",
+      "userId": "demo-user-001",
+      "name": "Enterprise Tech Outreach Sequence",
+      "type": "email",
+      "segment": "Enterprise Tech",
+      "content": {
+        "subject": "Driving Revenue Growth with AI-Powered Sales Intelligence",
+        "body": "Hi {{first_name}},\n\nI noticed {{company}} has been expanding its sales operations recently. Companies in your space are seeing 40% faster deal cycles with AI-powered lead intelligence.\n\nWould you be open to a 15-minute call this week to explore how we could help {{company}} achieve similar results?\n\nBest,\n{{sender_name}}",
+        "sequences": [
+          {
+            "step": 1,
+            "type": "email",
+            "content": "Initial outreach - value proposition",
+            "delay": "Day 0"
+          },
+          {
+            "step": 2,
+            "type": "email",
+            "content": "Case study follow-up",
+            "delay": "Day 3"
+          },
+          {
+            "step": 3,
+            "type": "linkedin",
+            "content": "LinkedIn connection + message",
+            "delay": "Day 5"
+          },
+          {
+            "step": 4,
+            "type": "email",
+            "content": "ROI calculator share",
+            "delay": "Day 7"
+          },
+          {
+            "step": 5,
+            "type": "call",
+            "content": "Phone follow-up",
+            "delay": "Day 10"
+          },
+          {
+            "step": 6,
+            "type": "email",
+            "content": "Break-up email",
+            "delay": "Day 14"
+          }
+        ]
+      },
+      "metrics": {
+        "sent": 450,
+        "opened": 189,
+        "clicked": 67,
+        "replied": 34,
+        "converted": 12
+      },
+      "status": "draft",
+      "createdAt": "2026-02-09T00:27:13.681Z",
+      "updatedAt": "2026-02-09T00:27:13.681Z"
+    },
+    "6412df2d-80a8-465f-9e79-b4c73a1ff4ff": {
+      "id": "6412df2d-80a8-465f-9e79-b4c73a1ff4ff",
+      "userId": "demo-user-001",
+      "name": "Mid-Market SaaS ABM Campaign",
+      "type": "abm",
+      "segment": "Mid-Market SaaS",
+      "content": {
+        "subject": "Personalized Growth Strategy for {{company}}",
+        "body": "Hi {{first_name}},\n\nI've put together a brief analysis of how {{company}} compares to peers in the SaaS space. Your recent product expansion caught our attention.\n\nWe've helped similar companies increase pipeline velocity by 35%. I'd love to share specific insights tailored to {{company}}.\n\nMind if I send over the analysis?\n\nCheers,\n{{sender_name}}",
+        "sequences": [
+          {
+            "step": 1,
+            "type": "email",
+            "content": "Personalized industry analysis",
+            "delay": "Day 0"
+          },
+          {
+            "step": 2,
+            "type": "linkedin",
+            "content": "Engage with company content",
+            "delay": "Day 2"
+          },
+          {
+            "step": 3,
+            "type": "email",
+            "content": "Custom report delivery",
+            "delay": "Day 4"
+          },
+          {
+            "step": 4,
+            "type": "call",
+            "content": "Discovery call attempt",
+            "delay": "Day 7"
+          }
+        ]
+      },
+      "metrics": {
+        "sent": 120,
+        "opened": 72,
+        "clicked": 38,
+        "replied": 19,
+        "converted": 8
+      },
+      "status": "paused",
+      "createdAt": "2026-02-09T00:27:31.601Z",
+      "updatedAt": "2026-02-09T01:58:39.441Z"
+    },
+    "afa2cb9b-d27a-46fb-ad71-fe8f505ebeb4": {
+      "id": "afa2cb9b-d27a-46fb-ad71-fe8f505ebeb4",
+      "userId": "demo-user-001",
+      "name": "Enterprise Tech Outreach Sequence",
+      "type": "email",
+      "segment": "Enterprise Tech",
+      "content": {
+        "subject": "Driving Revenue Growth with AI-Powered Sales Intelligence",
+        "body": "Hi {{first_name}},\n\nI noticed {{company}} has been expanding its sales operations recently. Companies in your space are seeing 40% faster deal cycles with AI-powered lead intelligence.\n\nWould you be open to a 15-minute call this week to explore how we could help {{company}} achieve similar results?\n\nBest,\n{{sender_name}}",
+        "sequences": [
+          {
+            "step": 1,
+            "type": "email",
+            "content": "Initial outreach - value proposition",
+            "delay": "Day 0"
+          },
+          {
+            "step": 2,
+            "type": "email",
+            "content": "Case study follow-up",
+            "delay": "Day 3"
+          },
+          {
+            "step": 3,
+            "type": "linkedin",
+            "content": "LinkedIn connection + message",
+            "delay": "Day 5"
+          },
+          {
+            "step": 4,
+            "type": "email",
+            "content": "ROI calculator share",
+            "delay": "Day 7"
+          },
+          {
+            "step": 5,
+            "type": "call",
+            "content": "Phone follow-up",
+            "delay": "Day 10"
+          },
+          {
+            "step": 6,
+            "type": "email",
+            "content": "Break-up email",
+            "delay": "Day 14"
+          }
+        ]
+      },
+      "metrics": {
+        "sent": 450,
+        "opened": 189,
+        "clicked": 67,
+        "replied": 34,
+        "converted": 12
+      },
+      "status": "draft",
+      "createdAt": "2026-02-09T07:32:36.339Z",
+      "updatedAt": "2026-02-09T07:32:36.339Z"
+    },
+    "98b492d6-1740-4595-b7f0-c5ae7e271b2b": {
+      "id": "98b492d6-1740-4595-b7f0-c5ae7e271b2b",
+      "userId": "demo-user-001",
+      "name": "Tech VP Outreach Q1 2026",
+      "type": "email",
+      "segment": "Technology · VP Level",
+      "content": {
+        "subject": "{{first_name}}, quick idea for {{company}}'s tech strategy",
+        "body": "",
+        "sequences": [
+          {
+            "step": 1,
+            "type": "email",
+            "delay": "Day 0",
+            "content": "Initial outreach email"
+          },
+          {
+            "step": 2,
+            "type": "email",
+            "delay": "Day 3",
+            "content": "Follow-up with value proposition"
+          },
+          {
+            "step": 3,
+            "type": "email",
+            "delay": "Day 7",
+            "content": "Case study / social proof"
+          }
+        ],
+        "audienceSource": "segmentation",
+        "audienceCount": 1206
+      },
+      "metrics": {
+        "sent": 0,
+        "opened": 0,
+        "clicked": 0,
+        "replied": 0,
+        "converted": 0
+      },
+      "status": "draft",
+      "createdAt": "2026-02-09T11:29:10.746Z",
+      "updatedAt": "2026-02-09T11:29:10.746Z"
+    },
+    "2c28406f-2088-476f-82e0-80eefa47e992": {
+      "id": "2c28406f-2088-476f-82e0-80eefa47e992",
+      "userId": "demo-user-001",
+      "name": "Mid-Market SaaS ABM Campaign",
+      "type": "abm",
+      "segment": "Mid-Market SaaS",
+      "content": {
+        "subject": "Personalized Growth Strategy for {{company}}",
+        "body": "Hi {{first_name}},\n\nI've put together a brief analysis of how {{company}} compares to peers in the SaaS space. Your recent product expansion caught our attention.\n\nWe've helped similar companies increase pipeline velocity by 35%. I'd love to share specific insights tailored to {{company}}.\n\nMind if I send over the analysis?\n\nCheers,\n{{sender_name}}",
+        "sequences": [
+          {
+            "step": 1,
+            "type": "email",
+            "content": "Personalized industry analysis",
+            "delay": "Day 0"
+          },
+          {
+            "step": 2,
+            "type": "linkedin",
+            "content": "Engage with company content",
+            "delay": "Day 2"
+          },
+          {
+            "step": 3,
+            "type": "email",
+            "content": "Custom report delivery",
+            "delay": "Day 4"
+          },
+          {
+            "step": 4,
+            "type": "call",
+            "content": "Discovery call attempt",
+            "delay": "Day 7"
+          }
+        ]
+      },
+      "metrics": {
+        "sent": 120,
+        "opened": 72,
+        "clicked": 38,
+        "replied": 19,
+        "converted": 8
+      },
+      "status": "draft",
+      "createdAt": "2026-03-07T13:23:54.608Z",
+      "updatedAt": "2026-03-07T13:23:54.608Z"
+    }
+  },
+  "abmResults": {
+    "980486dc-97e5-4b10-b568-65fd02afcd4d": {
+      "id": "980486dc-97e5-4b10-b568-65fd02afcd4d",
+      "userId": "demo-user-001",
+      "companyName": "CloudBridge Solutions",
+      "industry": "Cloud Services",
+      "size": "1000-5000",
+      "revenue": "$340M",
+      "matchScore": 89,
+      "signals": [
+        "New CTO appointed",
+        "Digital transformation initiative",
+        "Budget increase"
+      ],
+      "website": "cloudbridge.io",
+      "location": "Seattle, WA"
+    },
+    "baefe7f4-43c9-414f-9c45-8e243d1807b2": {
+      "id": "baefe7f4-43c9-414f-9c45-8e243d1807b2",
+      "userId": "demo-user-001",
+      "companyName": "MedTech Innovations",
+      "industry": "Healthcare Tech",
+      "size": "200-500",
+      "revenue": "$92M",
+      "matchScore": 85,
+      "signals": [
+        "HIPAA compliance needs",
+        "Platform migration",
+        "Growth phase"
+      ],
+      "website": "medtechinno.com",
+      "location": "Boston, MA"
+    },
+    "9c7b209b-9db4-4b48-8389-175be92d70d7": {
+      "id": "9c7b209b-9db4-4b48-8389-175be92d70d7",
+      "userId": "demo-user-001",
+      "companyName": "NexGen Financial",
+      "industry": "FinTech",
+      "size": "100-200",
+      "revenue": "$45M",
+      "matchScore": 87,
+      "signals": [
+        "Series B funding",
+        "Compliance requirements",
+        "Stack modernization"
+      ],
+      "website": "nexgenfinancial.com",
+      "location": "New York, NY"
+    },
+    "9cd969f9-626b-4b03-a542-88cb34940151": {
+      "id": "9cd969f9-626b-4b03-a542-88cb34940151",
+      "userId": "demo-user-001",
+      "companyName": "DataStream Corp",
+      "industry": "Data Infrastructure",
+      "size": "200-500",
+      "revenue": "$85M",
+      "matchScore": 91,
+      "signals": [
+        "Product launch",
+        "Expansion to EMEA",
+        "CRM migration"
+      ],
+      "website": "datastream.com",
+      "location": "Austin, TX"
+    },
+    "2c1ae5de-ef7f-4a6c-9ac7-b3cf0a19114a": {
+      "id": "2c1ae5de-ef7f-4a6c-9ac7-b3cf0a19114a",
+      "userId": "demo-user-001",
+      "companyName": "TechVision Analytics",
+      "industry": "Enterprise Software",
+      "size": "500-1000",
+      "revenue": "$120M",
+      "matchScore": 94,
+      "signals": [
+        "Recent funding round",
+        "Hiring sales team",
+        "Tech stack match"
+      ],
+      "website": "techvision.io",
+      "location": "San Francisco, CA"
+    },
+    "d5136de8-a27f-4728-86f6-3f15f7b7e068": {
+      "id": "d5136de8-a27f-4728-86f6-3f15f7b7e068",
+      "userId": "demo-user-001",
+      "companyName": "TechVision Analytics",
+      "industry": "Enterprise Software",
+      "size": "500-1000",
+      "revenue": "$120M",
+      "matchScore": 94,
+      "signals": [
+        "Recent funding round",
+        "Hiring sales team",
+        "Tech stack match"
+      ],
+      "website": "techvision.io",
+      "location": "San Francisco, CA"
+    },
+    "ccc13302-fcd2-47db-a257-0a703f54e264": {
+      "id": "ccc13302-fcd2-47db-a257-0a703f54e264",
+      "userId": "demo-user-001",
+      "companyName": "NexGen Financial",
+      "industry": "FinTech",
+      "size": "100-200",
+      "revenue": "$45M",
+      "matchScore": 87,
+      "signals": [
+        "Series B funding",
+        "Compliance requirements",
+        "Stack modernization"
+      ],
+      "website": "nexgenfinancial.com",
+      "location": "New York, NY"
+    },
+    "fe1fb9ff-062a-4ae9-a69f-c1d89fcdeb68": {
+      "id": "fe1fb9ff-062a-4ae9-a69f-c1d89fcdeb68",
+      "userId": "demo-user-001",
+      "companyName": "GreenEnergy Systems",
+      "industry": "Clean Energy",
+      "size": "100-200",
+      "revenue": "$67M",
+      "matchScore": 81,
+      "signals": [
+        "Government contracts",
+        "Rapid scaling",
+        "CRM implementation"
+      ],
+      "website": "greenenergy-sys.com",
+      "location": "Denver, CO"
+    },
+    "245f4a74-eb66-47e0-bf66-88061db12436": {
+      "id": "245f4a74-eb66-47e0-bf66-88061db12436",
+      "userId": "demo-user-001",
+      "companyName": "DataStream Corp",
+      "industry": "Data Infrastructure",
+      "size": "200-500",
+      "revenue": "$85M",
+      "matchScore": 91,
+      "signals": [
+        "Product launch",
+        "Expansion to EMEA",
+        "CRM migration"
+      ],
+      "website": "datastream.com",
+      "location": "Austin, TX"
+    },
+    "33a0d1c4-1ea0-4fe0-8142-4426bb44327d": {
+      "id": "33a0d1c4-1ea0-4fe0-8142-4426bb44327d",
+      "userId": "demo-user-001",
+      "companyName": "RetailEdge Platform",
+      "industry": "E-Commerce",
+      "size": "500-1000",
+      "revenue": "$210M",
+      "matchScore": 83,
+      "signals": [
+        "Omnichannel strategy",
+        "Data integration needs",
+        "Customer experience focus"
+      ],
+      "website": "retailedge.io",
+      "location": "Chicago, IL"
+    },
+    "843a5e90-3c0c-4141-b492-453f4aaf5d9b": {
+      "id": "843a5e90-3c0c-4141-b492-453f4aaf5d9b",
+      "userId": "demo-user-001",
+      "companyName": "GreenEnergy Systems",
+      "industry": "Clean Energy",
+      "size": "100-200",
+      "revenue": "$67M",
+      "matchScore": 81,
+      "signals": [
+        "Government contracts",
+        "Rapid scaling",
+        "CRM implementation"
+      ],
+      "website": "greenenergy-sys.com",
+      "location": "Denver, CO"
+    },
+    "b65e2e94-33a3-4d65-a6e9-b46b09c95502": {
+      "id": "b65e2e94-33a3-4d65-a6e9-b46b09c95502",
+      "userId": "demo-user-001",
+      "companyName": "MedTech Innovations",
+      "industry": "Healthcare Tech",
+      "size": "200-500",
+      "revenue": "$92M",
+      "matchScore": 85,
+      "signals": [
+        "HIPAA compliance needs",
+        "Platform migration",
+        "Growth phase"
+      ],
+      "website": "medtechinno.com",
+      "location": "Boston, MA"
+    },
+    "2d239f02-a957-4511-8ad4-309781967522": {
+      "id": "2d239f02-a957-4511-8ad4-309781967522",
+      "userId": "demo-user-001",
+      "companyName": "NexGen Financial",
+      "industry": "FinTech",
+      "size": "100-200",
+      "revenue": "$45M",
+      "matchScore": 87,
+      "signals": [
+        "Series B funding",
+        "Compliance requirements",
+        "Stack modernization"
+      ],
+      "website": "nexgenfinancial.com",
+      "location": "New York, NY"
+    },
+    "112bd625-0d40-40b6-8821-91041e63a3a8": {
+      "id": "112bd625-0d40-40b6-8821-91041e63a3a8",
+      "userId": "demo-user-001",
+      "companyName": "RetailEdge Platform",
+      "industry": "E-Commerce",
+      "size": "500-1000",
+      "revenue": "$210M",
+      "matchScore": 83,
+      "signals": [
+        "Omnichannel strategy",
+        "Data integration needs",
+        "Customer experience focus"
+      ],
+      "website": "retailedge.io",
+      "location": "Chicago, IL"
+    },
+    "e6d2bdd4-530e-4524-bcb7-68ee67fa5168": {
+      "id": "e6d2bdd4-530e-4524-bcb7-68ee67fa5168",
+      "userId": "demo-user-001",
+      "companyName": "CloudBridge Solutions",
+      "industry": "Cloud Services",
+      "size": "1000-5000",
+      "revenue": "$340M",
+      "matchScore": 89,
+      "signals": [
+        "New CTO appointed",
+        "Digital transformation initiative",
+        "Budget increase"
+      ],
+      "website": "cloudbridge.io",
+      "location": "Seattle, WA"
+    },
+    "166689db-da5b-402b-8f5f-ad2d37562476": {
+      "id": "166689db-da5b-402b-8f5f-ad2d37562476",
+      "userId": "demo-user-001",
+      "companyName": "TechVision Analytics",
+      "industry": "Enterprise Software",
+      "size": "500-1000",
+      "revenue": "$120M",
+      "matchScore": 94,
+      "signals": [
+        "Recent funding round",
+        "Hiring sales team",
+        "Tech stack match"
+      ],
+      "website": "techvision.io",
+      "location": "San Francisco, CA"
+    },
+    "d30c1e4a-66f9-439f-93cf-7339cdcaa747": {
+      "id": "d30c1e4a-66f9-439f-93cf-7339cdcaa747",
+      "userId": "demo-user-001",
+      "companyName": "DataStream Corp",
+      "industry": "Data Infrastructure",
+      "size": "200-500",
+      "revenue": "$85M",
+      "matchScore": 91,
+      "signals": [
+        "Product launch",
+        "Expansion to EMEA",
+        "CRM migration"
+      ],
+      "website": "datastream.com",
+      "location": "Austin, TX"
+    },
+    "c78d890c-d2b3-479d-a4fb-e8e4461d0291": {
+      "id": "c78d890c-d2b3-479d-a4fb-e8e4461d0291",
+      "userId": "demo-user-001",
+      "companyName": "MedTech Innovations",
+      "industry": "Healthcare Tech",
+      "size": "200-500",
+      "revenue": "$92M",
+      "matchScore": 85,
+      "signals": [
+        "HIPAA compliance needs",
+        "Platform migration",
+        "Growth phase"
+      ],
+      "website": "medtechinno.com",
+      "location": "Boston, MA"
+    },
+    "a51c4720-d37a-47d6-a115-fa68d9d5167a": {
+      "id": "a51c4720-d37a-47d6-a115-fa68d9d5167a",
+      "userId": "demo-user-001",
+      "companyName": "CloudBridge Solutions",
+      "industry": "Cloud Services",
+      "size": "1000-5000",
+      "revenue": "$340M",
+      "matchScore": 89,
+      "signals": [
+        "New CTO appointed",
+        "Digital transformation initiative",
+        "Budget increase"
+      ],
+      "website": "cloudbridge.io",
+      "location": "Seattle, WA"
+    },
+    "30d76c23-123c-49d8-9416-fb8fe2a91980": {
+      "id": "30d76c23-123c-49d8-9416-fb8fe2a91980",
+      "userId": "demo-user-001",
+      "companyName": "GreenEnergy Systems",
+      "industry": "Clean Energy",
+      "size": "100-200",
+      "revenue": "$67M",
+      "matchScore": 81,
+      "signals": [
+        "Government contracts",
+        "Rapid scaling",
+        "CRM implementation"
+      ],
+      "website": "greenenergy-sys.com",
+      "location": "Denver, CO"
+    },
+    "83c9d2e2-1cc2-4902-a1d3-0c6f8aba9034": {
+      "id": "83c9d2e2-1cc2-4902-a1d3-0c6f8aba9034",
+      "userId": "demo-user-001",
+      "companyName": "NexGen Financial",
+      "industry": "FinTech",
+      "size": "100-200",
+      "revenue": "$45M",
+      "matchScore": 87,
+      "signals": [
+        "Series B funding",
+        "Compliance requirements",
+        "Stack modernization"
+      ],
+      "website": "nexgenfinancial.com",
+      "location": "New York, NY"
+    },
+    "859cabc6-7f6c-4e99-8a7e-0f401a5fad07": {
+      "id": "859cabc6-7f6c-4e99-8a7e-0f401a5fad07",
+      "userId": "demo-user-001",
+      "companyName": "DataStream Corp",
+      "industry": "Data Infrastructure",
+      "size": "200-500",
+      "revenue": "$85M",
+      "matchScore": 91,
+      "signals": [
+        "Product launch",
+        "Expansion to EMEA",
+        "CRM migration"
+      ],
+      "website": "datastream.com",
+      "location": "Austin, TX"
+    },
+    "79205b99-9734-4063-8461-e0cd2c65134e": {
+      "id": "79205b99-9734-4063-8461-e0cd2c65134e",
+      "userId": "demo-user-001",
+      "companyName": "MedTech Innovations",
+      "industry": "Healthcare Tech",
+      "size": "200-500",
+      "revenue": "$92M",
+      "matchScore": 85,
+      "signals": [
+        "HIPAA compliance needs",
+        "Platform migration",
+        "Growth phase"
+      ],
+      "website": "medtechinno.com",
+      "location": "Boston, MA"
+    },
+    "3e2f213f-ddd5-46db-9043-747d5a43f8c5": {
+      "id": "3e2f213f-ddd5-46db-9043-747d5a43f8c5",
+      "userId": "demo-user-001",
+      "companyName": "LogiFlow AI",
+      "industry": "Supply Chain",
+      "size": "200-500",
+      "revenue": "$110M",
+      "matchScore": 79,
+      "signals": [
+        "AI adoption",
+        "Process automation",
+        "Vendor consolidation"
+      ],
+      "website": "logiflow.ai",
+      "location": "Atlanta, GA"
+    },
+    "f4811eee-fa7e-4cb5-8090-31bf6a026138": {
+      "id": "f4811eee-fa7e-4cb5-8090-31bf6a026138",
+      "userId": "demo-user-001",
+      "companyName": "RetailEdge Platform",
+      "industry": "E-Commerce",
+      "size": "500-1000",
+      "revenue": "$210M",
+      "matchScore": 83,
+      "signals": [
+        "Omnichannel strategy",
+        "Data integration needs",
+        "Customer experience focus"
+      ],
+      "website": "retailedge.io",
+      "location": "Chicago, IL"
+    },
+    "bd7af08e-9f82-43b8-a4de-9f5f59d0b16f": {
+      "id": "bd7af08e-9f82-43b8-a4de-9f5f59d0b16f",
+      "userId": "demo-user-001",
+      "companyName": "LogiFlow AI",
+      "industry": "Supply Chain",
+      "size": "200-500",
+      "revenue": "$110M",
+      "matchScore": 79,
+      "signals": [
+        "AI adoption",
+        "Process automation",
+        "Vendor consolidation"
+      ],
+      "website": "logiflow.ai",
+      "location": "Atlanta, GA"
+    },
+    "c8f5417b-5eb5-4f2d-98e4-c817fcb54636": {
+      "id": "c8f5417b-5eb5-4f2d-98e4-c817fcb54636",
+      "userId": "demo-user-001",
+      "companyName": "TechVision Analytics",
+      "industry": "Enterprise Software",
+      "size": "500-1000",
+      "revenue": "$120M",
+      "matchScore": 94,
+      "signals": [
+        "Recent funding round",
+        "Hiring sales team",
+        "Tech stack match"
+      ],
+      "website": "techvision.io",
+      "location": "San Francisco, CA"
+    },
+    "4c549469-21d2-4452-a175-15d16f85047b": {
+      "id": "4c549469-21d2-4452-a175-15d16f85047b",
+      "userId": "demo-user-001",
+      "companyName": "NexGen Financial",
+      "industry": "FinTech",
+      "size": "100-200",
+      "revenue": "$45M",
+      "matchScore": 87,
+      "signals": [
+        "Series B funding",
+        "Compliance requirements",
+        "Stack modernization"
+      ],
+      "website": "nexgenfinancial.com",
+      "location": "New York, NY"
+    },
+    "8e3505db-5f0f-4e0a-97e0-b762953e0cb5": {
+      "id": "8e3505db-5f0f-4e0a-97e0-b762953e0cb5",
+      "userId": "demo-user-001",
+      "companyName": "DataStream Corp",
+      "industry": "Data Infrastructure",
+      "size": "200-500",
+      "revenue": "$85M",
+      "matchScore": 91,
+      "signals": [
+        "Product launch",
+        "Expansion to EMEA",
+        "CRM migration"
+      ],
+      "website": "datastream.com",
+      "location": "Austin, TX"
+    },
+    "05e53ada-2e2b-4039-ac0a-59360a5e2e5f": {
+      "id": "05e53ada-2e2b-4039-ac0a-59360a5e2e5f",
+      "userId": "demo-user-001",
+      "companyName": "CloudBridge Solutions",
+      "industry": "Cloud Services",
+      "size": "1000-5000",
+      "revenue": "$340M",
+      "matchScore": 89,
+      "signals": [
+        "New CTO appointed",
+        "Digital transformation initiative",
+        "Budget increase"
+      ],
+      "website": "cloudbridge.io",
+      "location": "Seattle, WA"
+    },
+    "44b81a4b-defb-4d26-8032-cfd67c1e4ed7": {
+      "id": "44b81a4b-defb-4d26-8032-cfd67c1e4ed7",
+      "userId": "demo-user-001",
+      "companyName": "TechVision Analytics",
+      "industry": "Enterprise Software",
+      "size": "500-1000",
+      "revenue": "$120M",
+      "matchScore": 94,
+      "signals": [
+        "Recent funding round",
+        "Hiring sales team",
+        "Tech stack match"
+      ],
+      "website": "techvision.io",
+      "location": "San Francisco, CA"
+    },
+    "a6004701-c850-4964-9602-f660391f67e5": {
+      "id": "a6004701-c850-4964-9602-f660391f67e5",
+      "userId": "demo-user-001",
+      "companyName": "LogiFlow AI",
+      "industry": "Supply Chain",
+      "size": "200-500",
+      "revenue": "$110M",
+      "matchScore": 79,
+      "signals": [
+        "AI adoption",
+        "Process automation",
+        "Vendor consolidation"
+      ],
+      "website": "logiflow.ai",
+      "location": "Atlanta, GA"
+    },
+    "1abe3364-d1d2-4b00-99ea-bb6aca86df07": {
+      "id": "1abe3364-d1d2-4b00-99ea-bb6aca86df07",
+      "userId": "demo-user-001",
+      "companyName": "DataStream Corp",
+      "industry": "Data Infrastructure",
+      "size": "200-500",
+      "revenue": "$85M",
+      "matchScore": 91,
+      "signals": [
+        "Product launch",
+        "Expansion to EMEA",
+        "CRM migration"
+      ],
+      "website": "datastream.com",
+      "location": "Austin, TX"
+    },
+    "1e355cee-0b2c-4595-8adc-f9eed8457834": {
+      "id": "1e355cee-0b2c-4595-8adc-f9eed8457834",
+      "userId": "demo-user-001",
+      "companyName": "CloudBridge Solutions",
+      "industry": "Cloud Services",
+      "size": "1000-5000",
+      "revenue": "$340M",
+      "matchScore": 89,
+      "signals": [
+        "New CTO appointed",
+        "Digital transformation initiative",
+        "Budget increase"
+      ],
+      "website": "cloudbridge.io",
+      "location": "Seattle, WA"
+    },
+    "bb174441-fa78-401b-a08a-c6f6461e220c": {
+      "id": "bb174441-fa78-401b-a08a-c6f6461e220c",
+      "userId": "demo-user-001",
+      "companyName": "MedTech Innovations",
+      "industry": "Healthcare Tech",
+      "size": "200-500",
+      "revenue": "$92M",
+      "matchScore": 85,
+      "signals": [
+        "HIPAA compliance needs",
+        "Platform migration",
+        "Growth phase"
+      ],
+      "website": "medtechinno.com",
+      "location": "Boston, MA"
+    },
+    "666ce826-d0d8-4146-bb41-f27d47919403": {
+      "id": "666ce826-d0d8-4146-bb41-f27d47919403",
+      "userId": "demo-user-001",
+      "companyName": "TechVision Analytics",
+      "industry": "Enterprise Software",
+      "size": "500-1000",
+      "revenue": "$120M",
+      "matchScore": 94,
+      "signals": [
+        "Recent funding round",
+        "Hiring sales team",
+        "Tech stack match"
+      ],
+      "website": "techvision.io",
+      "location": "San Francisco, CA"
+    },
+    "7d1a9518-b945-45c2-918a-7f1eb836baaa": {
+      "id": "7d1a9518-b945-45c2-918a-7f1eb836baaa",
+      "userId": "demo-user-001",
+      "companyName": "DataStream Corp",
+      "industry": "Data Infrastructure",
+      "size": "200-500",
+      "revenue": "$85M",
+      "matchScore": 91,
+      "signals": [
+        "Product launch",
+        "Expansion to EMEA",
+        "CRM migration"
+      ],
+      "website": "datastream.com",
+      "location": "Austin, TX"
+    },
+    "6149db33-8e8d-4d84-af43-29a30b044ba2": {
+      "id": "6149db33-8e8d-4d84-af43-29a30b044ba2",
+      "userId": "demo-user-001",
+      "companyName": "NexGen Financial",
+      "industry": "FinTech",
+      "size": "100-200",
+      "revenue": "$45M",
+      "matchScore": 87,
+      "signals": [
+        "Series B funding",
+        "Compliance requirements",
+        "Stack modernization"
+      ],
+      "website": "nexgenfinancial.com",
+      "location": "New York, NY"
+    },
+    "ee1c0ea1-ff55-44c3-83d0-e7b53bbe2134": {
+      "id": "ee1c0ea1-ff55-44c3-83d0-e7b53bbe2134",
+      "userId": "demo-user-001",
+      "companyName": "CloudBridge Solutions",
+      "industry": "Cloud Services",
+      "size": "1000-5000",
+      "revenue": "$340M",
+      "matchScore": 89,
+      "signals": [
+        "New CTO appointed",
+        "Digital transformation initiative",
+        "Budget increase"
+      ],
+      "website": "cloudbridge.io",
+      "location": "Seattle, WA"
+    },
+    "d07b82c8-f023-4564-8c03-11b5b6af743f": {
+      "id": "d07b82c8-f023-4564-8c03-11b5b6af743f",
+      "userId": "demo-user-001",
+      "companyName": "RetailEdge Platform",
+      "industry": "E-Commerce",
+      "size": "500-1000",
+      "revenue": "$210M",
+      "matchScore": 83,
+      "signals": [
+        "Omnichannel strategy",
+        "Data integration needs",
+        "Customer experience focus"
+      ],
+      "website": "retailedge.io",
+      "location": "Chicago, IL"
+    },
+    "f58e790a-2da5-435e-a558-cfcff3523429": {
+      "id": "f58e790a-2da5-435e-a558-cfcff3523429",
+      "userId": "demo-user-001",
+      "companyName": "NexGen Financial",
+      "industry": "FinTech",
+      "size": "100-200",
+      "revenue": "$45M",
+      "matchScore": 87,
+      "signals": [
+        "Series B funding",
+        "Compliance requirements",
+        "Stack modernization"
+      ],
+      "website": "nexgenfinancial.com",
+      "location": "New York, NY"
+    },
+    "46e23cd7-c8b2-4363-9ae7-7bcbc8599a27": {
+      "id": "46e23cd7-c8b2-4363-9ae7-7bcbc8599a27",
+      "userId": "demo-user-001",
+      "companyName": "CloudBridge Solutions",
+      "industry": "Cloud Services",
+      "size": "1000-5000",
+      "revenue": "$340M",
+      "matchScore": 89,
+      "signals": [
+        "New CTO appointed",
+        "Digital transformation initiative",
+        "Budget increase"
+      ],
+      "website": "cloudbridge.io",
+      "location": "Seattle, WA"
+    },
+    "947422b9-f9bc-4cfa-82c5-cfa2517b7156": {
+      "id": "947422b9-f9bc-4cfa-82c5-cfa2517b7156",
+      "userId": "demo-user-001",
+      "companyName": "DataStream Corp",
+      "industry": "Data Infrastructure",
+      "size": "200-500",
+      "revenue": "$85M",
+      "matchScore": 91,
+      "signals": [
+        "Product launch",
+        "Expansion to EMEA",
+        "CRM migration"
+      ],
+      "website": "datastream.com",
+      "location": "Austin, TX"
+    },
+    "6f4713a7-7be5-46e5-9b5e-30c212a60a6d": {
+      "id": "6f4713a7-7be5-46e5-9b5e-30c212a60a6d",
+      "userId": "demo-user-001",
+      "companyName": "GreenEnergy Systems",
+      "industry": "Clean Energy",
+      "size": "100-200",
+      "revenue": "$67M",
+      "matchScore": 81,
+      "signals": [
+        "Government contracts",
+        "Rapid scaling",
+        "CRM implementation"
+      ],
+      "website": "greenenergy-sys.com",
+      "location": "Denver, CO"
+    },
+    "0928a9ac-6eec-45b8-9e5f-fb3dbc24d77c": {
+      "id": "0928a9ac-6eec-45b8-9e5f-fb3dbc24d77c",
+      "userId": "demo-user-001",
+      "companyName": "RetailEdge Platform",
+      "industry": "E-Commerce",
+      "size": "500-1000",
+      "revenue": "$210M",
+      "matchScore": 83,
+      "signals": [
+        "Omnichannel strategy",
+        "Data integration needs",
+        "Customer experience focus"
+      ],
+      "website": "retailedge.io",
+      "location": "Chicago, IL"
+    }
+  },
+  "activityLogs": [
+    {
+      "id": "log-001",
+      "userId": "demo-user-001",
+      "action": "Account Created",
+      "category": "auth",
+      "details": "Demo User registered with demo@amplifye.ai",
+      "createdAt": "2026-01-15T10:00:00.000Z"
+    },
+    {
+      "id": "54d6d391-61c0-4189-8474-f05680d09d28",
+      "userId": "e50cf263-3f11-4501-92bb-6c1d3528634d",
+      "action": "User registered",
+      "category": "auth",
+      "details": "Test User registered with test@example.com",
+      "createdAt": "2026-02-08T23:09:23.642Z"
+    },
+    {
+      "id": "8d91089b-1379-4ec4-97b9-2913f5522bad",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-02-08T23:09:23.656Z"
+    },
+    {
+      "id": "e7060ef5-79ea-4662-8290-8e11cdf9a01d",
+      "userId": "demo-user-001",
+      "action": "CRM Connected",
+      "category": "crm",
+      "details": "Connected salesforce CRM",
+      "createdAt": "2026-02-08T23:09:24.697Z"
+    },
+    {
+      "id": "8d34f683-db1f-4434-8a92-2cacdc50334c",
+      "userId": "demo-user-001",
+      "action": "CRM Connected",
+      "category": "crm",
+      "details": "Successfully connected salesforce",
+      "metadata": {
+        "provider": "salesforce"
+      },
+      "createdAt": "2026-02-08T23:09:24.698Z"
+    },
+    {
+      "id": "b53b7d53-b550-4cf7-a5c6-73d177a57237",
+      "userId": "demo-user-001",
+      "action": "Report Generated",
+      "category": "data",
+      "details": "Generated crm_analysis: Lead Scoring Analysis",
+      "createdAt": "2026-02-08T23:09:24.732Z"
+    },
+    {
+      "id": "2ab888ac-e3fb-4329-9919-a6b400a0e148",
+      "userId": "demo-user-001",
+      "action": "Data Analysis",
+      "category": "data",
+      "details": "Generated analysis: Lead Scoring Analysis",
+      "metadata": {},
+      "creditsUsed": 5,
+      "createdAt": "2026-02-08T23:09:24.733Z"
+    },
+    {
+      "id": "817b77b9-0484-4121-9566-a7fc28a6e497",
+      "userId": "demo-user-001",
+      "action": "ABM Search",
+      "category": "abm",
+      "details": "Found 5 lookalike companies",
+      "metadata": {},
+      "creditsUsed": 10,
+      "createdAt": "2026-02-08T23:09:24.747Z"
+    },
+    {
+      "id": "eb984367-e39e-409d-ab98-107678f544cc",
+      "userId": "demo-user-001",
+      "action": "Campaign Created",
+      "category": "campaign",
+      "details": "Created campaign: Mid-Market SaaS ABM Campaign",
+      "createdAt": "2026-02-08T23:09:24.758Z"
+    },
+    {
+      "id": "d115b299-ebbb-4869-a1df-d2f0bb1a3f66",
+      "userId": "demo-user-001",
+      "action": "Campaign Created",
+      "category": "campaign",
+      "details": "Created campaign: Mid-Market SaaS ABM Campaign",
+      "metadata": {},
+      "creditsUsed": 10,
+      "createdAt": "2026-02-08T23:09:24.760Z"
+    },
+    {
+      "id": "f60ea6c4-4033-4bd2-a7f1-b08fb0d6c63c",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-02-08T23:14:20.691Z"
+    },
+    {
+      "id": "4e69a390-be0e-4d4b-8ffb-26f8053b407b",
+      "userId": "demo-user-001",
+      "action": "Report Generated",
+      "category": "data",
+      "details": "Generated crm_analysis: CRM Pipeline Analysis",
+      "createdAt": "2026-02-08T23:15:11.442Z"
+    },
+    {
+      "id": "fcd7ae32-1dc7-4190-b0d5-5958de8be408",
+      "userId": "demo-user-001",
+      "action": "Data Analysis",
+      "category": "data",
+      "details": "Generated analysis: CRM Pipeline Analysis",
+      "metadata": {},
+      "creditsUsed": 5,
+      "createdAt": "2026-02-08T23:15:11.443Z"
+    },
+    {
+      "id": "2919580a-925a-4367-b788-d31ec31de280",
+      "userId": "demo-user-001",
+      "action": "ABM Search",
+      "category": "abm",
+      "details": "Found 5 lookalike companies",
+      "metadata": {},
+      "creditsUsed": 10,
+      "createdAt": "2026-02-08T23:15:42.618Z"
+    },
+    {
+      "id": "c0d1a607-257e-44e6-a5a5-97386f4a5b52",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-02-08T23:27:23.632Z"
+    },
+    {
+      "id": "428d33b1-cf31-43c0-ae97-487f2e5a4482",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-02-08T23:35:25.000Z"
+    },
+    {
+      "id": "1c06b3f3-750e-435a-be1c-333f69a02efc",
+      "userId": "demo-user-001",
+      "action": "Campaign Created",
+      "category": "campaign",
+      "details": "Created campaign: Mid-Market SaaS ABM Campaign",
+      "createdAt": "2026-02-08T23:37:33.553Z"
+    },
+    {
+      "id": "70dd7eda-c8da-4d31-b6f4-5148e357fd4b",
+      "userId": "demo-user-001",
+      "action": "Campaign Created",
+      "category": "campaign",
+      "details": "Created campaign: Mid-Market SaaS ABM Campaign",
+      "metadata": {},
+      "creditsUsed": 10,
+      "createdAt": "2026-02-08T23:37:33.554Z"
+    },
+    {
+      "id": "914cf8f2-56e1-4bf6-81a9-c3d0692870dc",
+      "userId": "demo-user-001",
+      "action": "Report Generated",
+      "category": "data",
+      "details": "Generated crm_analysis: CRM Pipeline Analysis",
+      "createdAt": "2026-02-08T23:37:54.770Z"
+    },
+    {
+      "id": "0fb3e49e-8cbf-4da7-a4f4-ca28d9b0d966",
+      "userId": "demo-user-001",
+      "action": "Data Analysis",
+      "category": "data",
+      "details": "Generated analysis: CRM Pipeline Analysis",
+      "metadata": {},
+      "creditsUsed": 5,
+      "createdAt": "2026-02-08T23:37:54.773Z"
+    },
+    {
+      "id": "b1fa2443-4f00-40c5-8dd2-8457a6fecdf8",
+      "userId": "demo-user-001",
+      "action": "Campaign Created",
+      "category": "campaign",
+      "details": "Created campaign: Enterprise Tech Outreach Sequence",
+      "createdAt": "2026-02-09T00:27:13.682Z"
+    },
+    {
+      "id": "af52a5ab-bfa2-49da-8888-1c5b5c191fde",
+      "userId": "demo-user-001",
+      "action": "Campaign Created",
+      "category": "campaign",
+      "details": "Created campaign: Enterprise Tech Outreach Sequence",
+      "metadata": {},
+      "creditsUsed": 10,
+      "createdAt": "2026-02-09T00:27:13.686Z"
+    },
+    {
+      "id": "bd9511ec-0d38-4669-90e7-b4b4e1fd74f3",
+      "userId": "demo-user-001",
+      "action": "Campaign Created",
+      "category": "campaign",
+      "details": "Created campaign: Mid-Market SaaS ABM Campaign",
+      "createdAt": "2026-02-09T00:27:31.603Z"
+    },
+    {
+      "id": "70a5e5b6-b33e-4327-8f67-2bdd321bfbf0",
+      "userId": "demo-user-001",
+      "action": "Campaign Created",
+      "category": "campaign",
+      "details": "Created campaign: Mid-Market SaaS ABM Campaign",
+      "metadata": {},
+      "creditsUsed": 10,
+      "createdAt": "2026-02-09T00:27:31.606Z"
+    },
+    {
+      "id": "c73c619f-8d56-4946-8b0f-ade97d90be0e",
+      "userId": "demo-user-001",
+      "action": "CRM Connected",
+      "category": "crm",
+      "details": "Connected hubspot CRM",
+      "createdAt": "2026-02-09T00:31:36.817Z"
+    },
+    {
+      "id": "6c7cda3f-f98c-4b34-b78e-6979297bd224",
+      "userId": "demo-user-001",
+      "action": "CRM Connected",
+      "category": "crm",
+      "details": "Successfully connected hubspot",
+      "metadata": {
+        "provider": "hubspot"
+      },
+      "createdAt": "2026-02-09T00:31:36.818Z"
+    },
+    {
+      "id": "4f53f234-9fec-4436-8052-060f1db5fa18",
+      "userId": "demo-user-001",
+      "action": "Campaign Updated",
+      "category": "campaign",
+      "details": "Updated campaign: Mid-Market SaaS ABM Campaign",
+      "metadata": {
+        "status": "active"
+      },
+      "createdAt": "2026-02-09T01:58:36.482Z"
+    },
+    {
+      "id": "641073f8-dd6a-4158-929e-57ab0189acd4",
+      "userId": "demo-user-001",
+      "action": "Campaign Updated",
+      "category": "campaign",
+      "details": "Updated campaign: Mid-Market SaaS ABM Campaign",
+      "metadata": {
+        "status": "paused"
+      },
+      "createdAt": "2026-02-09T01:58:39.443Z"
+    },
+    {
+      "id": "46c2ba01-fa7b-4366-8c4f-1532f0a184b7",
+      "userId": "demo-user-001",
+      "action": "ABM Search",
+      "category": "abm",
+      "details": "Found 5 lookalike companies",
+      "metadata": {},
+      "creditsUsed": 10,
+      "createdAt": "2026-02-09T03:26:14.967Z"
+    },
+    {
+      "id": "b8a8d789-7c92-4e5e-9913-8fbb99050a2f",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-02-09T04:22:35.694Z"
+    },
+    {
+      "id": "3c48b205-140b-4d05-bfe2-ef0ad0e1bf11",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-02-09T06:11:26.624Z"
+    },
+    {
+      "id": "8f5ba962-3acb-41f7-8b35-633d2cee668a",
+      "userId": "demo-user-001",
+      "action": "Report Generated",
+      "category": "data",
+      "details": "Generated crm_analysis: CRM Pipeline Analysis",
+      "createdAt": "2026-02-09T06:14:01.112Z"
+    },
+    {
+      "id": "b62a3d0d-409a-450a-a9ea-3ba145199440",
+      "userId": "demo-user-001",
+      "action": "Data Analysis",
+      "category": "data",
+      "details": "Generated analysis: CRM Pipeline Analysis",
+      "metadata": {},
+      "creditsUsed": 5,
+      "createdAt": "2026-02-09T06:14:01.116Z"
+    },
+    {
+      "id": "ae8ea307-bc7d-4cb5-96c0-84fb393bc8d3",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-02-09T06:22:16.983Z"
+    },
+    {
+      "id": "64035682-15ec-4db2-a22b-e74e2c8ae4aa",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-02-09T06:22:26.578Z"
+    },
+    {
+      "id": "57a4cd06-3f81-472a-8b5e-8969904dac54",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-02-09T06:22:44.293Z"
+    },
+    {
+      "id": "878c33fa-f02e-46d0-8978-72cba576f659",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-02-09T06:23:13.611Z"
+    },
+    {
+      "id": "5839dc62-8e07-40a7-bc1b-9ec0928eee44",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-02-09T06:33:07.326Z"
+    },
+    {
+      "id": "59f91496-3046-4363-88c5-390fdb6597ac",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-02-09T06:46:49.928Z"
+    },
+    {
+      "id": "f977a884-27c4-4596-9a01-073b4045b1d8",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-02-09T06:48:16.147Z"
+    },
+    {
+      "id": "803131dc-1483-49a8-97d4-37aaa399a5ad",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-02-09T06:50:27.102Z"
+    },
+    {
+      "id": "07eb1349-6a23-4daf-9857-8cb3ab00f3b5",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-02-09T06:51:40.285Z"
+    },
+    {
+      "id": "1dd163fd-a872-48ba-bf13-d0e15012cfdc",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-02-09T06:54:56.871Z"
+    },
+    {
+      "id": "4236ec43-b5e1-41b5-9463-6c4113c5c51b",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-02-09T06:55:05.389Z"
+    },
+    {
+      "id": "6e8330b7-d5a6-449d-9115-0531aaae659d",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-02-09T06:55:16.467Z"
+    },
+    {
+      "id": "e9fe0456-b194-4632-b185-47cdefc29f3e",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-02-09T06:55:30.943Z"
+    },
+    {
+      "id": "a258cb2a-bd5f-41c2-8914-0869272b2c3a",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-02-09T06:56:12.490Z"
+    },
+    {
+      "id": "f09547f7-8318-4823-9801-605129bbdb59",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-02-09T06:56:21.409Z"
+    },
+    {
+      "id": "35216697-ece4-4fa2-845b-795a00d00148",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-02-09T06:56:38.019Z"
+    },
+    {
+      "id": "093e3d70-1f41-4fb2-833f-f285dc4a88e9",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-02-09T06:56:47.997Z"
+    },
+    {
+      "id": "8c05a260-198e-4257-96d7-a925b38b9136",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-02-09T06:59:57.640Z"
+    },
+    {
+      "id": "10e8b1fc-0a34-464d-a428-772f7f291742",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-02-09T07:10:08.352Z"
+    },
+    {
+      "id": "9e088930-c5b1-4b03-8e42-9691f58126bb",
+      "userId": "demo-user-001",
+      "action": "Campaign Created",
+      "category": "campaign",
+      "details": "Created campaign: Enterprise Tech Outreach Sequence",
+      "createdAt": "2026-02-09T07:32:36.341Z"
+    },
+    {
+      "id": "51abe99e-a8e6-4382-8bbf-f1e79ae7d852",
+      "userId": "demo-user-001",
+      "action": "Campaign Created",
+      "category": "campaign",
+      "details": "Created campaign: Enterprise Tech Outreach Sequence",
+      "metadata": {},
+      "creditsUsed": 10,
+      "createdAt": "2026-02-09T07:32:36.347Z"
+    },
+    {
+      "id": "07ff887f-13d4-4d6b-935c-a24405078a8b",
+      "userId": "demo-user-001",
+      "action": "ABM Search",
+      "category": "abm",
+      "details": "Found 5 lookalike companies",
+      "metadata": {},
+      "creditsUsed": 10,
+      "createdAt": "2026-02-09T07:33:57.306Z"
+    },
+    {
+      "id": "dbe14203-266f-495a-bf91-822fd5d5cd88",
+      "userId": "demo-user-001",
+      "action": "ABM Search",
+      "category": "abm",
+      "details": "Found 5 lookalike companies",
+      "metadata": {},
+      "creditsUsed": 10,
+      "createdAt": "2026-02-09T07:49:39.277Z"
+    },
+    {
+      "id": "717aeb28-6b3b-45bc-b058-20d9c533bc46",
+      "userId": "demo-user-001",
+      "action": "Report Generated",
+      "category": "data",
+      "details": "Generated crm_analysis: Lead Scoring Analysis",
+      "createdAt": "2026-02-09T08:05:35.273Z"
+    },
+    {
+      "id": "9eaa5dc5-1b8a-40c0-81f0-b6d86c90137b",
+      "userId": "demo-user-001",
+      "action": "Data Analysis",
+      "category": "data",
+      "details": "Generated analysis: Lead Scoring Analysis",
+      "metadata": {},
+      "creditsUsed": 5,
+      "createdAt": "2026-02-09T08:05:35.277Z"
+    },
+    {
+      "id": "3c87fc57-90b4-47ff-a495-6b4506208add",
+      "userId": "demo-user-001",
+      "action": "Report Generated",
+      "category": "data",
+      "details": "Generated crm_analysis: Lead Scoring Analysis",
+      "createdAt": "2026-02-09T08:39:15.461Z"
+    },
+    {
+      "id": "4ab9b787-fd29-49be-9f40-ee216ecd2845",
+      "userId": "demo-user-001",
+      "action": "Data Analysis",
+      "category": "data",
+      "details": "Generated analysis: Lead Scoring Analysis",
+      "metadata": {},
+      "creditsUsed": 5,
+      "createdAt": "2026-02-09T08:39:15.467Z"
+    },
+    {
+      "id": "36a9b728-5c1a-40a4-ac22-f99795e6be67",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-02-09T09:58:42.971Z"
+    },
+    {
+      "id": "fa4060f7-f29f-4ff9-914a-1b2f5a19d632",
+      "userId": "demo-user-001",
+      "action": "ABM Search",
+      "category": "abm",
+      "details": "Found 5 lookalike companies",
+      "metadata": {},
+      "creditsUsed": 10,
+      "createdAt": "2026-02-09T09:59:04.888Z"
+    },
+    {
+      "id": "3dbebed4-5168-4297-918e-108a6ac558da",
+      "userId": "demo-user-001",
+      "action": "CRM Connected",
+      "category": "crm",
+      "details": "Connected pipedrive CRM",
+      "createdAt": "2026-02-09T10:03:06.370Z"
+    },
+    {
+      "id": "f8d923d1-fced-447a-95c5-43c528e70033",
+      "userId": "demo-user-001",
+      "action": "CRM Connected",
+      "category": "crm",
+      "details": "Successfully connected pipedrive",
+      "metadata": {
+        "provider": "pipedrive"
+      },
+      "createdAt": "2026-02-09T10:03:06.373Z"
+    },
+    {
+      "id": "a1d8d996-9a5b-44c3-b702-157b5763c35b",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-02-09T11:18:47.147Z"
+    },
+    {
+      "id": "3b388656-9d5e-4b22-a923-8c9f4762b8f1",
+      "userId": "demo-user-001",
+      "action": "ABM Search",
+      "category": "abm",
+      "details": "Found 5 lookalike companies",
+      "metadata": {},
+      "creditsUsed": 10,
+      "createdAt": "2026-02-09T11:19:30.201Z"
+    },
+    {
+      "id": "60e5a104-dda7-40dd-bc60-d2f1c837c4b9",
+      "userId": "demo-user-001",
+      "action": "Campaign Created",
+      "category": "campaign",
+      "details": "Created campaign: Tech VP Outreach Q1 2026",
+      "createdAt": "2026-02-09T11:29:10.748Z"
+    },
+    {
+      "id": "32115615-4751-45a3-9627-c2b0976fa6fe",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-02-09T11:53:42.491Z"
+    },
+    {
+      "id": "e358bb70-055e-476c-8bf0-57ec18f3ca7a",
+      "userId": "demo-user-001",
+      "action": "ABM Search",
+      "category": "abm",
+      "details": "Found 5 lookalike companies",
+      "metadata": {},
+      "creditsUsed": 10,
+      "createdAt": "2026-02-09T11:53:59.491Z"
+    },
+    {
+      "id": "6fa3964a-bedd-4cef-ab85-924378df2178",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-02-12T23:03:01.861Z"
+    },
+    {
+      "id": "e6c4657f-166e-4210-b337-29c5be49b226",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-02-13T00:34:21.391Z"
+    },
+    {
+      "id": "f0add78d-e918-464d-811c-8e2b990e7a8a",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-02-13T05:57:21.486Z"
+    },
+    {
+      "id": "59407497-60d5-4115-b296-d302b6e3ddcd",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-02-13T06:56:33.060Z"
+    },
+    {
+      "id": "431c9bce-97e4-4453-9bac-307640fe258e",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-02-16T12:31:41.040Z"
+    },
+    {
+      "id": "e083e49f-90d6-409b-a9a1-3c626687049f",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-02-16T12:53:46.814Z"
+    },
+    {
+      "id": "bb80b972-17c3-428d-88a6-67ff4fc343ec",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-02-17T03:58:18.560Z"
+    },
+    {
+      "id": "495cf561-bc15-42da-af35-283e00680708",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-02-17T06:56:57.461Z"
+    },
+    {
+      "id": "29f2ccde-d6c4-4d7a-8bc2-c7957696b173",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-02-17T09:39:25.797Z"
+    },
+    {
+      "id": "2fac0095-55fa-41ee-82ea-e87bdd7457c0",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-03-03T05:40:07.141Z"
+    },
+    {
+      "id": "49dfbc63-b28d-413e-a807-178c49d386ac",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-03-03T06:55:44.061Z"
+    },
+    {
+      "id": "3d551ca0-43ef-4a40-a136-2fccea3455bf",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-03-03T08:00:31.595Z"
+    },
+    {
+      "id": "275bdb19-5cce-4ea2-adfb-9d06767ea9a6",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-03-03T14:12:14.095Z"
+    },
+    {
+      "id": "22381aae-38a4-42d8-9724-2667ba940c74",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-03-05T09:02:47.877Z"
+    },
+    {
+      "id": "b4c177dd-1585-451c-81c3-5a781cb88f4b",
+      "userId": "demo-user-001",
+      "action": "ABM Search",
+      "category": "abm",
+      "details": "Found 5 lookalike companies",
+      "metadata": {},
+      "creditsUsed": 10,
+      "createdAt": "2026-03-05T10:47:54.151Z"
+    },
+    {
+      "id": "12907082-22ef-4c0d-b53e-ca74a57fa8d7",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-03-05T11:36:09.316Z"
+    },
+    {
+      "id": "0ee28eb9-e984-4e7d-8743-f572a958aa17",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-03-05T11:40:14.360Z"
+    },
+    {
+      "id": "0cac923f-800e-4525-af39-d0152763d1f5",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-03-05T11:51:45.769Z"
+    },
+    {
+      "id": "22f6fa27-c721-45e4-b53f-04dc46b64346",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-03-06T09:07:43.935Z"
+    },
+    {
+      "id": "9b1ba954-2039-436f-bb92-57d7922f6072",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-03-06T09:09:58.917Z"
+    },
+    {
+      "id": "a839c277-1d2b-45d8-8cd8-0d25f286678b",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-03-06T09:25:36.413Z"
+    },
+    {
+      "id": "803b1aea-501a-4353-b649-a140d4485b86",
+      "userId": "demo-user-001",
+      "action": "Campaign Updated",
+      "category": "campaign",
+      "details": "Updated campaign: undefined",
+      "metadata": {
+        "name": "Hyper-Personalized Oil & Gas VP Campaign",
+        "type": "email-nurture-sequence",
+        "segment": "VPs in Oil & Gas (USA)",
+        "status": "active",
+        "nurtureTouchpoints": 0,
+        "metrics": {
+          "sent": 8,
+          "sequenceEmails": 8,
+          "opened": 0,
+          "clicked": 0,
+          "replied": 0,
+          "converted": 0
+        }
+      },
+      "createdAt": "2026-03-06T09:26:39.617Z"
+    },
+    {
+      "id": "9b334d9f-20ac-4cbf-946a-f17153656295",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-03-07T13:23:21.307Z"
+    },
+    {
+      "id": "cb32bbde-b2bb-421f-a4a0-d63f46b15be5",
+      "userId": "demo-user-001",
+      "action": "Campaign Created",
+      "category": "campaign",
+      "details": "Created campaign: Mid-Market SaaS ABM Campaign",
+      "createdAt": "2026-03-07T13:23:54.612Z"
+    },
+    {
+      "id": "802c3835-b0aa-429b-b195-e9670c8f5def",
+      "userId": "demo-user-001",
+      "action": "Campaign Created",
+      "category": "campaign",
+      "details": "Created campaign: Mid-Market SaaS ABM Campaign",
+      "metadata": {},
+      "creditsUsed": 10,
+      "createdAt": "2026-03-07T13:23:54.617Z"
+    },
+    {
+      "id": "d39e2dc0-dfb3-44f1-af21-e4b2d79e4580",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-03-09T06:06:06.691Z"
+    },
+    {
+      "id": "0d8f3703-e9a2-4499-a231-3e22afaf5b76",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-03-09T06:18:53.194Z"
+    },
+    {
+      "id": "5a582819-5cf0-4576-87a3-247126b03095",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-03-09T06:22:31.249Z"
+    },
+    {
+      "id": "3518b158-7980-46dc-8368-93e1a532f760",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-03-09T06:45:48.349Z"
+    },
+    {
+      "id": "1d6f6ae7-5a62-42ac-b25b-fea98a3cb507",
+      "userId": "demo-user-001",
+      "action": "ICP Match Analysis",
+      "category": "data",
+      "details": "Ran ICP match analysis",
+      "metadata": {},
+      "creditsUsed": 5,
+      "createdAt": "2026-03-09T09:50:00.649Z"
+    },
+    {
+      "id": "aa92c89f-6999-463a-9635-ff7ee09f0f82",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-03-09T10:04:36.664Z"
+    },
+    {
+      "id": "46bc341b-c55b-4138-aee8-6aa91943bc37",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-03-09T10:07:36.804Z"
+    }
+  ],
+  "creditTransactions": [
+    {
+      "id": "561dead7-16de-475f-9d7b-ec2389f7a662",
+      "userId": "demo-user-001",
+      "amount": 5,
+      "type": "debit",
+      "description": "Data analysis",
+      "balanceAfter": 495,
+      "createdAt": "2026-02-08T23:09:24.732Z"
+    },
+    {
+      "id": "d135d6c3-da7e-454d-9afa-d706de9cee0a",
+      "userId": "demo-user-001",
+      "amount": 10,
+      "type": "debit",
+      "description": "ABM lookalike search",
+      "balanceAfter": 485,
+      "createdAt": "2026-02-08T23:09:24.746Z"
+    },
+    {
+      "id": "f58a95dc-2f15-4dfe-9d1c-5d664b3277d0",
+      "userId": "demo-user-001",
+      "amount": 10,
+      "type": "debit",
+      "description": "Campaign generation",
+      "balanceAfter": 475,
+      "createdAt": "2026-02-08T23:09:24.759Z"
+    },
+    {
+      "id": "cc7c5fda-fb88-46d5-ae5f-6d82ac399138",
+      "userId": "demo-user-001",
+      "amount": 5,
+      "type": "debit",
+      "description": "Data analysis",
+      "balanceAfter": 470,
+      "createdAt": "2026-02-08T23:15:11.442Z"
+    },
+    {
+      "id": "04cf8f5f-41f7-4cd4-a71b-7ef5c1fc091b",
+      "userId": "demo-user-001",
+      "amount": 10,
+      "type": "debit",
+      "description": "ABM lookalike search",
+      "balanceAfter": 460,
+      "createdAt": "2026-02-08T23:15:42.617Z"
+    },
+    {
+      "id": "12a69400-071a-42c8-abbb-6178a78ad380",
+      "userId": "demo-user-001",
+      "amount": 10,
+      "type": "debit",
+      "description": "Campaign generation",
+      "balanceAfter": 450,
+      "createdAt": "2026-02-08T23:37:33.554Z"
+    },
+    {
+      "id": "00494504-c5a4-4501-a395-b57a10a6ae79",
+      "userId": "demo-user-001",
+      "amount": 5,
+      "type": "debit",
+      "description": "Data analysis",
+      "balanceAfter": 445,
+      "createdAt": "2026-02-08T23:37:54.772Z"
+    },
+    {
+      "id": "9f8453b4-f144-4529-a850-15bb54e7ac70",
+      "userId": "demo-user-001",
+      "amount": 10,
+      "type": "debit",
+      "description": "Campaign generation",
+      "balanceAfter": 435,
+      "createdAt": "2026-02-09T00:27:13.684Z"
+    },
+    {
+      "id": "3f17aba1-7691-4833-b633-f87546b2b3b6",
+      "userId": "demo-user-001",
+      "amount": 10,
+      "type": "debit",
+      "description": "Campaign generation",
+      "balanceAfter": 425,
+      "createdAt": "2026-02-09T00:27:31.605Z"
+    },
+    {
+      "id": "14031855-fa64-4024-920c-9c0db5f73ed5",
+      "userId": "demo-user-001",
+      "amount": 10,
+      "type": "debit",
+      "description": "ABM lookalike search",
+      "balanceAfter": 415,
+      "createdAt": "2026-02-09T03:26:14.966Z"
+    },
+    {
+      "id": "e847ccbf-3c08-440a-a9a7-d461ab5b1100",
+      "userId": "demo-user-001",
+      "amount": 5,
+      "type": "debit",
+      "description": "Data analysis",
+      "balanceAfter": 410,
+      "createdAt": "2026-02-09T06:14:01.114Z"
+    },
+    {
+      "id": "8a30d84b-805f-43a7-bf3e-d2a8a3b39158",
+      "userId": "demo-user-001",
+      "amount": 10,
+      "type": "debit",
+      "description": "Campaign generation",
+      "balanceAfter": 400,
+      "createdAt": "2026-02-09T07:32:36.345Z"
+    },
+    {
+      "id": "e4078e00-ae16-4363-9317-3735cd971b3c",
+      "userId": "demo-user-001",
+      "amount": 10,
+      "type": "debit",
+      "description": "ABM lookalike search",
+      "balanceAfter": 390,
+      "createdAt": "2026-02-09T07:33:57.302Z"
+    },
+    {
+      "id": "b6eb58b7-7e42-4252-80ba-ecfc42213266",
+      "userId": "demo-user-001",
+      "amount": 10,
+      "type": "debit",
+      "description": "ABM lookalike search",
+      "balanceAfter": 380,
+      "createdAt": "2026-02-09T07:49:39.275Z"
+    },
+    {
+      "id": "46e6c9c3-7cd4-4db7-84f6-db0abc16e023",
+      "userId": "demo-user-001",
+      "amount": 500,
+      "type": "credit",
+      "description": "Purchased Starter plan — 500 credits added",
+      "balanceAfter": 880,
+      "createdAt": "2026-02-09T08:00:37.921Z"
+    },
+    {
+      "id": "9c61e0b1-3d8f-44d6-8f00-5cb753792706",
+      "userId": "demo-user-001",
+      "amount": 5,
+      "type": "debit",
+      "description": "Data analysis",
+      "balanceAfter": 875,
+      "createdAt": "2026-02-09T08:05:35.275Z"
+    },
+    {
+      "id": "4066e9fe-9bd7-45ed-8dd1-24d1f68f3bf8",
+      "userId": "demo-user-001",
+      "amount": 5,
+      "type": "debit",
+      "description": "Data analysis",
+      "balanceAfter": 870,
+      "createdAt": "2026-02-09T08:39:15.464Z"
+    },
+    {
+      "id": "f7f0ba32-b363-4118-a765-ca30e1930adf",
+      "userId": "demo-user-001",
+      "amount": 10,
+      "type": "debit",
+      "description": "ABM lookalike search",
+      "balanceAfter": 860,
+      "createdAt": "2026-02-09T09:59:04.886Z"
+    },
+    {
+      "id": "beb3eeea-bac8-427d-8a28-8593dd14a964",
+      "userId": "demo-user-001",
+      "amount": 500,
+      "type": "credit",
+      "description": "Purchased Starter plan — 500 credits added",
+      "balanceAfter": 1360,
+      "createdAt": "2026-02-09T10:07:02.210Z"
+    },
+    {
+      "id": "9792a5f1-05a1-4621-8f7e-d003e62936b8",
+      "userId": "demo-user-001",
+      "amount": 10,
+      "type": "debit",
+      "description": "ABM lookalike search",
+      "balanceAfter": 1350,
+      "createdAt": "2026-02-09T11:19:30.198Z"
+    },
+    {
+      "id": "a521cd36-25c9-42f8-b147-043b44f1afa1",
+      "userId": "demo-user-001",
+      "amount": 10,
+      "type": "debit",
+      "description": "ABM lookalike search",
+      "balanceAfter": 1340,
+      "createdAt": "2026-02-09T11:53:59.489Z"
+    },
+    {
+      "id": "f3961997-656d-4c14-bbf7-b3693e56c5fe",
+      "userId": "demo-user-001",
+      "amount": 10,
+      "type": "debit",
+      "description": "ABM lookalike search",
+      "balanceAfter": 1330,
+      "createdAt": "2026-03-05T10:47:54.149Z"
+    },
+    {
+      "id": "2ab1212c-f879-45ea-9fe3-152b1ea5ded8",
+      "userId": "demo-user-001",
+      "amount": 10,
+      "type": "debit",
+      "description": "Campaign generation",
+      "balanceAfter": 1320,
+      "createdAt": "2026-03-07T13:23:54.615Z"
+    },
+    {
+      "id": "45932611-7e78-4cbf-bf93-b04066ef666c",
+      "userId": "demo-user-001",
+      "amount": 5,
+      "type": "debit",
+      "description": "ICP match analysis",
+      "balanceAfter": 1315,
+      "createdAt": "2026-03-09T09:50:00.646Z"
+    },
+    {
+      "id": "a3736da8-112a-43a8-b2bc-c2de6582e672",
+      "userId": "demo-user-001",
+      "amount": 2000,
+      "type": "credit",
+      "description": "Purchased Growth plan — 2000 credits added",
+      "balanceAfter": 3315,
+      "createdAt": "2026-03-09T10:02:12.932Z"
+    }
+  ]
+}
