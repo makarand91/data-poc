@@ -3720,6 +3720,22 @@
       "category": "auth",
       "details": "Demo User signed in",
       "createdAt": "2026-03-09T10:07:36.804Z"
+    },
+    {
+      "id": "0e2f0f7e-0633-4577-8dae-19ce1e3c69df",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-03-09T11:03:29.381Z"
+    },
+    {
+      "id": "1536f929-a02d-4ad4-a03d-e485e3a82cbf",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-03-17T16:12:53.539Z"
     }
   ],
   "creditTransactions": [

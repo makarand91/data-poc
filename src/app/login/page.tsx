@@ -8,7 +8,7 @@ export default function LoginPage() {
   const [isRegister, setIsRegister] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
-  const [form, setForm] = useState({ email: '', password: '', name: '', company: '' });
+  const [form, setForm] = useState({ email: 'demo@amplifye.ai', password: 'demo123', name: '', company: '' });
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

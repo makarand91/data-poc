@@ -28,6 +28,26 @@ import {
   RotateCcw,
   Eye,
   Lock,
+  Activity,
+  Globe,
+  Cpu,
+  ArrowUpRight,
+  ArrowDownRight,
+  Briefcase,
+  MapPin,
+  Monitor,
+  Server,
+  Wifi,
+  HeartPulse,
+  Lightbulb,
+  ExternalLink,
+  TrendingDown,
+  Mail,
+  MessageSquare,
+  User,
+  Target,
+  LayoutGrid,
+  List,
 } from 'lucide-react';
 
 // ─── Constants ────────────────────────────────────────────────────────────────
@@ -250,7 +270,11 @@ interface ICP {
 // ─── Component ────────────────────────────────────────────────────────────────
 
 export default function DataPage() {
-  const [activeTab, setActiveTab] = useState('icp');
+  const [layoutMode, setLayoutMode] = useState<'A' | 'B'>('B');
+  const [activeTab, setActiveTab] = useState('home');
+  const [talSubTab, setTalSubTab] = useState('upload');
+  const [analyticsSubTab, setAnalyticsSubTab] = useState('analytics');
+  const [changesSubTab, setChangesSubTab] = useState('changes');
   const [currentJobTitle, setCurrentJobTitle] = useState('');
   const [countrySearch, setCountrySearch] = useState('');
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -629,6 +653,10 @@ export default function DataPage() {
     tal: <Upload className="w-4 h-4" />,
     runs: <RefreshCw className="w-4 h-4" />,
     download: <Download className="w-4 h-4" />,
+    health: <HeartPulse className="w-4 h-4" />,
+    changes: <Activity className="w-4 h-4" />,
+    webanalytics: <Globe className="w-4 h-4" />,
+    technographics: <Cpu className="w-4 h-4" />,
   };
 
   return (
@@ -637,37 +665,267 @@ export default function DataPage() {
       <div className="sticky top-0 z-40 bg-white border-b border-gray-200">
         <div className="px-8 pt-5 pb-3">
           <div className="flex items-center justify-between">
-            <div>
-              <h1 className="text-lg font-semibold text-[#1a1a2e]">Your Audience</h1>
-              <p className="text-gray-500 text-xs mt-0.5">Build, enrich, and download your ideal customer profiles</p>
+            <div className="flex items-center gap-3">
+              {layoutMode === 'B' && activeTab !== 'home' && (
+                <button onClick={() => setActiveTab('home')} className="text-gray-500 hover:text-gray-700 transition">
+                  <ArrowRight className="w-4 h-4 rotate-180" />
+                </button>
+              )}
+              <div>
+                <h1 className="text-lg font-semibold text-[#1a1a2e]">Your Audience</h1>
+                <p className="text-gray-500 text-xs mt-0.5">Build, enrich, and download your ideal customer profiles</p>
+              </div>
             </div>
-            <div className="flex items-center gap-2 bg-amber-50 rounded-lg px-3 py-1.5 border border-amber-200">
-              <Zap className="w-3.5 h-3.5 text-amber-600" />
-              <span className="text-xs font-semibold text-amber-700">{creditBalance} credits</span>
+            <div className="flex items-center gap-4">
+              {/* A/B Layout Toggle */}
+              <div className="flex items-center border border-gray-200 rounded-lg overflow-hidden">
+                <button
+                  onClick={() => { setLayoutMode('A'); setActiveTab('icp'); }}
+                  className={`flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium transition-all ${layoutMode === 'A' ? 'bg-[#1a1a2e] text-white' : 'bg-white text-gray-500 hover:text-gray-700'}`}
+                >
+                  <List className="w-3.5 h-3.5" />
+                  Layout A
+                </button>
+                <button
+                  onClick={() => { setLayoutMode('B'); setActiveTab('home'); }}
+                  className={`flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium transition-all ${layoutMode === 'B' ? 'bg-[#1a1a2e] text-white' : 'bg-white text-gray-500 hover:text-gray-700'}`}
+                >
+                  <LayoutGrid className="w-3.5 h-3.5" />
+                  Layout B
+                </button>
+              </div>
+              <div className="flex items-center gap-2 bg-amber-50 rounded-lg px-3 py-1.5 border border-amber-200">
+                <Zap className="w-3.5 h-3.5 text-amber-600" />
+                <span className="text-xs font-semibold text-amber-700">{creditBalance} credits</span>
+              </div>
             </div>
           </div>
         </div>
-        {/* Tabs — full width */}
-        <div className="px-8 flex gap-0">
-          {[
-            { id: 'icp', label: 'Define ICP' },
-            { id: 'analytics', label: 'ICP Match Analytics' },
-            { id: 'tal', label: 'ABM / TAL Upload' },
-            { id: 'runs', label: 'Past ABM Runs' },
-            { id: 'download', label: 'Download' },
-          ].map(tab => (
-            <button key={tab.id} onClick={() => setActiveTab(tab.id)}
-              className={`flex items-center gap-1.5 py-2.5 px-4 text-[13px] font-medium transition-all relative ${activeTab === tab.id ? 'text-[#e85d3a]' : 'text-gray-500 hover:text-gray-700'}`}
-            >
-              {TAB_ICONS[tab.id]}{tab.label}
-              {activeTab === tab.id && <span className="absolute bottom-0 left-2 right-2 h-[2px] bg-[#e85d3a] rounded-full" />}
-            </button>
-          ))}
-        </div>
+        {/* Layout A: 6 grouped tabs */}
+        {layoutMode === 'A' && (
+          <div>
+            <div className="px-8 flex gap-0">
+              {[
+                { id: 'icp', label: 'Define ICP', icon: 'icp' },
+                { id: 'a_tal', label: 'ABM Campaigns', icon: 'tal' },
+                { id: 'a_insights', label: 'Audience Insights', icon: 'analytics' },
+                { id: 'a_signals', label: 'Buyer Signals', icon: 'changes' },
+                { id: 'technographics', label: 'Technographics', icon: 'technographics' },
+                { id: 'download', label: 'Download Center', icon: 'download' },
+              ].map(tab => (
+                <button key={tab.id} onClick={() => setActiveTab(tab.id)}
+                  className={`flex items-center gap-1.5 py-2.5 px-4 text-[13px] font-medium transition-all relative ${activeTab === tab.id ? 'text-[#e85d3a]' : 'text-gray-500 hover:text-gray-700'}`}
+                >
+                  {TAB_ICONS[tab.icon]}{tab.label}
+                  {activeTab === tab.id && <span className="absolute bottom-0 left-2 right-2 h-[2px] bg-[#e85d3a] rounded-full" />}
+                </button>
+              ))}
+            </div>
+            {/* Layout A sub-tabs */}
+            {activeTab === 'a_tal' && (
+              <div className="px-8 flex gap-0 border-t border-gray-100">
+                {[
+                  { id: 'upload', label: 'ABM / TAL Upload' },
+                  { id: 'runs', label: 'Past ABM Runs' },
+                ].map(tab => (
+                  <button key={tab.id} onClick={() => setTalSubTab(tab.id)}
+                    className={`flex items-center gap-1.5 py-2.5 px-4 text-[13px] font-medium transition-all relative ${talSubTab === tab.id ? 'text-[#e85d3a]' : 'text-gray-500 hover:text-gray-700'}`}
+                  >
+                    {tab.label}
+                    {talSubTab === tab.id && <span className="absolute bottom-0 left-2 right-2 h-[2px] bg-[#e85d3a] rounded-full" />}
+                  </button>
+                ))}
+              </div>
+            )}
+            {activeTab === 'a_insights' && (
+              <div className="px-8 flex gap-0 border-t border-gray-100">
+                {[
+                  { id: 'analytics', label: 'ICP Match Analytics' },
+                  { id: 'health', label: 'Data Health' },
+                ].map(tab => (
+                  <button key={tab.id} onClick={() => setAnalyticsSubTab(tab.id)}
+                    className={`flex items-center gap-1.5 py-2.5 px-4 text-[13px] font-medium transition-all relative ${analyticsSubTab === tab.id ? 'text-[#e85d3a]' : 'text-gray-500 hover:text-gray-700'}`}
+                  >
+                    {tab.label}
+                    {analyticsSubTab === tab.id && <span className="absolute bottom-0 left-2 right-2 h-[2px] bg-[#e85d3a] rounded-full" />}
+                  </button>
+                ))}
+              </div>
+            )}
+            {activeTab === 'a_signals' && (
+              <div className="px-8 flex gap-0 border-t border-gray-100">
+                {[
+                  { id: 'changes', label: 'Job & Account Changes' },
+                  { id: 'webanalytics', label: 'Website Analytics' },
+                ].map(tab => (
+                  <button key={tab.id} onClick={() => setChangesSubTab(tab.id)}
+                    className={`flex items-center gap-1.5 py-2.5 px-4 text-[13px] font-medium transition-all relative ${changesSubTab === tab.id ? 'text-[#e85d3a]' : 'text-gray-500 hover:text-gray-700'}`}
+                  >
+                    {tab.label}
+                    {changesSubTab === tab.id && <span className="absolute bottom-0 left-2 right-2 h-[2px] bg-[#e85d3a] rounded-full" />}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
+        {/* Layout B: Sub-tabs bar — only show when drilled in */}
+        {layoutMode === 'B' && activeTab === 'tal' && (
+          <div className="px-8 flex gap-0 border-t border-gray-100">
+            {[
+              { id: 'upload', label: 'ABM / TAL Upload' },
+              { id: 'runs', label: 'Past ABM Runs' },
+            ].map(tab => (
+              <button key={tab.id} onClick={() => setTalSubTab(tab.id)}
+                className={`flex items-center gap-1.5 py-2.5 px-4 text-[13px] font-medium transition-all relative ${talSubTab === tab.id ? 'text-[#e85d3a]' : 'text-gray-500 hover:text-gray-700'}`}
+              >
+                {tab.label}
+                {talSubTab === tab.id && <span className="absolute bottom-0 left-2 right-2 h-[2px] bg-[#e85d3a] rounded-full" />}
+              </button>
+            ))}
+          </div>
+        )}
+        {layoutMode === 'B' && activeTab === 'analytics' && (
+          <div className="px-8 flex gap-0 border-t border-gray-100">
+            {[
+              { id: 'analytics', label: 'ICP Match Analytics' },
+              { id: 'health', label: 'Data Health' },
+            ].map(tab => (
+              <button key={tab.id} onClick={() => setAnalyticsSubTab(tab.id)}
+                className={`flex items-center gap-1.5 py-2.5 px-4 text-[13px] font-medium transition-all relative ${analyticsSubTab === tab.id ? 'text-[#e85d3a]' : 'text-gray-500 hover:text-gray-700'}`}
+              >
+                {tab.label}
+                {analyticsSubTab === tab.id && <span className="absolute bottom-0 left-2 right-2 h-[2px] bg-[#e85d3a] rounded-full" />}
+              </button>
+            ))}
+          </div>
+        )}
+        {layoutMode === 'B' && activeTab === 'changes' && (
+          <div className="px-8 flex gap-0 border-t border-gray-100">
+            {[
+              { id: 'changes', label: 'Job & Account Changes' },
+              { id: 'webanalytics', label: 'Website Analytics' },
+            ].map(tab => (
+              <button key={tab.id} onClick={() => setChangesSubTab(tab.id)}
+                className={`flex items-center gap-1.5 py-2.5 px-4 text-[13px] font-medium transition-all relative ${changesSubTab === tab.id ? 'text-[#e85d3a]' : 'text-gray-500 hover:text-gray-700'}`}
+              >
+                {tab.label}
+                {changesSubTab === tab.id && <span className="absolute bottom-0 left-2 right-2 h-[2px] bg-[#e85d3a] rounded-full" />}
+              </button>
+            ))}
+          </div>
+        )}
       </div>
 
       {/* Content — full width */}
       <div className="px-8 py-5">
+
+        {/* ═══════════════════ HOME / LANDING PAGE ═══════════════════ */}
+        {activeTab === 'home' && (
+          <div className="space-y-8">
+            {/* Feature Cards Grid - 3x2 */}
+            <div className="grid grid-cols-3 gap-6">
+              {/* Card 1: Define ICP */}
+              <button onClick={() => setActiveTab('icp')} className="group text-left">
+                <div className="border border-gray-200 rounded-lg p-5 bg-white hover:border-gray-300 hover:shadow-sm transition">
+                  <div className="flex items-start justify-between mb-4">
+                    <div className="w-8 h-8 rounded-lg flex items-center justify-center bg-red-50 flex-shrink-0">
+                      <Sparkles className="w-4 h-4 text-[#e85d3a]" />
+                    </div>
+                    <ArrowRight className="w-4 h-4 text-gray-300 group-hover:text-gray-400 transition" />
+                  </div>
+                  <h3 className="text-[#1a1a2e] font-semibold text-base mb-2">Define ICP</h3>
+                  <p className="text-gray-500 text-sm line-clamp-2">Build your ideal customer profile with industry, job function, seniority, and geo filters</p>
+                </div>
+              </button>
+
+              {/* Card 2: ABM Campaigns */}
+              <button onClick={() => { setActiveTab('tal'); setTalSubTab('upload'); }} className="group text-left">
+                <div className="border border-gray-200 rounded-lg p-5 bg-white hover:border-gray-300 hover:shadow-sm transition">
+                  <div className="flex items-start justify-between mb-4">
+                    <div className="w-8 h-8 rounded-lg flex items-center justify-center bg-blue-50 flex-shrink-0">
+                      <Upload className="w-4 h-4 text-[#1a1a2e]" />
+                    </div>
+                    <ArrowRight className="w-4 h-4 text-gray-300 group-hover:text-gray-400 transition" />
+                  </div>
+                  <h3 className="text-[#1a1a2e] font-semibold text-base mb-2">ABM Campaigns</h3>
+                  <p className="text-gray-500 text-sm line-clamp-2">Upload target account lists, run ABM matching, and manage past campaign runs</p>
+                </div>
+              </button>
+
+              {/* Card 3: Audience Insights */}
+              <button onClick={() => { setActiveTab('analytics'); setAnalyticsSubTab('analytics'); }} className="group text-left">
+                <div className="border border-gray-200 rounded-lg p-5 bg-white hover:border-gray-300 hover:shadow-sm transition">
+                  <div className="flex items-start justify-between mb-4">
+                    <div className="w-8 h-8 rounded-lg flex items-center justify-center bg-emerald-50 flex-shrink-0">
+                      <BarChart3 className="w-4 h-4 text-[#059669]" />
+                    </div>
+                    <ArrowRight className="w-4 h-4 text-gray-300 group-hover:text-gray-400 transition" />
+                  </div>
+                  <h3 className="text-[#1a1a2e] font-semibold text-base mb-2">Audience Insights</h3>
+                  <p className="text-gray-500 text-sm line-clamp-2">ICP match analytics, data health scores, and enrichment recommendations</p>
+                </div>
+              </button>
+
+              {/* Card 4: Buyer Signals */}
+              <button onClick={() => { setActiveTab('changes'); setChangesSubTab('changes'); }} className="group text-left">
+                <div className="border border-gray-200 rounded-lg p-5 bg-white hover:border-gray-300 hover:shadow-sm transition">
+                  <div className="flex items-start justify-between mb-4">
+                    <div className="w-8 h-8 rounded-lg flex items-center justify-center bg-violet-50 flex-shrink-0">
+                      <Activity className="w-4 h-4 text-[#7c3aed]" />
+                    </div>
+                    <ArrowRight className="w-4 h-4 text-gray-300 group-hover:text-gray-400 transition" />
+                  </div>
+                  <h3 className="text-[#1a1a2e] font-semibold text-base mb-2">Buyer Signals</h3>
+                  <p className="text-gray-500 text-sm line-clamp-2">Track job changes, account movements, and website visitor analytics</p>
+                </div>
+              </button>
+
+              {/* Card 5: Technographics */}
+              <button onClick={() => setActiveTab('technographics')} className="group text-left">
+                <div className="border border-gray-200 rounded-lg p-5 bg-white hover:border-gray-300 hover:shadow-sm transition">
+                  <div className="flex items-start justify-between mb-4">
+                    <div className="w-8 h-8 rounded-lg flex items-center justify-center bg-indigo-50 flex-shrink-0">
+                      <Cpu className="w-4 h-4 text-[#2563eb]" />
+                    </div>
+                    <ArrowRight className="w-4 h-4 text-gray-300 group-hover:text-gray-400 transition" />
+                  </div>
+                  <h3 className="text-[#1a1a2e] font-semibold text-base mb-2">Technographics</h3>
+                  <p className="text-gray-500 text-sm line-clamp-2">Technology stack tracking, adoption trends, and competitive intelligence</p>
+                </div>
+              </button>
+
+              {/* Card 6: Download Center */}
+              <button onClick={() => setActiveTab('download')} className="group text-left">
+                <div className="border border-gray-200 rounded-lg p-5 bg-white hover:border-gray-300 hover:shadow-sm transition">
+                  <div className="flex items-start justify-between mb-4">
+                    <div className="w-8 h-8 rounded-lg flex items-center justify-center bg-amber-50 flex-shrink-0">
+                      <Download className="w-4 h-4 text-[#d97706]" />
+                    </div>
+                    <ArrowRight className="w-4 h-4 text-gray-300 group-hover:text-gray-400 transition" />
+                  </div>
+                  <h3 className="text-[#1a1a2e] font-semibold text-base mb-2">Download Center</h3>
+                  <p className="text-gray-500 text-sm line-clamp-2">Export enriched contact lists, suppression files, and campaign reports</p>
+                </div>
+              </button>
+            </div>
+
+            {/* Quick Stats Row */}
+            <div className="grid grid-cols-4 gap-4 mt-8">
+              {[
+                { label: 'Total Contacts', value: '280M+' },
+                { label: 'Companies Tracked', value: '45M+' },
+                { label: 'Data Health Score', value: '78%' },
+                { label: 'Active Campaigns', value: '4' },
+              ].map(stat => (
+                <div key={stat.label} className="bg-gray-50 border border-gray-200 rounded-lg p-4">
+                  <p className="text-xs text-gray-500 font-medium mb-1">{stat.label}</p>
+                  <p className="text-2xl font-bold text-[#1a1a2e]">{stat.value}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* ═══════════════════ TAB 1: DEFINE ICP ═══════════════════ */}
         {activeTab === 'icp' && (
@@ -972,7 +1230,7 @@ export default function DataPage() {
         )}
 
         {/* ═══════════════════ TAB 2: ABM / TAL UPLOAD ═══════════════════ */}
-        {activeTab === 'tal' && (
+        {((activeTab === 'tal' && talSubTab === 'upload') || activeTab === 'tal_direct' || (activeTab === 'a_tal' && talSubTab === 'upload')) && (
           <div className="space-y-8">
 
             {/* Suppression from ICP notice */}
@@ -1375,7 +1633,7 @@ export default function DataPage() {
         )}
 
         {/* ═══════════════════ TAB 3: PAST ABM RUNS ═══════════════════ */}
-        {activeTab === 'runs' && (
+        {((activeTab === 'tal' && talSubTab === 'runs') || activeTab === 'runs_direct' || (activeTab === 'a_tal' && talSubTab === 'runs')) && (
           <div className="space-y-6">
             {/* Info banner */}
             <div className="gradient-card rounded-lg p-5">
@@ -1656,7 +1914,7 @@ export default function DataPage() {
         )}
 
         {/* ═══════════════════ TAB 4: ICP MATCH ANALYTICS ═══════════════════ */}
-        {activeTab === 'analytics' && (
+        {((activeTab === 'analytics' && analyticsSubTab === 'analytics') || activeTab === 'analytics_direct' || (activeTab === 'a_insights' && analyticsSubTab === 'analytics')) && (
           <div className="space-y-4">
             {/* Top stats row - compact */}
             <div className="grid grid-cols-4 gap-3">
@@ -1849,6 +2107,389 @@ export default function DataPage() {
                       </div>
                     </div>
                     <span className="text-xs font-bold text-gray-500 bg-gray-200 px-2.5 py-1 rounded-full">-{d.credits} cr</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* ═══════════════════ TAB 6: DATA HEALTH ═══════════════════ */}
+        {((activeTab === 'analytics' && analyticsSubTab === 'health') || activeTab === 'health_direct' || (activeTab === 'a_insights' && analyticsSubTab === 'health')) && (
+          <div className="space-y-5">
+            {/* Health Score Hero */}
+            <div className="gradient-card rounded-lg p-5">
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 icon-badge icon-badge-emerald"><HeartPulse className="w-4 h-4 text-emerald-600" /></div>
+                  <div>
+                    <h3 className="text-sm font-semibold text-[#1a1a2e]">Overall Data Health Score</h3>
+                    <p className="text-xs text-gray-500">Last updated 2 hours ago</p>
+                  </div>
+                </div>
+                <div className="text-right">
+                  <p className="text-3xl font-bold text-emerald-600">78<span className="text-lg text-gray-400">/100</span></p>
+                  <p className="text-xs text-emerald-600 font-medium flex items-center gap-1 justify-end"><ArrowUpRight className="w-3 h-3" /> +3 from last week</p>
+                </div>
+              </div>
+              {/* Score breakdown bar */}
+              <div className="grid grid-cols-4 gap-3">
+                {[
+                  { label: 'Email Validity', score: 94, color: 'bg-emerald-500' },
+                  { label: 'Phone Accuracy', score: 72, color: 'bg-amber-500' },
+                  { label: 'Title Freshness', score: 68, color: 'bg-orange-500' },
+                  { label: 'Company Data', score: 89, color: 'bg-emerald-500' },
+                ].map(m => (
+                  <div key={m.label} className="bg-gray-50 rounded-lg p-3 border border-gray-200">
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-xs text-gray-600 font-medium">{m.label}</span>
+                      <span className="text-xs font-bold text-gray-900">{m.score}%</span>
+                    </div>
+                    <div className="w-full bg-gray-200 rounded-full h-1.5">
+                      <div className={`${m.color} h-full rounded-full`} style={{ width: `${m.score}%` }} />
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Recommendations */}
+            <div className="gradient-card rounded-lg p-5">
+              <div className="flex items-center gap-2 mb-4">
+                <div className="w-8 h-8 icon-badge icon-badge-amber"><Lightbulb className="w-4 h-4 text-amber-600" /></div>
+                <h3 className="text-sm font-semibold text-[#1a1a2e]">Recommendations</h3>
+              </div>
+              <div className="space-y-3">
+                {[
+                  { priority: 'High', title: 'Re-verify 1,240 stale email addresses', description: 'These emails haven\'t been verified in 90+ days. Re-running verification could recover 15-20% of bounced contacts.', action: 'Run Verification', color: 'bg-red-50 text-red-700 border-red-200' },
+                  { priority: 'Medium', title: 'Enrich 3,400 contacts missing phone numbers', description: 'Phone coverage is at 72%. Enrichment could add direct dials for an estimated 2,100 additional contacts.', action: 'Start Enrichment', color: 'bg-amber-50 text-amber-700 border-amber-200' },
+                  { priority: 'Medium', title: 'Update 890 outdated job titles', description: 'These contacts show title changes in external signals. Refreshing could improve ICP match accuracy by ~8%.', action: 'Refresh Titles', color: 'bg-amber-50 text-amber-700 border-amber-200' },
+                  { priority: 'Low', title: 'Merge 156 duplicate company records', description: 'Duplicate companies detected across your TAL uploads. Merging will clean up analytics and avoid double-counting.', action: 'Review Duplicates', color: 'bg-blue-50 text-blue-700 border-blue-200' },
+                ].map((rec, i) => (
+                  <div key={i} className="flex items-start gap-4 p-4 rounded-lg border border-gray-200 hover:bg-gray-50 transition">
+                    <span className={`px-2 py-0.5 rounded text-[10px] font-bold border flex-shrink-0 mt-0.5 ${rec.color}`}>{rec.priority}</span>
+                    <div className="flex-1 min-w-0">
+                      <p className="text-sm font-medium text-gray-900">{rec.title}</p>
+                      <p className="text-xs text-gray-500 mt-0.5">{rec.description}</p>
+                    </div>
+                    <button className="px-3 py-1.5 rounded-lg bg-[#1a1a2e] text-white text-xs font-medium hover:bg-[#2a2a45] transition-colors flex-shrink-0">{rec.action}</button>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Decay Trends */}
+            <div className="grid grid-cols-3 gap-4">
+              {[
+                { label: 'Contacts Decaying Monthly', value: '~320', trend: 'down', detail: 'Avg. 2.5% monthly decay rate', icon: TrendingDown, bg: 'icon-badge-rose', color: 'text-rose-600' },
+                { label: 'Last Full Enrichment', value: '12 days ago', trend: 'neutral', detail: 'Recommended: every 7 days', icon: RefreshCw, bg: 'icon-badge-amber', color: 'text-amber-600' },
+                { label: 'Data Completeness', value: '84%', trend: 'up', detail: 'Up from 79% last month', icon: Database, bg: 'icon-badge-emerald', color: 'text-emerald-600' },
+              ].map(s => (
+                <div key={s.label} className="stat-card">
+                  <div className="flex items-center gap-2 mb-2">
+                    <div className={`w-7 h-7 icon-badge ${s.bg}`}><s.icon className={`w-3.5 h-3.5 ${s.color}`} /></div>
+                    <span className="text-xs text-gray-500 font-medium">{s.label}</span>
+                  </div>
+                  <p className="text-lg font-bold text-gray-900">{s.value}</p>
+                  <p className="text-xs text-gray-500 mt-1">{s.detail}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* ═══════════════════ TAB 7: JOB & ACCOUNT CHANGES ═══════════════════ */}
+        {((activeTab === 'changes' && changesSubTab === 'changes') || activeTab === 'changes_direct' || (activeTab === 'a_signals' && changesSubTab === 'changes')) && (
+          <div className="space-y-5">
+            {/* Summary stats */}
+            <div className="grid grid-cols-4 gap-3">
+              {[
+                { label: 'Job Changes (30d)', value: '247', icon: Briefcase, bg: 'icon-badge-violet', color: 'text-violet-600', detail: 'Promotions, role changes, departures' },
+                { label: 'New Hires Detected', value: '89', icon: Users, bg: 'icon-badge-emerald', color: 'text-emerald-600', detail: 'Into your target accounts' },
+                { label: 'Champions Moved', value: '34', icon: Building2, bg: 'icon-badge-amber', color: 'text-amber-600', detail: 'Known contacts at new companies' },
+                { label: 'Contacts at Risk', value: '62', icon: AlertTriangle, bg: 'icon-badge-rose', color: 'text-rose-600', detail: 'Left company or changed role' },
+              ].map(s => (
+                <div key={s.label} className="stat-card">
+                  <div className="flex items-center gap-2 mb-2">
+                    <div className={`w-7 h-7 icon-badge ${s.bg}`}><s.icon className={`w-3.5 h-3.5 ${s.color}`} /></div>
+                    <span className="text-xs text-gray-500 font-medium">{s.label}</span>
+                  </div>
+                  <p className="text-2xl font-bold text-gray-900">{s.value}</p>
+                  <p className="text-xs text-gray-500 mt-1">{s.detail}</p>
+                </div>
+              ))}
+            </div>
+
+            {/* Recent Job Changes table */}
+            <div className="gradient-card rounded-lg overflow-hidden">
+              <div className="px-4 py-3 border-b border-gray-200 flex items-center justify-between">
+                <h3 className="text-sm font-semibold text-[#1a1a2e] flex items-center gap-2"><Briefcase className="w-4 h-4 text-gray-400" /> Recent Job Changes</h3>
+                <span className="text-xs text-gray-400">Last 30 days</span>
+              </div>
+              <div className="overflow-x-auto">
+                <table className="w-full">
+                  <thead><tr className="border-b border-gray-200 bg-gray-50 text-left">
+                    <th className="px-4 py-2.5 text-xs font-semibold text-gray-500">Contact</th>
+                    <th className="px-4 py-2.5 text-xs font-semibold text-gray-500">Previous Role</th>
+                    <th className="px-4 py-2.5 text-xs font-semibold text-gray-500">New Role</th>
+                    <th className="px-4 py-2.5 text-xs font-semibold text-gray-500">Company</th>
+                    <th className="px-4 py-2.5 text-xs font-semibold text-gray-500">Change Type</th>
+                    <th className="px-4 py-2.5 text-xs font-semibold text-gray-500">Date</th>
+                  </tr></thead>
+                  <tbody>
+                    {[
+                      { name: 'Sarah Chen', prev: 'VP Marketing', next: 'CMO', company: 'Salesforce', type: 'Promotion', date: 'Mar 12', typeColor: 'bg-emerald-50 text-emerald-700 border-emerald-200' },
+                      { name: 'James Wilson', prev: 'Director IT', next: 'CTO', company: 'HubSpot', type: 'Promotion', date: 'Mar 10', typeColor: 'bg-emerald-50 text-emerald-700 border-emerald-200' },
+                      { name: 'Maria Garcia', prev: 'Head of Sales', next: '—', company: 'Stripe', type: 'Departed', date: 'Mar 8', typeColor: 'bg-red-50 text-red-700 border-red-200' },
+                      { name: 'Alex Park', prev: '—', next: 'VP Engineering', company: 'Datadog', type: 'New Hire', date: 'Mar 7', typeColor: 'bg-blue-50 text-blue-700 border-blue-200' },
+                      { name: 'Lisa Thompson', prev: 'Sr. Director Ops', next: 'VP Operations', company: 'Shopify', type: 'Promotion', date: 'Mar 5', typeColor: 'bg-emerald-50 text-emerald-700 border-emerald-200' },
+                      { name: 'David Kim', prev: 'CRO', next: '—', company: 'Roche', type: 'Departed', date: 'Mar 3', typeColor: 'bg-red-50 text-red-700 border-red-200' },
+                      { name: 'Rachel Adams', prev: '—', next: 'Director of Sales', company: 'UiPath', type: 'New Hire', date: 'Mar 1', typeColor: 'bg-blue-50 text-blue-700 border-blue-200' },
+                      { name: 'Michael Roberts', prev: 'VP Product', next: 'CPO', company: 'Celonis', type: 'Promotion', date: 'Feb 28', typeColor: 'bg-emerald-50 text-emerald-700 border-emerald-200' },
+                    ].map((c, i) => (
+                      <tr key={i} className={`border-b border-gray-100 ${i % 2 === 0 ? 'bg-white' : 'bg-gray-50/50'}`}>
+                        <td className="px-4 py-3 text-sm font-medium text-gray-900">{c.name}</td>
+                        <td className="px-4 py-3 text-sm text-gray-600">{c.prev}</td>
+                        <td className="px-4 py-3 text-sm text-gray-900 font-medium">{c.next}</td>
+                        <td className="px-4 py-3 text-sm text-gray-600">{c.company}</td>
+                        <td className="px-4 py-3"><span className={`px-2 py-0.5 rounded text-xs font-medium border ${c.typeColor}`}>{c.type}</span></td>
+                        <td className="px-4 py-3 text-xs text-gray-400">{c.date}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            {/* Champion Tracking */}
+            <div className="gradient-card rounded-lg overflow-hidden">
+              <div className="px-4 py-3 border-b border-gray-200 flex items-center justify-between">
+                <h3 className="text-sm font-semibold text-[#1a1a2e] flex items-center gap-2"><Building2 className="w-4 h-4 text-gray-400" /> Champion Tracking</h3>
+                <span className="text-xs text-gray-400">Last 30 days</span>
+              </div>
+              <div className="overflow-x-auto">
+                <table className="w-full">
+                  <thead><tr className="border-b border-gray-200 bg-gray-50 text-left">
+                    <th className="px-4 py-2.5 text-xs font-semibold text-gray-500">Contact</th>
+                    <th className="px-4 py-2.5 text-xs font-semibold text-gray-500">Previous Company</th>
+                    <th className="px-4 py-2.5 text-xs font-semibold text-gray-500"></th>
+                    <th className="px-4 py-2.5 text-xs font-semibold text-gray-500">New Company</th>
+                    <th className="px-4 py-2.5 text-xs font-semibold text-gray-500">New Role</th>
+                    <th className="px-4 py-2.5 text-xs font-semibold text-gray-500">Signal</th>
+                    <th className="px-4 py-2.5 text-xs font-semibold text-gray-500">Date</th>
+                  </tr></thead>
+                  <tbody>
+                    {[
+                      { name: 'Maria Garcia', prevCo: 'Stripe', newCo: 'Snowflake', newRole: 'VP of Sales', signal: 'Target Account', signalColor: 'bg-emerald-50 text-emerald-700 border-emerald-200', date: 'Mar 14' },
+                      { name: 'David Kim', prevCo: 'Roche', newCo: 'Moderna', newRole: 'CRO', signal: 'ICP Match', signalColor: 'bg-blue-50 text-blue-700 border-blue-200', date: 'Mar 11' },
+                      { name: 'Priya Sharma', prevCo: 'Freshworks', newCo: 'Salesforce', newRole: 'Director of CS', signal: 'Target Account', signalColor: 'bg-emerald-50 text-emerald-700 border-emerald-200', date: 'Mar 9' },
+                      { name: 'Tom Fischer', prevCo: 'Celonis', newCo: 'Databricks', newRole: 'Head of Engineering', signal: 'ICP Match', signalColor: 'bg-blue-50 text-blue-700 border-blue-200', date: 'Mar 7' },
+                      { name: 'Jessica Lee', prevCo: 'HubSpot', newCo: 'Notion', newRole: 'CMO', signal: 'New Opportunity', signalColor: 'bg-violet-50 text-violet-700 border-violet-200', date: 'Mar 5' },
+                      { name: 'Carlos Mendes', prevCo: 'Nubank', newCo: 'Stripe', newRole: 'VP of Product', signal: 'Target Account', signalColor: 'bg-emerald-50 text-emerald-700 border-emerald-200', date: 'Mar 3' },
+                      { name: 'Anna Kowalski', prevCo: 'Klarna', newCo: 'Revolut', newRole: 'Director of Ops', signal: 'ICP Match', signalColor: 'bg-blue-50 text-blue-700 border-blue-200', date: 'Mar 1' },
+                      { name: 'Ryan Mitchell', prevCo: 'Toast', newCo: 'Shopify', newRole: 'CTO', signal: 'Target Account', signalColor: 'bg-emerald-50 text-emerald-700 border-emerald-200', date: 'Feb 27' },
+                    ].map((c, i) => (
+                      <tr key={i} className={`border-b border-gray-100 ${i % 2 === 0 ? 'bg-white' : 'bg-gray-50/50'}`}>
+                        <td className="px-4 py-3 text-sm font-medium text-gray-900">{c.name}</td>
+                        <td className="px-4 py-3 text-sm text-gray-500">{c.prevCo}</td>
+                        <td className="px-4 py-1.5"><ArrowRight className="w-3.5 h-3.5 text-[#e85d3a]" /></td>
+                        <td className="px-4 py-3 text-sm text-gray-900 font-medium">{c.newCo}</td>
+                        <td className="px-4 py-3 text-sm text-gray-600">{c.newRole}</td>
+                        <td className="px-4 py-3"><span className={`px-2 py-0.5 rounded text-xs font-medium border ${c.signalColor}`}>{c.signal}</span></td>
+                        <td className="px-4 py-3 text-xs text-gray-400">{c.date}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* ═══════════════════ TAB 8: WEBSITE ANALYTICS ═══════════════════ */}
+        {((activeTab === 'changes' && changesSubTab === 'webanalytics') || activeTab === 'webanalytics_direct' || (activeTab === 'a_signals' && changesSubTab === 'webanalytics')) && (
+          <div className="space-y-5">
+            {/* Top stats */}
+            <div className="grid grid-cols-4 gap-3">
+              {[
+                { label: 'Identified Visitors (30d)', value: '1,847', icon: Eye, bg: 'icon-badge-indigo', color: 'text-indigo-600', change: '+12%', up: true },
+                { label: 'Companies Identified', value: '342', icon: Building2, bg: 'icon-badge-violet', color: 'text-violet-600', change: '+8%', up: true },
+                { label: 'ICP Matches', value: '156', icon: Target, bg: 'icon-badge-emerald', color: 'text-emerald-600', change: '+23%', up: true },
+                { label: 'High-Intent Visitors', value: '48', icon: Zap, bg: 'icon-badge-amber', color: 'text-amber-600', change: '+5%', up: true },
+              ].map(s => (
+                <div key={s.label} className="stat-card">
+                  <div className="flex items-center gap-2 mb-2">
+                    <div className={`w-7 h-7 icon-badge ${s.bg}`}><s.icon className={`w-3.5 h-3.5 ${s.color}`} /></div>
+                    <span className="text-xs text-gray-500 font-medium">{s.label}</span>
+                  </div>
+                  <div className="flex items-end gap-2">
+                    <p className="text-2xl font-bold text-gray-900">{s.value}</p>
+                    <span className={`text-xs font-medium flex items-center gap-0.5 mb-1 ${s.up ? 'text-emerald-600' : 'text-red-600'}`}>
+                      {s.up ? <ArrowUpRight className="w-3 h-3" /> : <ArrowDownRight className="w-3 h-3" />}{s.change}
+                    </span>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Top visiting companies */}
+            <div className="gradient-card rounded-lg overflow-hidden">
+              <div className="px-4 py-3 border-b border-gray-200 flex items-center justify-between">
+                <h3 className="text-sm font-semibold text-[#1a1a2e] flex items-center gap-2"><Globe className="w-4 h-4 text-gray-400" /> Top Visiting Companies</h3>
+                <span className="text-xs text-gray-400">Last 30 days</span>
+              </div>
+              <div className="overflow-x-auto">
+                <table className="w-full">
+                  <thead><tr className="border-b border-gray-200 bg-gray-50 text-left">
+                    <th className="px-4 py-2.5 text-xs font-semibold text-gray-500">Company</th>
+                    <th className="px-4 py-2.5 text-xs font-semibold text-gray-500 text-right">Visits</th>
+                    <th className="px-4 py-2.5 text-xs font-semibold text-gray-500 text-right">Pages</th>
+                    <th className="px-4 py-2.5 text-xs font-semibold text-gray-500">Top Pages</th>
+                    <th className="px-4 py-2.5 text-xs font-semibold text-gray-500">Intent</th>
+                    <th className="px-4 py-2.5 text-xs font-semibold text-gray-500">ICP Match</th>
+                  </tr></thead>
+                  <tbody>
+                    {[
+                      { company: 'Salesforce', domain: 'salesforce.com', visits: 47, pages: 128, topPages: '/pricing, /enterprise, /demo', intent: 'High', icp: true, intentColor: 'bg-red-50 text-red-700 border-red-200' },
+                      { company: 'HubSpot', domain: 'hubspot.com', visits: 34, pages: 89, topPages: '/features, /integrations', intent: 'High', icp: true, intentColor: 'bg-red-50 text-red-700 border-red-200' },
+                      { company: 'Shopify', domain: 'shopify.com', visits: 28, pages: 64, topPages: '/pricing, /case-studies', intent: 'Medium', icp: true, intentColor: 'bg-amber-50 text-amber-700 border-amber-200' },
+                      { company: 'Datadog', domain: 'datadoghq.com', visits: 22, pages: 51, topPages: '/blog, /resources', intent: 'Medium', icp: true, intentColor: 'bg-amber-50 text-amber-700 border-amber-200' },
+                      { company: 'Stripe', domain: 'stripe.com', visits: 19, pages: 42, topPages: '/demo, /pricing', intent: 'High', icp: false, intentColor: 'bg-red-50 text-red-700 border-red-200' },
+                      { company: 'Notion', domain: 'notion.so', visits: 15, pages: 33, topPages: '/blog, /about', intent: 'Low', icp: false, intentColor: 'bg-gray-100 text-gray-600 border-gray-200' },
+                      { company: 'Figma', domain: 'figma.com', visits: 12, pages: 28, topPages: '/features, /pricing', intent: 'Medium', icp: false, intentColor: 'bg-amber-50 text-amber-700 border-amber-200' },
+                    ].map((c, i) => (
+                      <tr key={i} className={`border-b border-gray-100 ${i % 2 === 0 ? 'bg-white' : 'bg-gray-50/50'}`}>
+                        <td className="px-4 py-3"><p className="text-sm font-medium text-gray-900">{c.company}</p><p className="text-xs text-gray-400">{c.domain}</p></td>
+                        <td className="px-4 py-3 text-sm font-medium text-gray-900 text-right">{c.visits}</td>
+                        <td className="px-4 py-3 text-sm text-gray-600 text-right">{c.pages}</td>
+                        <td className="px-4 py-3 text-xs text-gray-500">{c.topPages}</td>
+                        <td className="px-4 py-3"><span className={`px-2 py-0.5 rounded text-xs font-medium border ${c.intentColor}`}>{c.intent}</span></td>
+                        <td className="px-4 py-3">{c.icp ? <CheckCircle className="w-4 h-4 text-emerald-500" /> : <span className="text-xs text-gray-300">—</span>}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            {/* Page performance */}
+            <div className="gradient-card rounded-lg p-5">
+              <h3 className="text-sm font-semibold text-[#1a1a2e] mb-4 flex items-center gap-2"><BarChart3 className="w-4 h-4 text-gray-400" /> Top Pages by Identified Visitors</h3>
+              <div className="space-y-2.5">
+                {[
+                  { page: '/pricing', visitors: 423, pct: 100 },
+                  { page: '/enterprise', visitors: 312, pct: 74 },
+                  { page: '/demo', visitors: 287, pct: 68 },
+                  { page: '/features', visitors: 245, pct: 58 },
+                  { page: '/case-studies', visitors: 198, pct: 47 },
+                  { page: '/integrations', visitors: 156, pct: 37 },
+                  { page: '/blog', visitors: 134, pct: 32 },
+                ].map(p => (
+                  <div key={p.page} className="flex items-center gap-3">
+                    <span className="text-xs text-gray-600 font-medium w-28 flex-shrink-0 truncate font-mono">{p.page}</span>
+                    <div className="flex-1 bg-gray-100 rounded-full h-2"><div className="bg-[#1a1a2e] h-full rounded-full" style={{ width: `${p.pct}%` }} /></div>
+                    <span className="text-xs text-gray-500 w-16 text-right flex-shrink-0">{p.visitors} visitors</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* ═══════════════════ TAB 9: TECHNOGRAPHICS ═══════════════════ */}
+        {activeTab === 'technographics' && (
+          <div className="space-y-5">
+            {/* Summary */}
+            <div className="grid grid-cols-3 gap-3">
+              {[
+                { label: 'Technologies Tracked', value: '2,450+', icon: Cpu, bg: 'icon-badge-indigo', color: 'text-indigo-600', detail: 'Across your target accounts' },
+                { label: 'Accounts with Tech Data', value: '87%', icon: Server, bg: 'icon-badge-emerald', color: 'text-emerald-600', detail: '174 of 200 target accounts' },
+                { label: 'Tech Stack Changes (30d)', value: '38', icon: Activity, bg: 'icon-badge-amber', color: 'text-amber-600', detail: 'New installs & removals' },
+              ].map(s => (
+                <div key={s.label} className="stat-card">
+                  <div className="flex items-center gap-2 mb-2">
+                    <div className={`w-7 h-7 icon-badge ${s.bg}`}><s.icon className={`w-3.5 h-3.5 ${s.color}`} /></div>
+                    <span className="text-xs text-gray-500 font-medium">{s.label}</span>
+                  </div>
+                  <p className="text-2xl font-bold text-gray-900">{s.value}</p>
+                  <p className="text-xs text-gray-500 mt-1">{s.detail}</p>
+                </div>
+              ))}
+            </div>
+
+            {/* Tech categories */}
+            <div className="grid grid-cols-2 gap-4">
+              {/* Top technologies by adoption */}
+              <div className="gradient-card rounded-lg p-5">
+                <h3 className="text-sm font-semibold text-[#1a1a2e] mb-4 flex items-center gap-2"><Cpu className="w-4 h-4 text-gray-400" /> Top Technologies (Target Accounts)</h3>
+                <div className="space-y-2.5">
+                  {[
+                    { name: 'Salesforce CRM', category: 'CRM', adoption: 78, accounts: 156 },
+                    { name: 'AWS', category: 'Cloud', adoption: 72, accounts: 144 },
+                    { name: 'Google Analytics', category: 'Analytics', adoption: 68, accounts: 136 },
+                    { name: 'HubSpot', category: 'Marketing', adoption: 54, accounts: 108 },
+                    { name: 'Slack', category: 'Collaboration', adoption: 52, accounts: 104 },
+                    { name: 'Snowflake', category: 'Data', adoption: 41, accounts: 82 },
+                    { name: 'Okta', category: 'Security', adoption: 38, accounts: 76 },
+                    { name: 'Datadog', category: 'Monitoring', adoption: 34, accounts: 68 },
+                  ].map(t => (
+                    <div key={t.name} className="flex items-center gap-3">
+                      <span className="text-xs text-gray-900 font-medium w-32 flex-shrink-0 truncate">{t.name}</span>
+                      <span className="text-[10px] text-gray-400 font-medium w-16 flex-shrink-0">{t.category}</span>
+                      <div className="flex-1 bg-gray-100 rounded-full h-2"><div className="bg-[#e85d3a] h-full rounded-full" style={{ width: `${t.adoption}%` }} /></div>
+                      <span className="text-xs text-gray-500 w-12 text-right flex-shrink-0">{t.adoption}%</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Tech by category */}
+              <div className="gradient-card rounded-lg p-5">
+                <h3 className="text-sm font-semibold text-[#1a1a2e] mb-4 flex items-center gap-2"><Server className="w-4 h-4 text-gray-400" /> Technology Categories</h3>
+                <div className="space-y-3">
+                  {[
+                    { category: 'CRM & Sales', count: 12, top: 'Salesforce, HubSpot, Pipedrive', icon: Users, color: 'text-blue-600 bg-blue-50' },
+                    { category: 'Cloud Infrastructure', count: 8, top: 'AWS, Azure, GCP', icon: Server, color: 'text-violet-600 bg-violet-50' },
+                    { category: 'Marketing Automation', count: 10, top: 'HubSpot, Marketo, Pardot', icon: Mail, color: 'text-emerald-600 bg-emerald-50' },
+                    { category: 'Analytics & BI', count: 7, top: 'Google Analytics, Tableau, Looker', icon: BarChart3, color: 'text-amber-600 bg-amber-50' },
+                    { category: 'Security & Identity', count: 6, top: 'Okta, CrowdStrike, Zscaler', icon: Shield, color: 'text-red-600 bg-red-50' },
+                    { category: 'Collaboration', count: 5, top: 'Slack, Teams, Zoom', icon: MessageSquare, color: 'text-indigo-600 bg-indigo-50' },
+                  ].map(c => (
+                    <div key={c.category} className="flex items-center gap-3 p-3 rounded-lg border border-gray-100 hover:bg-gray-50 transition">
+                      <div className={`w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 ${c.color.split(' ')[1]}`}>
+                        <c.icon className={`w-3.5 h-3.5 ${c.color.split(' ')[0]}`} />
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <p className="text-sm font-medium text-gray-900">{c.category}</p>
+                        <p className="text-xs text-gray-400 truncate">{c.top}</p>
+                      </div>
+                      <span className="text-xs font-medium text-gray-500 bg-gray-100 px-2 py-0.5 rounded">{c.count} tools</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Recent tech changes */}
+            <div className="gradient-card rounded-lg overflow-hidden">
+              <div className="px-4 py-3 border-b border-gray-200 flex items-center justify-between">
+                <h3 className="text-sm font-semibold text-[#1a1a2e] flex items-center gap-2"><Activity className="w-4 h-4 text-gray-400" /> Recent Technology Changes</h3>
+                <span className="text-xs text-gray-400">Last 30 days</span>
+              </div>
+              <div>
+                {[
+                  { company: 'Salesforce', change: 'Added Snowflake', type: 'Install', date: 'Mar 14', color: 'bg-emerald-50 text-emerald-700 border-emerald-200' },
+                  { company: 'HubSpot', change: 'Switched from Segment to mParticle', type: 'Switch', date: 'Mar 12', color: 'bg-blue-50 text-blue-700 border-blue-200' },
+                  { company: 'Stripe', change: 'Added Datadog', type: 'Install', date: 'Mar 10', color: 'bg-emerald-50 text-emerald-700 border-emerald-200' },
+                  { company: 'Shopify', change: 'Removed Marketo', type: 'Removal', date: 'Mar 8', color: 'bg-red-50 text-red-700 border-red-200' },
+                  { company: 'Datadog', change: 'Added CrowdStrike', type: 'Install', date: 'Mar 5', color: 'bg-emerald-50 text-emerald-700 border-emerald-200' },
+                  { company: 'Roche', change: 'Added Workday', type: 'Install', date: 'Mar 2', color: 'bg-emerald-50 text-emerald-700 border-emerald-200' },
+                ].map((c, i) => (
+                  <div key={i} className={`flex items-center gap-4 px-4 py-3 hover:bg-gray-50 transition ${i < 5 ? 'border-b border-gray-100' : ''}`}>
+                    <span className="text-sm font-medium text-gray-900 w-28 flex-shrink-0">{c.company}</span>
+                    <p className="text-sm text-gray-600 flex-1">{c.change}</p>
+                    <span className={`px-2 py-0.5 rounded text-xs font-medium border flex-shrink-0 ${c.color}`}>{c.type}</span>
+                    <span className="text-xs text-gray-400 w-16 text-right flex-shrink-0">{c.date}</span>
                   </div>
                 ))}
               </div>
