@@ -3736,6 +3736,14 @@
       "category": "auth",
       "details": "Demo User signed in",
       "createdAt": "2026-03-17T16:12:53.539Z"
+    },
+    {
+      "id": "11afe03e-e7dc-42c9-bbba-0fec3a6bb4da",
+      "userId": "demo-user-001",
+      "action": "User logged in",
+      "category": "auth",
+      "details": "Demo User signed in",
+      "createdAt": "2026-03-18T12:31:30.564Z"
     }
   ],
   "creditTransactions": [

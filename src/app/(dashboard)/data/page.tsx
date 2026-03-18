@@ -46,8 +46,6 @@ import {
   MessageSquare,
   User,
   Target,
-  LayoutGrid,
-  List,
 } from 'lucide-react';
 
 // ─── Constants ────────────────────────────────────────────────────────────────
@@ -270,7 +268,6 @@ interface ICP {
 // ─── Component ────────────────────────────────────────────────────────────────
 
 export default function DataPage() {
-  const [layoutMode, setLayoutMode] = useState<'A' | 'B'>('B');
   const [activeTab, setActiveTab] = useState('home');
   const [talSubTab, setTalSubTab] = useState('upload');
   const [analyticsSubTab, setAnalyticsSubTab] = useState('analytics');
@@ -666,7 +663,7 @@ export default function DataPage() {
         <div className="px-8 pt-5 pb-3">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              {layoutMode === 'B' && activeTab !== 'home' && (
+              {activeTab !== 'home' && (
                 <button onClick={() => setActiveTab('home')} className="text-gray-500 hover:text-gray-700 transition">
                   <ArrowRight className="w-4 h-4 rotate-180" />
                 </button>
@@ -676,101 +673,14 @@ export default function DataPage() {
                 <p className="text-gray-500 text-xs mt-0.5">Build, enrich, and download your ideal customer profiles</p>
               </div>
             </div>
-            <div className="flex items-center gap-4">
-              {/* A/B Layout Toggle */}
-              <div className="flex items-center border border-gray-200 rounded-lg overflow-hidden">
-                <button
-                  onClick={() => { setLayoutMode('A'); setActiveTab('icp'); }}
-                  className={`flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium transition-all ${layoutMode === 'A' ? 'bg-[#1a1a2e] text-white' : 'bg-white text-gray-500 hover:text-gray-700'}`}
-                >
-                  <List className="w-3.5 h-3.5" />
-                  Layout A
-                </button>
-                <button
-                  onClick={() => { setLayoutMode('B'); setActiveTab('home'); }}
-                  className={`flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium transition-all ${layoutMode === 'B' ? 'bg-[#1a1a2e] text-white' : 'bg-white text-gray-500 hover:text-gray-700'}`}
-                >
-                  <LayoutGrid className="w-3.5 h-3.5" />
-                  Layout B
-                </button>
-              </div>
-              <div className="flex items-center gap-2 bg-amber-50 rounded-lg px-3 py-1.5 border border-amber-200">
-                <Zap className="w-3.5 h-3.5 text-amber-600" />
-                <span className="text-xs font-semibold text-amber-700">{creditBalance} credits</span>
-              </div>
+            <div className="flex items-center gap-2 bg-amber-50 rounded-lg px-3 py-1.5 border border-amber-200">
+              <Zap className="w-3.5 h-3.5 text-amber-600" />
+              <span className="text-xs font-semibold text-amber-700">{creditBalance} credits</span>
             </div>
           </div>
         </div>
-        {/* Layout A: 6 grouped tabs */}
-        {layoutMode === 'A' && (
-          <div>
-            <div className="px-8 flex gap-0">
-              {[
-                { id: 'icp', label: 'Define ICP', icon: 'icp' },
-                { id: 'a_tal', label: 'ABM Campaigns', icon: 'tal' },
-                { id: 'a_insights', label: 'Audience Insights', icon: 'analytics' },
-                { id: 'a_signals', label: 'Buyer Signals', icon: 'changes' },
-                { id: 'technographics', label: 'Technographics', icon: 'technographics' },
-                { id: 'download', label: 'Download Center', icon: 'download' },
-              ].map(tab => (
-                <button key={tab.id} onClick={() => setActiveTab(tab.id)}
-                  className={`flex items-center gap-1.5 py-2.5 px-4 text-[13px] font-medium transition-all relative ${activeTab === tab.id ? 'text-[#e85d3a]' : 'text-gray-500 hover:text-gray-700'}`}
-                >
-                  {TAB_ICONS[tab.icon]}{tab.label}
-                  {activeTab === tab.id && <span className="absolute bottom-0 left-2 right-2 h-[2px] bg-[#e85d3a] rounded-full" />}
-                </button>
-              ))}
-            </div>
-            {/* Layout A sub-tabs */}
-            {activeTab === 'a_tal' && (
-              <div className="px-8 flex gap-0 border-t border-gray-100">
-                {[
-                  { id: 'upload', label: 'ABM / TAL Upload' },
-                  { id: 'runs', label: 'Past ABM Runs' },
-                ].map(tab => (
-                  <button key={tab.id} onClick={() => setTalSubTab(tab.id)}
-                    className={`flex items-center gap-1.5 py-2.5 px-4 text-[13px] font-medium transition-all relative ${talSubTab === tab.id ? 'text-[#e85d3a]' : 'text-gray-500 hover:text-gray-700'}`}
-                  >
-                    {tab.label}
-                    {talSubTab === tab.id && <span className="absolute bottom-0 left-2 right-2 h-[2px] bg-[#e85d3a] rounded-full" />}
-                  </button>
-                ))}
-              </div>
-            )}
-            {activeTab === 'a_insights' && (
-              <div className="px-8 flex gap-0 border-t border-gray-100">
-                {[
-                  { id: 'analytics', label: 'ICP Match Analytics' },
-                  { id: 'health', label: 'Data Health' },
-                ].map(tab => (
-                  <button key={tab.id} onClick={() => setAnalyticsSubTab(tab.id)}
-                    className={`flex items-center gap-1.5 py-2.5 px-4 text-[13px] font-medium transition-all relative ${analyticsSubTab === tab.id ? 'text-[#e85d3a]' : 'text-gray-500 hover:text-gray-700'}`}
-                  >
-                    {tab.label}
-                    {analyticsSubTab === tab.id && <span className="absolute bottom-0 left-2 right-2 h-[2px] bg-[#e85d3a] rounded-full" />}
-                  </button>
-                ))}
-              </div>
-            )}
-            {activeTab === 'a_signals' && (
-              <div className="px-8 flex gap-0 border-t border-gray-100">
-                {[
-                  { id: 'changes', label: 'Job & Account Changes' },
-                  { id: 'webanalytics', label: 'Website Analytics' },
-                ].map(tab => (
-                  <button key={tab.id} onClick={() => setChangesSubTab(tab.id)}
-                    className={`flex items-center gap-1.5 py-2.5 px-4 text-[13px] font-medium transition-all relative ${changesSubTab === tab.id ? 'text-[#e85d3a]' : 'text-gray-500 hover:text-gray-700'}`}
-                  >
-                    {tab.label}
-                    {changesSubTab === tab.id && <span className="absolute bottom-0 left-2 right-2 h-[2px] bg-[#e85d3a] rounded-full" />}
-                  </button>
-                ))}
-              </div>
-            )}
-          </div>
-        )}
-        {/* Layout B: Sub-tabs bar — only show when drilled in */}
-        {layoutMode === 'B' && activeTab === 'tal' && (
+        {/* Sub-tabs bar — only show when drilled in */}
+        {activeTab === 'tal' && (
           <div className="px-8 flex gap-0 border-t border-gray-100">
             {[
               { id: 'upload', label: 'ABM / TAL Upload' },
@@ -785,7 +695,7 @@ export default function DataPage() {
             ))}
           </div>
         )}
-        {layoutMode === 'B' && activeTab === 'analytics' && (
+        {activeTab === 'analytics' && (
           <div className="px-8 flex gap-0 border-t border-gray-100">
             {[
               { id: 'analytics', label: 'ICP Match Analytics' },
@@ -800,7 +710,7 @@ export default function DataPage() {
             ))}
           </div>
         )}
-        {layoutMode === 'B' && activeTab === 'changes' && (
+        {activeTab === 'changes' && (
           <div className="px-8 flex gap-0 border-t border-gray-100">
             {[
               { id: 'changes', label: 'Job & Account Changes' },
@@ -1230,7 +1140,7 @@ export default function DataPage() {
         )}
 
         {/* ═══════════════════ TAB 2: ABM / TAL UPLOAD ═══════════════════ */}
-        {((activeTab === 'tal' && talSubTab === 'upload') || activeTab === 'tal_direct' || (activeTab === 'a_tal' && talSubTab === 'upload')) && (
+        {(activeTab === 'tal' && talSubTab === 'upload') && (
           <div className="space-y-8">
 
             {/* Suppression from ICP notice */}
@@ -1633,7 +1543,7 @@ export default function DataPage() {
         )}
 
         {/* ═══════════════════ TAB 3: PAST ABM RUNS ═══════════════════ */}
-        {((activeTab === 'tal' && talSubTab === 'runs') || activeTab === 'runs_direct' || (activeTab === 'a_tal' && talSubTab === 'runs')) && (
+        {(activeTab === 'tal' && talSubTab === 'runs') && (
           <div className="space-y-6">
             {/* Info banner */}
             <div className="gradient-card rounded-lg p-5">
@@ -1914,7 +1824,7 @@ export default function DataPage() {
         )}
 
         {/* ═══════════════════ TAB 4: ICP MATCH ANALYTICS ═══════════════════ */}
-        {((activeTab === 'analytics' && analyticsSubTab === 'analytics') || activeTab === 'analytics_direct' || (activeTab === 'a_insights' && analyticsSubTab === 'analytics')) && (
+        {(activeTab === 'analytics' && analyticsSubTab === 'analytics') && (
           <div className="space-y-4">
             {/* Top stats row - compact */}
             <div className="grid grid-cols-4 gap-3">
@@ -2115,7 +2025,7 @@ export default function DataPage() {
         )}
 
         {/* ═══════════════════ TAB 6: DATA HEALTH ═══════════════════ */}
-        {((activeTab === 'analytics' && analyticsSubTab === 'health') || activeTab === 'health_direct' || (activeTab === 'a_insights' && analyticsSubTab === 'health')) && (
+        {(activeTab === 'analytics' && analyticsSubTab === 'health') && (
           <div className="space-y-5">
             {/* Health Score Hero */}
             <div className="gradient-card rounded-lg p-5">
@@ -2199,7 +2109,7 @@ export default function DataPage() {
         )}
 
         {/* ═══════════════════ TAB 7: JOB & ACCOUNT CHANGES ═══════════════════ */}
-        {((activeTab === 'changes' && changesSubTab === 'changes') || activeTab === 'changes_direct' || (activeTab === 'a_signals' && changesSubTab === 'changes')) && (
+        {(activeTab === 'changes' && changesSubTab === 'changes') && (
           <div className="space-y-5">
             {/* Summary stats */}
             <div className="grid grid-cols-4 gap-3">
@@ -2307,7 +2217,7 @@ export default function DataPage() {
         )}
 
         {/* ═══════════════════ TAB 8: WEBSITE ANALYTICS ═══════════════════ */}
-        {((activeTab === 'changes' && changesSubTab === 'webanalytics') || activeTab === 'webanalytics_direct' || (activeTab === 'a_signals' && changesSubTab === 'webanalytics')) && (
+        {(activeTab === 'changes' && changesSubTab === 'webanalytics') && (
           <div className="space-y-5">
             {/* Top stats */}
             <div className="grid grid-cols-4 gap-3">
